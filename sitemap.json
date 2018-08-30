@@ -1,16 +1,21 @@
-[
-    {
-        "filename": "index.html",
-        "template": "src/index.pug",
-        "inNav": false,
-        "name": "Home",
-        "topDir": ""
-    },
-    {
-        "filename": "projects/hello.html",
-        "template": "src/projects/hello.pug",
-        "inNav": false,
-        "name": "Hello",
-        "topDir": "../"
-    }
-]
+{
+    "projectTemplate": "src/projects/project.pug",
+    "pages": [
+        {
+            "filename": "index.html",
+            "template": "src/index.pug",
+            "inNav": false,
+            "title": "Renoj Varghese",
+            "topDir": "",
+            "imgDir": "static/img/"
+        },
+        {
+            "filename": "projects/musicvisualizer/index.html",
+            "template": "src/projects/musicvisualizer.pug",
+            "inNav": true,
+            "title": "Web Music Visualiser",
+            "topDir": "../",
+            "imgDir": "static/img/musicvisualizer"
+        }
+    ]
+}
