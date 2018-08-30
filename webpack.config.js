@@ -3,9 +3,9 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const sitemap = require("./sitemap.json");
+const pages = require("./sitemap.json").pages;
 
-const plugins = sitemap.map(function(page, i) {
+const plugins = pages.map(function(page, i) {
     return new HtmlWebpackPlugin({
         filename: page.filename,
         template: page.template,
