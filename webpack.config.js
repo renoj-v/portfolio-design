@@ -11,7 +11,7 @@ const plugins = pages.map(function(page, i) {
         template: page.template,
 
         topDir: page.topDir,
-
+        title: page.title,
         inject: false
     });
 });

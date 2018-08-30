@@ -7,7 +7,7 @@ sitemap.pages.forEach(function(page, i) {
     if (page.template && !fs.existsSync(page.template)) {
         fs.writeFileSync(page.template, projectString);
     }
-    if (page.imgDir && !fs.existsSync(page.imageDir)) {
+    if (page.imgDir && !fs.existsSync(page.imgDir)) {
         fs.mkdirSync(page.imgDir);
     }
 });
