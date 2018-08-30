@@ -9,7 +9,8 @@
         "build": "webpack --mode production",
         "deploy": "deploy-to-git",
         "clean": "rm -rf dist/",
-        "prod": "npm run clean && npm run deploy"
+        "prod": "npm run clean && npm run deploy",
+        "generate": "node generate.js"
     },
     "repository": {
         "type": "git",
