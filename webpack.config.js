@@ -6,14 +6,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const pages = require("./sitemap.json").pages;
 
 const plugins = pages.map(function(page, i) {
-    return new HtmlWebpackPlugin({
-        filename: page.filename,
-        template: page.template,
-
-        topDir: page.topDir,
-        title: page.title,
+    const plug = new HtmlWebpackPlugin({
+        ...page,
+        pages: pages,
         inject: false
     });
+    return plug;
 });
 const pug = {
     test: /\.pug$/,
@@ -49,7 +47,7 @@ const scss = {
     ]
 };
 const images = {
-    test: /\.(jpg|png)$/,
+    test: /\.(jpg|png|svg)$/,
     use: {
         loader: "file-loader",
         options: {
