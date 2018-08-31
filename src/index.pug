@@ -1,10 +1,19 @@
-doctype html
-html
-    head
-        link(rel="stylesheet" href="./main.css")
-    body
-        h1 Hello. 
-        h2 Currently reworking development. Check back in a bit :)
-        img(src="static/placeholder.png")
-        script(src="./main.js")
+extends ./layout
+
+block css 
         
+block content
+    - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
+    h1 Hello
+    
+    .super-container
+        .container.clearfix
+            each page in subpages
+                a.portfolio-link(href=page.filename style="opacity:0")
+                    .portfolio-item
+                        .center.rotate-high
+                            .img-container
+                                img(src=images+"Screen1.png")            
+                        .center-text 
+                        h3.header=page.title
+    
