@@ -11,7 +11,6 @@
 .nav-list {
     display: flex;
     justify-content: left;
-    padding: 15px 0px 15px 15px;
     font-size: 16px;
     list-style: none;
     max-width: 992px;
@@ -21,12 +20,27 @@
     margin: 0 20px;
 }
 .nav-link {
-    position: relative;
-    top: 15px;
 }
 .home {
     display: block;
     background-size: contain;
     width: 50px;
     height: 50px;
+}
+.drop-down {
+    position: relative;
+    display: inline;
+    .nav-list {
+        padding: 0;
+        display: none;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        width: 200px;
+    }
+    &:hover .nav-list {
+        display: block;
+        opacity: 1;
+    }
 }

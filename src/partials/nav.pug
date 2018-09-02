@@ -3,3 +3,11 @@ mixin navlist(items, topDir)
         each item in items
             li.nav-list-item
                 a.nav-link(href=topDir+ item.filename)=item.title
+
+mixin dropnavlist(items, name, topDir)
+    .drop-down
+        a.drop-down-trigger=name
+        ul.nav-list
+            each item in items
+                li.nav-list-item
+                    a.nav-link(href=topDir+ item.filename)=item.title
