@@ -1,5 +1,5 @@
 var fs = require("fs");
-var sitemap = require("./sitemap.json");
+var sitemap = require("./sitemap.js");
 
 var projectString = fs.readFileSync(sitemap.projectTemplate, "utf-8");
 

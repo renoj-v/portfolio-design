@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const pages = require("./sitemap.json").pages;
+const pages = require("./sitemap.js").pages;
 
 const plugins = pages.map(function(page, i) {
     const plug = new HtmlWebpackPlugin({
