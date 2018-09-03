@@ -1,13 +1,21 @@
-mixin navlist(items, topDir)
-    ul.nav-list
-        each item in items
-            li.nav-list-item
-                a.nav-link(href=topDir+ item.filename)=item.title
+mixin navitem(page, topDir)
+    li.nav-list-item
+        a.nav-link(href=topDir+ page.filename)=page.title
 
-mixin dropnavlist(items, name, topDir)
+mixin dropnavlist(pages, name, topDir)
     .drop-down
         a.drop-down-trigger=name
         ul.nav-list
-            each item in items
-                li.nav-list-item
-                    a.nav-link(href=topDir+ item.filename)=item.title
+            each page in pages
+                +navitem(page, topDir)
+
+mixin nav(nav,topDir)
+    nav.fade-in.delay-little
+        ul.nav-list
+            each item in nav
+                if item.isDrop
+                    +dropnavlist(item.subpages, item.name, topDir)
+                else
+                    +navitem(item.page, topDir)
+        
+            

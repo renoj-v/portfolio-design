@@ -13,7 +13,7 @@ const projects = [
         template: "src/projects/musicvisualizer.pug",
         inNav: true,
         title: "Web Music Visualiser",
-        topDir: "../",
+        topDir: "../../",
         imgDir: "static/img/musicvisualizer"
     }
 ];
@@ -28,6 +28,7 @@ module.exports = {
         },
         {
             isDrop: true,
+            name: "Projects",
             page: home,
             subpages: projects
         },

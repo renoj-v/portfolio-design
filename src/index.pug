@@ -1,13 +1,10 @@
 extends ./layout
 
-include ./partials/nav
 
 block css 
         
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
-    - const topDir = self.htmlWebpackPlugin.options.topDir
-    +dropnavlist(subpages, "Projects",topDir)
     
     .super-container
         .container.clearfix

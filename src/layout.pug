@@ -1,5 +1,7 @@
 - const images = self.htmlWebpackPlugin.options.imgDir
-    
+- const nav = self.htmlWebpackPlugin.options.nav
+- const topDir = self.htmlWebpackPlugin.options.topDir
+include partials/nav
 doctype html
 html(lang="en")
     head
@@ -12,6 +14,7 @@ html(lang="en")
             link(href=css, rel='stylesheet')
         block css
     body
+            +nav(nav, topDir)
             block content
             each js in self.htmlWebpackPlugin.files.js
                 script(type='text/javascript', src=js)
