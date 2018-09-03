@@ -30,7 +30,7 @@ module.exports = {
             isDrop: true,
             name: "Projects",
             page: home,
-            subpages: projects
+            subpages: [...projects, ...projects, ...projects, ...projects]
         },
         ...others.map(function(other) {
             return {

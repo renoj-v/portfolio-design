@@ -5,12 +5,12 @@ mixin navitem(page, topDir)
 mixin dropnavlist(pages, name, topDir)
     .drop-down
         a.drop-down-trigger=name
-        ul.nav-list
+        ul.nav-list.drop-down-list
             each page in pages
                 +navitem(page, topDir)
 
 mixin nav(nav,topDir)
-    nav.fade-in.delay-little
+    nav.nav.fade-in.delay-little
         ul.nav-list
             each item in nav
                 if item.isDrop
