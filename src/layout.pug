@@ -14,8 +14,12 @@ html(lang="en")
             link(href=css, rel='stylesheet')
         block css
     body
-            +nav(nav, topDir)
+            block header
             block content
             each js in self.htmlWebpackPlugin.files.js
                 script(type='text/javascript', src=js)
             block js
+
+block header
+    header
+        +nav(nav, topDir)
