@@ -18,6 +18,10 @@ const projects = [
     }
 ];
 const others = [];
+
+const socials = [];
+
+const contact = [];
 module.exports = {
     projectTemplate: "src/projects/project.pug",
     pages: [home, ...projects, ...others],
@@ -38,5 +42,8 @@ module.exports = {
                 page: other
             };
         })
-    ]
+    ],
+    footer: {
+        socials: socials
+    }
 };
