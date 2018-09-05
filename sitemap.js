@@ -21,16 +21,16 @@ const others = [];
 
 const socials = [
     {
-        name: "LinkedIn",
-        link: "https://www.linkedin.com/in/renoj-varghese/"
-    },
-    {
         name: "GitHub",
         link: "https://github.com/renojvarghese"
     },
     {
         name: "Behance",
         link: "https://www.behance.net/renojvargh78ed"
+    },
+    {
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/renoj-varghese/"
     }
 ];
 
