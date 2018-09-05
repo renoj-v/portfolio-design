@@ -1,0 +1,16 @@
+mixin footer(footer)
+    footer.footer
+        .get-in-touch
+            h2.footer-header.header
+                |Get in Touch
+            p If you would like to reach out, please email at renoj.varghese@uconn.edu
+            
+        .footer-socials
+            h3 More of my Skills
+            ul.socials-list
+                each social in footer.socials
+                    li.socials-item 
+                        a(href=social.link)=social.name
+        .resume-container
+            a(href="static/docs/resumeRenojVarghese.pdf").button="View Resume"
+                

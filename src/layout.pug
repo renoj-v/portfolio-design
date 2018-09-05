@@ -1,11 +1,13 @@
 - const images = self.htmlWebpackPlugin.options.imgDir
 - const nav = self.htmlWebpackPlugin.options.nav
+- const footer = self.htmlWebpackPlugin.options.footer
 - const topDir = self.htmlWebpackPlugin.options.topDir
 include partials/nav
+include partials/footer
 doctype html
 html(lang="en")
     head
-        title= self.htmlWebpackPlugin.title
+        title= self.htmlWebpackPlugin.options.title
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(name="description" content="Renoj's portfolio")
@@ -14,12 +16,9 @@ html(lang="en")
             link(href=css, rel='stylesheet')
         block css
     body
-            block header
-            block content
-            each js in self.htmlWebpackPlugin.files.js
-                script(type='text/javascript', src=js)
-            block js
-
-block header
-    header
         +nav(nav, topDir)
+        block content
+        +footer(footer)
+        each js in self.htmlWebpackPlugin.files.js
+            script(type='text/javascript', src=js)
+        block js

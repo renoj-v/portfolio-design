@@ -6,12 +6,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const sitemap = require("./sitemap.js");
 const pages = sitemap.pages;
 const nav = sitemap.nav;
+const footer = sitemap.footer;
 
 const plugins = pages.map(function(page, i) {
     const plug = new HtmlWebpackPlugin({
         ...page,
         pages: pages,
         nav: nav,
+        footer: footer,
         inject: false
     });
     return plug;
