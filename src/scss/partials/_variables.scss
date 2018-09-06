@@ -2,6 +2,27 @@ $tea-brown: #bd772a;
 $brown: #8e4f0a;
 $dark-brown: #211406;
 $tan: #ffebd7;
+$gold: #dfa700;
 $blue: #3915ea;
 $purple: #61007e;
+$white: #ffffff;
+$black: #000000;
 $link-hover: $blue;
+
+$logo-width: 50px;
+
+/* media queries*/
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}

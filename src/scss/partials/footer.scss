@@ -1,0 +1,25 @@
+.footer {
+    background: $dark-brown;
+    color: $white;
+    .footer-header {
+        color: $gold;
+        font-size: 4vw;
+    }
+    .footer-p {
+        font-size: 2.5vw;
+    }
+}
+
+.socials-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    font-size: 16px;
+    list-style: none;
+}
+.socials-link {
+    color: $white;
+    &:hover {
+        color: $gold;
+    }
+}
