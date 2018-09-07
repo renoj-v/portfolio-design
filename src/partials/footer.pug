@@ -1,16 +1,18 @@
 mixin footer(footer)
     footer.footer
-        .get-in-touch.footer-section
-            h3.footer-header.header
-                |Get in Touch
-            p.footer-p If you would like to reach out, please email at renoj.varghese@uconn.edu
-            
-        .footer-socials.footer-section
-            h3.footer-header.header Checkout More
-            ul.socials-list
-                each social in footer.socials
-                    li.socials-item 
-                        a.socials-link(href=social.link)=social.name
-            .resume-container
-                a(href="static/docs/resumeRenojVarghese.pdf").button="View Resume"
-                
+        .super-container
+            .footer-inner 
+                .get-in-touch.footer-section
+                    h3.footer-header.header
+                        |Get in Touch
+                    p.footer-p If you would like to reach out, please email at renoj.varghese@uconn.edu
+                    
+                .footer-socials.footer-section
+                    h3.footer-header.header Checkout More
+                    ul.socials-list
+                        each social in footer.socials
+                            li.socials-item 
+                                a.socials-link(href=social.link)=social.name
+                    .resume-container
+                        a(href="static/docs/resumeRenojVarghese.pdf").button="View Resume"
+                    

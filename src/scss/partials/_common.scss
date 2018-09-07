@@ -1,8 +1,6 @@
 body {
     background: #ffebd7;
-    background-size: 100%;
-    overflow-x: hidden;
-    padding: 100px 0px;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -38,4 +36,8 @@ img {
 }
 .margin-top-30 {
     margin-top: 30px;
+}
+.super-container {
+    max-width: $supreme-max-width;
+    margin: 0 auto;
 }
