@@ -2,18 +2,7 @@
     background: $dark-brown;
     color: $white;
     position: relative;
-    &:before {
-        content: "";
-        width: $logo-width;
-        height: $logo-width;
-        border-bottom: 10px solid $gold;
-        border-bottom-left-radius: 100%;
-        border-bottom-right-radius: 100%;
-        background: $tan;
-        position: absolute;
-        left: calc(50% - #{$logo-width} / 2);
-        bottom: calc(100% - #{$logo-width}/ 2);
-    }
+    margin-top: $logo-width;
 }
 .footer-inner {
     padding: 20px 30px;
@@ -36,6 +25,16 @@
             font-size: 18px;
         }
     }
+    a {
+        color: $white;
+        &:hover {
+            color: $gold;
+        }
+        font-size: 3vw;
+        @include min-tablet {
+            font-size: 18px;
+        }
+    }
 }
 .footer-section {
     @include min-tablet {
@@ -48,14 +47,4 @@
     padding-left: 0;
     font-size: 16px;
     list-style: none;
-}
-.socials-link {
-    color: $white;
-    &:hover {
-        color: $gold;
-    }
-    font-size: 3vw;
-    @include min-tablet {
-        font-size: 18px;
-    }
 }

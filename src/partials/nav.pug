@@ -12,11 +12,6 @@ mixin dropnavlist(pages, name, topDir)
 mixin nav(nav,topDir)
     nav.nav.fade-in.delay-little
         .super-conatiner
-            ul.nav-list
-                each item in nav
-                    if item.isDrop
-                        +dropnavlist(item.subpages, item.name, topDir)
-                    else
-                        +navitem(item.page, topDir)
+            +dropnavlist(nav.projects, "Projects", topDir)
         
             

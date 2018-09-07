@@ -3,7 +3,7 @@ extends ./layout
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
     
-    .super-container
+    .super-container.align-center
         .container.clearfix
             each page in subpages
                 a.portfolio-link(href=page.filename style="opacity:0")

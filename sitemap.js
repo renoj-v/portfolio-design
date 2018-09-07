@@ -38,24 +38,11 @@ const contact = [];
 module.exports = {
     projectTemplate: "src/projects/project.pug",
     pages: [home, ...projects, ...others],
-    nav: [
-        {
-            isDrop: false,
-            page: home
-        },
-        {
-            isDrop: true,
-            name: "Projects",
-            page: home,
-            subpages: [...projects, ...projects, ...projects, ...projects]
-        },
-        ...others.map(function(other) {
-            return {
-                isDrop: false,
-                page: other
-            };
-        })
-    ],
+    nav: {
+        home: home,
+        socials: socials.slice(0, 2),
+        projects: projects
+    },
     footer: {
         socials: socials
     }
