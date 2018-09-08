@@ -1,6 +1,7 @@
 .nav {
     background: #211406;
     position: relative;
+    padding: 20px 10px;
     a {
         color: white;
         opacity: 0.8;
@@ -22,7 +23,6 @@
             height: $logo-width-wide;
         }
     }
-    padding-left: $logo-width + 15px;
 }
 .nav-list {
     display: flex;
@@ -45,10 +45,11 @@
 }
 .drop-down {
     position: relative;
-    padding: 0 15px;
+    padding: 15px;
     display: inline-block;
+    background: $dark-brown;
     .drop-down-list {
-        background: #211406;
+        background: $dark-brown;
         padding: 20px 0 10px;
         position: absolute;
         left: 0;
