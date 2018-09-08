@@ -40,6 +40,7 @@ module.exports = {
     pages: [home, ...projects, ...others],
     nav: {
         home: home,
+        others: others,
         socials: socials.slice(0, 2),
         projects: projects
     },

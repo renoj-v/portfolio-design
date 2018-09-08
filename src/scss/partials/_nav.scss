@@ -9,15 +9,20 @@
             opacity: 1;
         }
     }
+}
+.logo {
+    width: $logo-width;
+    position: relative;
     &:before {
         content: "";
         width: $logo-width;
         height: $logo-width;
         border-radius: 100%;
         background: url($static+"/img/logo.svg");
+        display: inline-block;
         position: absolute;
-        left: 15px;
-        top: $logo-width/8;
+        left: 0;
+        top: 0;
         @include min-tablet {
             width: $logo-width-wide;
             height: $logo-width-wide;
@@ -26,7 +31,8 @@
 }
 .nav-list {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 16px;
     list-style: none;
     max-width: 992px;
@@ -45,7 +51,6 @@
 }
 .drop-down {
     position: relative;
-    padding: 15px;
     display: inline-block;
     background: $dark-brown;
     .drop-down-list {

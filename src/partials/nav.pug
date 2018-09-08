@@ -1,7 +1,9 @@
 mixin navitem(page, topDir)
     li.nav-list-item
         a.nav-link(href=topDir+ page.filename)=page.title
-
+mixin externallink(name, link)
+    li.nav-list-item
+        a.nav-link(href=link)=name
 mixin dropnavlist(pages, name, topDir)
     .drop-down
         a.drop-down-trigger=name
@@ -11,7 +13,17 @@ mixin dropnavlist(pages, name, topDir)
 
 mixin nav(nav,topDir)
     nav.nav.fade-in.delay-little
-        .super-conatiner
-            +dropnavlist(nav.projects, "Projects", topDir)
+        .super-container
+            
+            ul.nav-list
+                li.nav-list-item 
+                    a(href=topDir)
+                        .logo
+                li.nav-list-item
+                    +dropnavlist(nav.projects, "Projects", topDir)
+                each item in nav.others
+                    +externallink(item.name, item.link)
+                each item in nav.socials
+                    +externallink(item.name, item.link)
         
             
