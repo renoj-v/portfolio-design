@@ -7,24 +7,8 @@ const home = {
     imgDir: "static/img/"
 };
 
-const current_projects = [
-    {
-        filename: "projects/musicvisualizer/index.html",
-        template: "src/projects/musicvisualizer.pug",
-        inNav: true,
-        title: "Web Music Visualiser",
-        topDir: "../../",
-        imgDir: "static/img/musicvisualizer"
-    },
-    {
-        filename: "projects//index.html",
-        template: "src/projects/musicvisualizer.pug",
-        inNav: true,
-        title: "Web Music Visualiser",
-        topDir: "../../",
-        imgDir: "static/img/musicvisualizer"
-    }
-];
+const current_projects = require("./current_projects.json");
+
 const others = [];
 
 const socials = [

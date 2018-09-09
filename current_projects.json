@@ -1,0 +1,12 @@
+[
+    {
+        "filename": "projects/musicvisualizer/index.html",
+        "template": "src/projects/musicvisualizer.pug",
+        "inNav": true,
+        "title": "Web Music Visualiser",
+        "topDir": "../../",
+        "imgDir": "static/img/musicvisualizer",
+        "icon": "static/img/musicvisualizer/icon.jpg",
+        "token": "musicvisualizer"
+    }
+]

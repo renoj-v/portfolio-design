@@ -10,7 +10,8 @@
         "deploy": "deploy-to-git",
         "clean": "rm -rf dist/",
         "prod": "npm run clean && npm run deploy",
-        "generate": "node generate.js"
+        "generate": "node generate.js",
+        "add-project": "node add-project.js"
     },
     "repository": {
         "type": "git",

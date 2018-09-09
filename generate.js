@@ -1,3 +1,4 @@
+// a personal script for generating sitemap
 var fs = require("fs");
 var sitemap = require("./sitemap.js");
 
