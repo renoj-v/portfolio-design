@@ -18,7 +18,8 @@ html(lang="en")
         block css
     body
         +nav(nav, topDir)
-        block content
+        .content
+            block content
         +footer(footer)
         each js in self.htmlWebpackPlugin.files.js
             script(type='text/javascript', src=js)
