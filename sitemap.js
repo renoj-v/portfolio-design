@@ -7,9 +7,17 @@ const home = {
     imgDir: "static/img/"
 };
 
-const projects = [
+const current_projects = [
     {
         filename: "projects/musicvisualizer/index.html",
+        template: "src/projects/musicvisualizer.pug",
+        inNav: true,
+        title: "Web Music Visualiser",
+        topDir: "../../",
+        imgDir: "static/img/musicvisualizer"
+    },
+    {
+        filename: "projects//index.html",
         template: "src/projects/musicvisualizer.pug",
         inNav: true,
         title: "Web Music Visualiser",
@@ -37,12 +45,12 @@ const socials = [
 const contact = [];
 module.exports = {
     projectTemplate: "src/projects/project.pug",
-    pages: [home, ...projects, ...others],
+    pages: [home, ...current_projects, ...others],
     nav: {
         home: home,
         others: others,
         socials: socials.slice(0, 2),
-        projects: projects
+        projects: current_projects
     },
     footer: {
         socials: socials

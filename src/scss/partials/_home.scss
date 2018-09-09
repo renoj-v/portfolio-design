@@ -1,247 +1,247 @@
-@keyframes spin {
-    0% {
-        transform: rotateZ(0deg) translateZ(0);
-        /*help use GPU*/
-    }
-
-    100% {
-        transform: rotateZ(360deg) translateZ(0);
-    }
-}
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-.fade-in {
-    opacity: 0;
-    animation: fade-in 0.5s ease-in forwards 0.1s;
-}
-.header {
-    font-family: "Lora", sans-serif;
-    color: #8e4f0a;
-}
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-    color: #5f3507;
-}
-
-.cls-1 {
-    stroke-width: 2px;
-}
-
-.cls-2 {
-    stroke-width: 5px;
-}
-
-.cls-3 {
-    fill: #bd772a;
-    /*animation: shineFill .5s ease-in forwards .5s;*/
-    transition: fill 2s ease;
-    stroke-width: 0.1px;
-}
-
-.portal:hover .cls-3 {
-    fill: #61007e;
-}
-
-.cls-1,
-.cls-2 {
-    fill: none;
-    stroke: #bd772a;
-    transition: stroke 2s ease;
-    /*     animation: shineStroke .5s ease-in forwards .5s;*/
-    stroke-miterlimit: 10;
-}
-
-.portal:hover .cls-1,
-.portal:hover .cls-2 {
-    stroke: #3915ea;
-}
-
-.portal {
-    animation: spin 300s ease infinite;
-    margin: 10px 3%;
-    transition: 0.4s all ease;
-}
-
-.portal:hover {
-    -webkit-filter: drop-shadow(0px 3px 15px white);
-    filter: drop-shadow(0px 0px 0px white);
-    filter: drop-shadow(0px 3px 15px white);
-}
-
-.delay-little {
-    animation-delay: 0.2s;
-}
-
-.delay-high {
-    animation-delay: 0.4s;
-}
-
-.center-text {
-    text-align: center;
-    position: relative;
-    top: -15px;
-}
-
-.center-header {
-    font-size: 24px;
-}
-
-.center-header,
-.center-paragraph {
-    transition: color 0.4s ease;
-}
-
-.portfolio-item:hover .center-header,
-.portfolio-item:hover .center-paragraph {
-    color: #262261;
-}
-
-.hero {
-    padding-top: 100px;
-    max-width: 992px;
-    margin: 0 auto;
-    text-align: center;
-}
-#hero-img {
-    max-width: 500px;
-    margin: 0 auto;
-}
-.title {
-    margin-bottom: 0;
-}
-.rotation-control {
-    display: inline-block;
-    transform: rotateZ(120deg);
-    transform-origin: 50% 50% 0 !important;
-    -webkit-transform-origin: 50% 50%;
-}
-
-.center {
-    position: relative;
-    margin: auto;
-    /*background: url('portals-29.svg') no-repeat ;
-  background-size: cover;*/
-    min-width: 300px;
-    min-height: 300px;
-    transition: background 0.4s ease;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.center::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url("../../static/img/portals-29.svg") no-repeat;
-    background-size: cover;
-    min-width: 300px;
-    min-height: 300px;
-    animation: spin 300s ease infinite;
-    transition: background 0.4s ease;
-}
-
-.portfolio-item:hover .center::before {
-    background: url("../../static/img/portals-30.svg") no-repeat;
-}
-
-.container {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.portfolio-item:hover .img-container:after {
-    opacity: 1;
-}
-
-.rotate-slight {
-    transform: rotateZ(45deg);
-}
-
-.rotate-slight .img-container {
-    transform: rotateZ(-45deg);
-}
-
-.rotate-medium {
-    transform: rotateZ(90deg);
-}
-
-.rotate-medium .img-container {
-    transform: rotateZ(-90deg);
-}
-
-.rotate-high {
-    transform: rotateZ(135deg);
-}
-
-.rotate-high .img-container {
-    transform: rotateZ(-135deg);
-}
-
-.portfolio-link {
-    margin-top: 50px;
-}
-
-.portfolio-item {
-    text-align: center;
-    max-width: 300px;
-    margin: 0 10px;
-    opacity: 0;
-    transition: all 0.4s ease;
-    animation: fade-in 0.4s ease-in forwards 0.1s;
-}
-.portfolio-item .img-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    top: 50px;
-    left: 50px;
-    overflow: hidden;
-    border-radius: 100%;
-    transition: 0.4s all ease 0.1s;
-}
-.portfolio-item .img-container:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    transition: 0.4s all ease 0.1s;
-    background: radial-gradient(
-        ellipse at center,
-        rgba(30, 87, 153, 0.1) 0%,
-        rgba(101, 45, 144, 0.4) 100%
-    );
-    opacity: 0;
-}
-.portfolio-item img {
-    min-width: 100%;
-    width: auto;
-    height: 100%;
-}
-.delay-little {
-    animation-delay: 0.2s;
-}
-
-.delay-high {
-    animation-delay: 0.4s;
-}
-.portfolio-link {
-    opacity: 1 !important;
-}
+// @keyframes spin {
+//     0% {
+//         transform: rotateZ(0deg) translateZ(0);
+//         /*help use GPU*/
+//     }
+//
+//     100% {
+//         transform: rotateZ(360deg) translateZ(0);
+//     }
+// }
+// @keyframes fade-in {
+//     0% {
+//         opacity: 0;
+//     }
+//
+//     100% {
+//         opacity: 1;
+//     }
+// }
+// .fade-in {
+//     opacity: 0;
+//     animation: fade-in 0.5s ease-in forwards 0.1s;
+// }
+// .header {
+//     font-family: "Lora", sans-serif;
+//     color: #8e4f0a;
+// }
+//
+// body,
+// html {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     font-family: "Open Sans", sans-serif;
+//     color: #5f3507;
+// }
+//
+// .cls-1 {
+//     stroke-width: 2px;
+// }
+//
+// .cls-2 {
+//     stroke-width: 5px;
+// }
+//
+// .cls-3 {
+//     fill: #bd772a;
+//     /*animation: shineFill .5s ease-in forwards .5s;*/
+//     transition: fill 2s ease;
+//     stroke-width: 0.1px;
+// }
+//
+// .portal:hover .cls-3 {
+//     fill: #61007e;
+// }
+//
+// .cls-1,
+// .cls-2 {
+//     fill: none;
+//     stroke: #bd772a;
+//     transition: stroke 2s ease;
+//     /*     animation: shineStroke .5s ease-in forwards .5s;*/
+//     stroke-miterlimit: 10;
+// }
+//
+// .portal:hover .cls-1,
+// .portal:hover .cls-2 {
+//     stroke: #3915ea;
+// }
+//
+// .portal {
+//     animation: spin 300s ease infinite;
+//     margin: 10px 3%;
+//     transition: 0.4s all ease;
+// }
+//
+// .portal:hover {
+//     -webkit-filter: drop-shadow(0px 3px 15px white);
+//     filter: drop-shadow(0px 0px 0px white);
+//     filter: drop-shadow(0px 3px 15px white);
+// }
+//
+// .delay-little {
+//     animation-delay: 0.2s;
+// }
+//
+// .delay-high {
+//     animation-delay: 0.4s;
+// }
+//
+// .center-text {
+//     text-align: center;
+//     position: relative;
+//     top: -15px;
+// }
+//
+// .center-header {
+//     font-size: 24px;
+// }
+//
+// .center-header,
+// .center-paragraph {
+//     transition: color 0.4s ease;
+// }
+//
+// .portfolio-item:hover .center-header,
+// .portfolio-item:hover .center-paragraph {
+//     color: #262261;
+// }
+//
+// .hero {
+//     padding-top: 100px;
+//     max-width: 992px;
+//     margin: 0 auto;
+//     text-align: center;
+// }
+// #hero-img {
+//     max-width: 500px;
+//     margin: 0 auto;
+// }
+// .title {
+//     margin-bottom: 0;
+// }
+// .rotation-control {
+//     display: inline-block;
+//     transform: rotateZ(120deg);
+//     transform-origin: 50% 50% 0 !important;
+//     -webkit-transform-origin: 50% 50%;
+// }
+//
+// .center {
+//     position: relative;
+//     margin: auto;
+//     /*background: url('portals-29.svg') no-repeat ;
+//   background-size: cover;*/
+//     min-width: 300px;
+//     min-height: 300px;
+//     transition: background 0.4s ease;
+//     width: 300px;
+//     height: 300px;
+//     margin: 0 auto;
+// }
+//
+// .center::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background: url("../../static/img/portals-29.svg") no-repeat;
+//     background-size: cover;
+//     min-width: 300px;
+//     min-height: 300px;
+//     animation: spin 300s ease infinite;
+//     transition: background 0.4s ease;
+// }
+//
+// .portfolio-item:hover .center::before {
+//     background: url("../../static/img/portals-30.svg") no-repeat;
+// }
+//
+// .container {
+//     display: inline-flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+// }
+//
+// .portfolio-item:hover .img-container:after {
+//     opacity: 1;
+// }
+//
+// .rotate-slight {
+//     transform: rotateZ(45deg);
+// }
+//
+// .rotate-slight .img-container {
+//     transform: rotateZ(-45deg);
+// }
+//
+// .rotate-medium {
+//     transform: rotateZ(90deg);
+// }
+//
+// .rotate-medium .img-container {
+//     transform: rotateZ(-90deg);
+// }
+//
+// .rotate-high {
+//     transform: rotateZ(135deg);
+// }
+//
+// .rotate-high .img-container {
+//     transform: rotateZ(-135deg);
+// }
+//
+// .portfolio-link {
+//     margin-top: 50px;
+// }
+//
+// .portfolio-item {
+//     text-align: center;
+//     max-width: 300px;
+//     margin: 0 10px;
+//     opacity: 0;
+//     transition: all 0.4s ease;
+//     animation: fade-in 0.4s ease-in forwards 0.1s;
+// }
+// .portfolio-item .img-container {
+//     position: relative;
+//     width: 200px;
+//     height: 200px;
+//     top: 50px;
+//     left: 50px;
+//     overflow: hidden;
+//     border-radius: 100%;
+//     transition: 0.4s all ease 0.1s;
+// }
+// .portfolio-item .img-container:after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 200px;
+//     height: 200px;
+//     transition: 0.4s all ease 0.1s;
+//     background: radial-gradient(
+//         ellipse at center,
+//         rgba(30, 87, 153, 0.1) 0%,
+//         rgba(101, 45, 144, 0.4) 100%
+//     );
+//     opacity: 0;
+// }
+// .portfolio-item img {
+//     min-width: 100%;
+//     width: auto;
+//     height: 100%;
+// }
+// .delay-little {
+//     animation-delay: 0.2s;
+// }
+//
+// .delay-high {
+//     animation-delay: 0.4s;
+// }
+// .portfolio-link {
+//     opacity: 1 !important;
+// }
