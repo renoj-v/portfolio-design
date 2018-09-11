@@ -1,5 +1,65 @@
 [
     {
+        "filename": "projects/blizzard/index.html",
+        "template": "src/projects/blizzard.pug",
+        "inNav": true,
+        "title": "Blizzard Entertainment - Hearthstone",
+        "topDir": "../../",
+        "imgDir": "static/img/blizzard",
+        "icon": "static/img/blizzard/icon.jpg",
+        "token": "blizzard"
+    },
+    {
+        "filename": "projects/mannequin/index.html",
+        "template": "src/projects/mannequin.pug",
+        "inNav": true,
+        "title": "Fashionable Projection Mapping",
+        "topDir": "../../",
+        "imgDir": "static/img/mannequin",
+        "icon": "static/img/mannequin/icon.jpg",
+        "token": "mannequin"
+    },
+    {
+        "filename": "projects/subconscious/index.html",
+        "template": "src/projects/subconscious.pug",
+        "inNav": true,
+        "title": "Subconscious",
+        "topDir": "../../",
+        "imgDir": "static/img/subconscious",
+        "icon": "static/img/subconscious/icon.jpg",
+        "token": "subconscious"
+    },
+    {
+        "filename": "projects/ccmc/index.html",
+        "template": "src/projects/ccmc.pug",
+        "inNav": true,
+        "title": "Antibiotics App",
+        "topDir": "../../",
+        "imgDir": "static/img/ccmc",
+        "icon": "static/img/ccmc/icon.jpg",
+        "token": "ccmc"
+    },
+    {
+        "filename": "projects/govcontact/index.html",
+        "template": "src/projects/govcontact.pug",
+        "inNav": true,
+        "title": "GovContact",
+        "topDir": "../../",
+        "imgDir": "static/img/govcontact",
+        "icon": "static/img/govcontact/icon.jpg",
+        "token": "govcontact"
+    },
+    {
+        "filename": "projects/sanskriti/index.html",
+        "template": "src/projects/sanskriti.pug",
+        "inNav": true,
+        "title": "Sanskriti",
+        "topDir": "../../",
+        "imgDir": "static/img/sanskriti",
+        "icon": "static/img/sanskriti/icon.jpg",
+        "token": "sanskriti"
+    },
+    {
         "filename": "projects/musicvisualizer/index.html",
         "template": "src/projects/musicvisualizer.pug",
         "inNav": true,
