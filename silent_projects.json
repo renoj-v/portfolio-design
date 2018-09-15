@@ -1,0 +1,22 @@
+[
+    {
+        "filename": "projects/blizzard/index.html",
+        "template": "src/projects/blizzard.pug",
+        "inNav": true,
+        "title": "Blizzard Entertainment - Hearthstone",
+        "topDir": "../../",
+        "imgDir": "static/img/blizzard",
+        "icon": "static/img/blizzard/icon.jpg",
+        "token": "blizzard"
+    },
+    {
+        "filename": "projects/subconscious/index.html",
+        "template": "src/projects/subconscious.pug",
+        "inNav": true,
+        "title": "Subconscious",
+        "topDir": "../../",
+        "imgDir": "static/img/subconscious",
+        "icon": "static/img/subconscious/icon.jpg",
+        "token": "subconscious"
+    }
+]
