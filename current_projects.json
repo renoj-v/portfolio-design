@@ -5,7 +5,7 @@
         "inNav": true,
         "title": "Fashionable Projection Mapping",
         "topDir": "../../",
-        "imgDir": "static/img/mannequin",
+        "imgDir": "static/img/mannequin/",
         "icon": "static/img/mannequin/icon.jpg",
         "token": "mannequin"
     },
@@ -15,7 +15,7 @@
         "inNav": true,
         "title": "Antibiotics App",
         "topDir": "../../",
-        "imgDir": "static/img/ccmc",
+        "imgDir": "static/img/ccmc/",
         "icon": "static/img/ccmc/icon.jpg",
         "token": "ccmc"
     },
@@ -25,7 +25,7 @@
         "inNav": true,
         "title": "GovContact",
         "topDir": "../../",
-        "imgDir": "static/img/govcontact",
+        "imgDir": "static/img/govcontact/",
         "icon": "static/img/govcontact/icon.jpg",
         "token": "govcontact"
     },
@@ -35,7 +35,7 @@
         "inNav": true,
         "title": "Sanskriti",
         "topDir": "../../",
-        "imgDir": "static/img/sanskriti",
+        "imgDir": "static/img/sanskriti/",
         "icon": "static/img/sanskriti/icon.jpg",
         "token": "sanskriti"
     },
@@ -45,7 +45,7 @@
         "inNav": true,
         "title": "Web Music Visualiser",
         "topDir": "../../",
-        "imgDir": "static/img/musicvisualiser",
+        "imgDir": "static/img/musicvisualiser/",
         "icon": "static/img/musicvisualiser/icon.jpg",
         "token": "musicvisualiser"
     }

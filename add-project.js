@@ -15,7 +15,7 @@ current_projects.unshift({
     inNav: true,
     title: title,
     topDir: "../../",
-    imgDir: "static/img/" + token,
+    imgDir: "static/img/" + token + "/",
     icon: "static/img/" + token + "/icon.jpg",
     token: token
 });
