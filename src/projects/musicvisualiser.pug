@@ -1,7 +1,19 @@
 extends ../layout
 
+
 block content
-    h1 Hello. 
-    h2 This page is currently under development
-    h3 come back later, please
-    p I'm sure have something cool to show soon
+    .project-container
+        h1.project-title Music Web Visualizer
+        p.project-p
+        
+        h2.project-header Initial Drawings
+        p.project-p
+        +img(images+"sketch1.jpg", alt="visualiser sketch")
+        +img(images+"sketch2.jpg", alt="visualiser sketch")
+        +img(images+"sketch2.jpg", alt="visualiser sketch")
+        
+        h2 Final Project
+        p.project-p
+        +img(images+"screen1.png", alt="visualiser final")
+        +img(images+"screen2.png", alt="visualiser final")
+        +img(images+"screen3.png", alt="visualiser final")
