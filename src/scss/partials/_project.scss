@@ -1,53 +1,42 @@
 .project-container {
-
-	padding: 100px 0px;
-	max-width: 768px;
-	margin:0 auto;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	// opacity: 0;
-	// animation: fade-in 1.0s ease forwards 0.1s;
-
+    padding: 100px 0px;
+    max-width: 768px;
+    margin: 0 auto;
 }
- .project-title {
-	font-family: 'Lora', sans-serif;
-	text-align: center;
-	width: 100%;
-	margin: 0 0 1.4em;
+.project-title {
+    font-family: "Lora", sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 1.4em;
 }
 .project-header {
-	font-family: 'Lora', sans-serif;
+    font-family: "Lora", sans-serif;
 }
 .project-p {
-	text-indent: 40px;
-	line-height: 2.0;
-
+    text-indent: 40px;
+    line-height: 2;
 }
 
-
-
-@media screen and (min-width:768px) {
-	.grid-4 {
-		float:left;
-		width:33%;
-	}
-	.grid-8 {
-		float:left;
-		width:66%;
-	}
-	.pad-8 {
-		margin-left: 16%;
-		margin-right: 16%;
-	}
-	.grid-12 {
-		float:left;
-		width: 100%;
-	}
-
+@media screen and (min-width: 768px) {
+    .grid-4 {
+        float: left;
+        width: 33%;
+    }
+    .grid-8 {
+        float: left;
+        width: 66%;
+    }
+    .pad-8 {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+    .grid-12 {
+        float: left;
+        width: 100%;
+    }
 }
-@media screen and (max-width:991px) {
-	.project-container {
-		padding:100px 30px;
-	}
+@media screen and (max-width: 991px) {
+    .project-container {
+        padding: 100px 30px;
+    }
 }

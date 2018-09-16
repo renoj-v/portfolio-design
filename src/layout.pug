@@ -13,6 +13,7 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(name="description" content="Renoj's portfolio")
         meta(name="author" content="Renoj Varghese")
+        block css-before
         each css in self.htmlWebpackPlugin.files.css
             link(href=css, rel='stylesheet')
         block css

@@ -3,14 +3,23 @@ extends ./layout
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
     
-    .super-container.align-center
+    .super-container.align-center#projects
         .container.clearfix
             each page in subpages
-                a.portfolio-link(href=page.filename style="opacity:0")
+                a.portfolio-link(href=page.filename)
                     .portfolio-item
                         .center.rotate-high
                             .img-container
                                 img(src=page.icon alt=page.title)            
                         .center-text 
                         h3.header=page.title
-    
+
+block css-before
+    style.
+        .porfolio-link {
+            opacity:0;
+        }
+        
+block js
+    script.
+        document.getElementById("projects").classList.add("active")
