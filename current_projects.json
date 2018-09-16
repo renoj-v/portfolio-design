@@ -1,23 +1,13 @@
 [
     {
-        "filename": "projects/mannequin/index.html",
-        "template": "src/projects/mannequin.pug",
+        "filename": "projects/sanskriti/index.html",
+        "template": "src/projects/sanskriti.pug",
         "inNav": true,
-        "title": "Fashionable Projection Mapping",
+        "title": "Sanskriti",
         "topDir": "../../",
-        "imgDir": "static/img/mannequin/",
-        "icon": "static/img/mannequin/icon.jpg",
-        "token": "mannequin"
-    },
-    {
-        "filename": "projects/ccmc/index.html",
-        "template": "src/projects/ccmc.pug",
-        "inNav": true,
-        "title": "Antibiotics App",
-        "topDir": "../../",
-        "imgDir": "static/img/ccmc/",
-        "icon": "static/img/ccmc/icon.jpg",
-        "token": "ccmc"
+        "imgDir": "static/img/sanskriti/",
+        "icon": "static/img/sanskriti/icon.jpg",
+        "token": "sanskriti"
     },
     {
         "filename": "projects/govcontact/index.html",
@@ -30,15 +20,16 @@
         "token": "govcontact"
     },
     {
-        "filename": "projects/sanskriti/index.html",
-        "template": "src/projects/sanskriti.pug",
+        "filename": "projects/ccmc/index.html",
+        "template": "src/projects/ccmc.pug",
         "inNav": true,
-        "title": "Sanskriti",
+        "title": "Antibiotics App",
         "topDir": "../../",
-        "imgDir": "static/img/sanskriti/",
-        "icon": "static/img/sanskriti/icon.jpg",
-        "token": "sanskriti"
+        "imgDir": "static/img/ccmc/",
+        "icon": "static/img/ccmc/icon.jpg",
+        "token": "ccmc"
     },
+
     {
         "filename": "projects/musicvisualiser/index.html",
         "template": "src/projects/musicvisualiser.pug",
@@ -48,5 +39,25 @@
         "imgDir": "static/img/musicvisualiser/",
         "icon": "static/img/musicvisualiser/icon.jpg",
         "token": "musicvisualiser"
+    },
+    {
+        "filename": "projects/mannequin/index.html",
+        "template": "src/projects/mannequin.pug",
+        "inNav": true,
+        "title": "Fashionable Projection Mapping",
+        "topDir": "../../",
+        "imgDir": "static/img/mannequin/",
+        "icon": "static/img/mannequin/icon.jpg",
+        "token": "mannequin"
+    },
+    {
+        "filename": "projects/spacebattle/index.html",
+        "template": "src/projects/spacebattle.pug",
+        "inNav": true,
+        "title": "2942: Space Battle",
+        "topDir": "../../",
+        "imgDir": "static/img/spacebattle/",
+        "icon": "static/img/spacebattle/icon.jpg",
+        "token": "spacebattle"
     }
 ]
