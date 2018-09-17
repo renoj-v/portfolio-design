@@ -5,19 +5,29 @@ block content
     .project-container
         h1.project-title Music Web Visualizer
         +section("Background")
-        
-        .external-links
-            +link("https://github.uconn.edu/pages/rkv14001/3D-spheres/")
-                | View App
-            +link("https://github.uconn.edu/rkv14001/3D-spheres")
-                | View Code
+            span.
+                The idea for the project came from all the cool things that are possible with Three.js and WebGL. 
+                This was a personal project of mine to use code to create art. My program
+                breaks down .mp3 files to turn into colors, shapes, and movement. 
+            .external-links
+                +link("https://github.uconn.edu/pages/rkv14001/3D-spheres/")
+                    | View App
+                +link("https://github.uconn.edu/rkv14001/3D-spheres")
+                    | View Code
                 
         +section("Intial Sketches")
+            span.
+                First part of the project was to sketch a few ideas out. Here are some examples of
+                what I used to come up with the final piece. I wanted to go for a "dancing spheres" concept.
             +img("sketch1.jpg", "visualiser sketch")
             +img("sketch2.jpg", "visualiser sketch")
             +img("sketch2.jpg", "visualiser sketch")
         
         +section("Process and Final Result")
+            span.
+                After sketching, I prototyped a scene in Unity3D. I assembled the sphere in different forms. 
+                A plugin allowed me to export my prototype to my Three.js code. After getting the prototype, 
+                I programmed each sphere to move based on the .mp3 file it was given. 
             +img("screen1.png", "visualiser final")
             +img("screen2.png", "visualiser final")
             +img("screen3.png", "visualiser final")
