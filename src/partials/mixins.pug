@@ -21,3 +21,9 @@ mixin link(href)
     a.btn(href=href)
         .label
             block
+mixin backHome(dir)
+    - if (!dir) { dir = topDir}
+    .back-home    
+        a.btn(href=dir)
+            .label
+                | Back to Projects
