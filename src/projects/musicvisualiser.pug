@@ -4,16 +4,20 @@ extends ../layout
 block content
     .project-container
         h1.project-title Music Web Visualizer
-        p.project-p
+        +section("Background")
         
-        h2.project-header Initial Drawings
-        p.project-p
-        +img(images+"sketch1.jpg", alt="visualiser sketch")
-        +img(images+"sketch2.jpg", alt="visualiser sketch")
-        +img(images+"sketch2.jpg", alt="visualiser sketch")
+        .external-links
+            +link("https://github.uconn.edu/pages/rkv14001/3D-spheres/")
+                | View App
+            +link("https://github.uconn.edu/rkv14001/3D-spheres")
+                | View Code
+                
+        +section("Intial Sketches")
+            +img(images+"sketch1.jpg", alt="visualiser sketch")
+            +img(images+"sketch2.jpg", alt="visualiser sketch")
+            +img(images+"sketch2.jpg", alt="visualiser sketch")
         
-        h2 Final Project
-        p.project-p
-        +img(images+"screen1.png", alt="visualiser final")
-        +img(images+"screen2.png", alt="visualiser final")
-        +img(images+"screen3.png", alt="visualiser final")
+        +section("Process and Final Result")
+            +img(images+"screen1.png", alt="visualiser final")
+            +img(images+"screen2.png", alt="visualiser final")
+            +img(images+"screen3.png", alt="visualiser final")

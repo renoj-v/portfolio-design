@@ -1,8 +1,19 @@
 extends ../layout
 
+
 block content
     .project-container
-        h1.project-title Hello. 
-        h2.project-header This page is currently under development
-        h3.project-header come back later, please
-        p.project-p I'm currently cooking something up.
+        h1.project-title Antibiotics
+        +section("Background")
+        
+        .external-links
+            +link(images+"CCMCMockups.pdf")
+                | View Full Mockups
+            +link(images+"CCMCWireframes.pdf")
+                | View Full Wireframes
+        
+        +section("User Stories")
+        +section("Wireframes")
+        +section("Icon Design")
+        +section("Styling")
+        +section("Final Mockups")

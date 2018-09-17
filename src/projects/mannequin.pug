@@ -3,7 +3,11 @@ extends ../layout
 block content
     .project-container
         h1.project-title Hello. 
-        h2.project-header This page is currently under development
-        h3.project-header come back later, please
-        p.project-p I'm currently cooking something up.
-        +youtube("5XgdD2-lhns","mannequin video")
+        
+        +section("Background")
+        .external_links
+            +link("https://youtu.be/5XgdD2-lhns")
+        
+        +section("Process")
+        +section("Final Show")
+            +youtube("5XgdD2-lhns","mannequin video")
