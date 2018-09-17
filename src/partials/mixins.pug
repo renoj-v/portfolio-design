@@ -1,6 +1,11 @@
-mixin img(src, alt)
+mixin image(src, alt)
     .img-container
         img(src=src alt=alt)
+
+mixin img(src, alt) 
+    - if (images)  {src = images + src}
+    .img-container
+        img(src=src alt=(alt ? alt : "images"))
 
 mixin youtube(key, alt)
     .img-container

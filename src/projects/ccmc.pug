@@ -3,7 +3,7 @@ extends ../layout
 
 block content
     .project-container
-        h1.project-title Antibiotics
+        h1.project-title Antibiotics App
         +section("Background")
         
         .external-links
@@ -13,7 +13,19 @@ block content
                 | View Full Wireframes
         
         +section("User Stories")
+            +img("stories1.jpg", "user stories")
+            +img("stories2.jpg", "user stories")
         +section("Wireframes")
+            +img("wireframes.jpg", "wireframes")
         +section("Icon Design")
+            +img("iconset.jpg", "icons")
         +section("Styling")
+            +img("otherstyles.jpg")
         +section("Final Mockups")
+            +img("final.jpg", "final mockup")
+            
+        .external-links
+            +link(images+"CCMCMockups.pdf")
+                | View Full Mockups
+            +link(images+"CCMCWireframes.pdf")
+                | View Full Wireframes
