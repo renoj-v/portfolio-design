@@ -2,13 +2,16 @@ body {
     background: #ffebd7;
     margin: 0;
 }
-a {
+a,
+a:focus,
+a:visited {
     text-decoration: none;
     color: #bd772a;
-    font-family: "Open Sans", sans-serif;
-    transition: all 0.2s ease;
-    &:hover {
-        color: #3915ea;
+    &.link {
+        transition: all 0.2s ease;
+        &:hover {
+            color: #3915ea;
+        }
     }
 }
 h1 {

@@ -2,15 +2,18 @@
     padding: 100px 0px;
     max-width: 768px;
     margin: 0 auto;
+    .img-container {
+        margin: 15px 20px;
+    }
 }
 .project-title {
-    font-family: "Lora", sans-serif;
+    font-family: "Lora", serif;
     text-align: center;
     width: 100%;
     margin: 0 0 1.4em;
 }
 .project-header {
-    font-family: "Lora", sans-serif;
+    font-family: "Lora", serif;
 }
 .project-p {
     text-indent: 40px;

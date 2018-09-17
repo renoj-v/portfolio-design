@@ -28,7 +28,6 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
     color: #5f3507;
 }
 
@@ -91,13 +90,9 @@ html {
     top: -15px;
 }
 
-.center-header {
-    font-size: 24px;
-}
-
 .center-header,
 .center-paragraph {
-    transition: color 0.4s ease;
+    transition: color 0.2s ease;
 }
 
 .portfolio-item:hover .center-header,
@@ -188,9 +183,8 @@ html {
 }
 
 .portfolio-link {
-    margin-top: 50px;
     opacity: 0;
-    transition: all 0.8s ease 0.4s;
+    transition: all 0.4s ease 0.4s;
 }
 
 .portfolio-item {
@@ -230,11 +224,4 @@ html {
     min-width: 100%;
     width: auto;
     height: 100%;
-}
-.delay-little {
-    animation-delay: 0.2s;
-}
-
-.delay-high {
-    animation-delay: 0.4s;
 }
