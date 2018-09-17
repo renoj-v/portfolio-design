@@ -2,15 +2,26 @@ extends ../layout
 
 block content
     .project-container
-        h1.project-title Hello. 
+        h1.project-title Projection Mapping on a Mannequin 
         
         +section("Background")
+            span.
+                The idea of the project came from what could be possible with projection mapping technology. 
+                I wanted to prototype a new type of store display, in which mannequins could showcase multiple 
+                styles. In this example, I chose to showcase sunglass styles. 
         .external-links
             +link("https://youtu.be/5XgdD2-lhns")
         
         +section("Process")
+            span.
+                The mapping process involved tracing over the project to find the shape of the mannequin and its features.
+                Afterwards, I used After Effects to animate a video that showcased different styles of sunglasses. Below is
+                an example of the mask and animation in After Effects.
             +img("aework.jpg")
         +section("Final Show")
+            span.
+                The final show, videoed below, is the result of projecting my animation on to the mannequin. The animation changes
+                the colors of hair, eyebrows, lipstick, and sunglasses to show potential for accessory store displays.
             +youtube("5XgdD2-lhns","mannequin video")
             
         +backHome(topDir)
