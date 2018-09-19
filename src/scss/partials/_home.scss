@@ -94,7 +94,9 @@ html {
 .center-paragraph {
     transition: color 0.2s ease;
 }
-
+.center-paragraph {
+    font-size: 14px;
+}
 .portfolio-item:hover .center-header,
 .portfolio-item:hover .center-paragraph {
     color: #262261;
@@ -102,9 +104,12 @@ html {
 
 .hero {
     padding-top: 100px;
-    max-width: 992px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
+    .center-text {
+        margin-top: 60px;
+    }
 }
 #hero-img {
     max-width: 500px;
