@@ -4,7 +4,7 @@ mixin image(src, alt)
 
 mixin img(src, alt) 
     - if (images)  {src = images + src}
-    .img-container
+    .img-container(class!=attributes.class)
         img(src=src alt=(alt ? alt : "images"))
 
 mixin youtube(key, alt)
