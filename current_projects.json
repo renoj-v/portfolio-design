@@ -7,7 +7,9 @@
         "topDir": "../../",
         "imgDir": "static/img/sanskriti/",
         "icon": "static/img/sanskriti/icon.jpg",
-        "token": "sanskriti"
+        "token": "sanskriti",
+        "description":
+            "Designing the logo for UConn's traditional Indian culture club"
     },
     {
         "filename": "projects/govcontact/index.html",
@@ -17,7 +19,9 @@
         "topDir": "../../",
         "imgDir": "static/img/govcontact/",
         "icon": "static/img/govcontact/icon.jpg",
-        "token": "govcontact"
+        "token": "govcontact",
+        "description":
+            "A React.js app to connect you with your government representatives"
     },
     {
         "filename": "projects/ccmc/index.html",
@@ -27,7 +31,9 @@
         "topDir": "../../",
         "imgDir": "static/img/ccmc/",
         "icon": "static/img/ccmc/icon.jpg",
-        "token": "ccmc"
+        "token": "ccmc",
+        "description":
+            "UI/UX for a medical app that ranks antibiotics for different diseases"
     },
 
     {
@@ -38,17 +44,21 @@
         "topDir": "../../",
         "imgDir": "static/img/musicvisualiser/",
         "icon": "static/img/musicvisualiser/icon.jpg",
-        "token": "musicvisualiser"
+        "token": "musicvisualiser",
+        "description":
+            "Turning sound into colors, shapes, and movement in WebGL"
     },
     {
         "filename": "projects/mannequin/index.html",
         "template": "src/projects/mannequin.pug",
         "inNav": true,
-        "title": "Fashionable Projection Mapping",
+        "title": "Projection Mapping",
         "topDir": "../../",
         "imgDir": "static/img/mannequin/",
         "icon": "static/img/mannequin/icon.jpg",
-        "token": "mannequin"
+        "token": "mannequin",
+        "description":
+            "Prototyping a way to showcase accessories on a mannequin"
     },
     {
         "filename": "projects/spacebattle/index.html",
@@ -58,6 +68,7 @@
         "topDir": "../../",
         "imgDir": "static/img/spacebattle/",
         "icon": "static/img/spacebattle/icon.jpg",
-        "token": "spacebattle"
+        "token": "spacebattle",
+        "description": "A video game to fight off alien spaceships"
     }
 ]
