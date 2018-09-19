@@ -4,6 +4,8 @@ block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
     
     .super-container.align-center#projects
+        .hero.fade-in.delay-little
+            h1="Renoj Varghese\'s Portfolio"
         .container.clearfix
             each page in subpages
                 a.portfolio-link(href=page.filename)
@@ -13,6 +15,7 @@ block content
                                 img(src=page.icon alt=page.title)            
                         .center-text 
                         h3.center-header.header=page.title
+                        p.center-paragraph=page.description
 
 block css-before
     style.

@@ -6,7 +6,7 @@ mixin footer(footer)
                     h3.footer-header.header
                         |Get in Touch
                     p.footer-p Say hello at 
-                        a(href="mailto:renojvarghese.edu") renoj.varghese@uconn.edu
+                        a(href="mailto:renoj@uconn.edu") renoj@uconn.edu
                     
                 .footer-socials.footer-section
                     h3.footer-header.header Checkout More
@@ -14,6 +14,4 @@ mixin footer(footer)
                         each social in footer.socials
                             li.socials-item 
                                 a.socials-link(href=social.link)=social.name
-                    .resume-container
-                        a(href="static/docs/resumeRenojVarghese.pdf").button="View Resume"
                     
