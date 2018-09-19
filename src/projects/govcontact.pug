@@ -4,23 +4,41 @@ block content
     .project-container
         h1.project-title GovContact
         +section("Background")
-        
-        .external-links
-            +link("https://gov-contact.herokuapp.com")
-                | View App
-            +link("https://github.com/renojvarghese/gov-contact-dos")
-                | View Code
+            span.
+                GovContact allows you to search and find your government representatives.
+                The purpose is to be able to contact those who have legislative power. The idea for the application
+                came from the Battle for Net Neutrality campaign, which displayed every representative's 
+                contact information. I wanted to replicate that in a more general app.
+            i.
+                The app may take some time to load since it is hosted on Heroku.
+            .external-links
+                +link("https://gov-contact.herokuapp.com")
+                    | View App
+                +link("https://github.com/renojvarghese/gov-contact-dos")
+                    | View Code
         
         +section("User Stories")
+            span.
+                The following user stories represent what GovContact is able to do.
+                Writing user stories helped me think inside the shoes of someone who might use this app.
             +img("user-stories.png", "user stories")
         +section("Wireframes")
+            span.
+                After writing user stories, I went to design the interface for GovContact.
+                I chose to showcase government representatives in a card style to encapsulate all the information
+                about that representative in one place.
             +img("wireframes.png", "wireframes")
-            +img("card-wireframe1.png", "card wireframe")
-            +img("search-wireframe", "search wireframe")
+            +img("search-wireframe.png", "search wireframe")
             +img("results-wireframe.png", "results wireframe")
         +section("Styles and Icons")
-            +img("style-guide.png", "styles")
+            span.
+                The colors and icons for the app. I went with the classic red, white, and blue, 
+                since I was focusing on government representatives in the U.S.A.
+            +img("style-guide.png", "styles").white-bg
         +section("Development and Final App")
+            span.
+                The final app was created using React.js and Google Civic API. Here are screenshots of the final 
+                app. 
             +img("final-result.png", "final")
             +img("final-result2.png", "final")
             
