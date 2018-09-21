@@ -68,3 +68,9 @@ img {
 .white-bg {
     background: #fff;
 }
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: left;
+}

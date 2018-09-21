@@ -3,7 +3,7 @@
     max-width: 768px;
     margin: 0 auto;
     .img-container {
-        margin: 15px 20px;
+        margin: 15px 0px;
     }
 }
 .project-title {
@@ -48,11 +48,12 @@ a.btn {
 }
 @media screen and (min-width: 768px) {
     .grid-4 {
-        float: left;
         width: 33%;
     }
+    .grid-6 {
+        width: 49.5%;
+    }
     .grid-8 {
-        float: left;
         width: 66%;
     }
     .pad-8 {
@@ -60,7 +61,6 @@ a.btn {
         margin-right: 16%;
     }
     .grid-12 {
-        float: left;
         width: 100%;
     }
 }
