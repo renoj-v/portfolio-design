@@ -1,5 +1,16 @@
 [
     {
+        "filename": "projects/acroart/index.html",
+        "template": "src/projects/acroart.pug",
+        "inNav": true,
+        "title": "Acro Art",
+        "topDir": "../../",
+        "imgDir": "static/img/acroart/",
+        "icon": "static/img/acroart/icon.jpg",
+        "token": "acroart",
+        "description": "Illustrations showcasing moves in the circus"
+    },
+    {
         "filename": "projects/sanskriti/index.html",
         "template": "src/projects/sanskriti.pug",
         "inNav": true,
@@ -35,7 +46,6 @@
         "description":
             "UI/UX for a medical app that ranks antibiotics for different diseases"
     },
-
     {
         "filename": "projects/musicvisualiser/index.html",
         "template": "src/projects/musicvisualiser.pug",
@@ -47,28 +57,5 @@
         "token": "musicvisualiser",
         "description":
             "Turning sound into colors, shapes, and movement in WebGL"
-    },
-    {
-        "filename": "projects/mannequin/index.html",
-        "template": "src/projects/mannequin.pug",
-        "inNav": true,
-        "title": "Projection Mapping",
-        "topDir": "../../",
-        "imgDir": "static/img/mannequin/",
-        "icon": "static/img/mannequin/icon.jpg",
-        "token": "mannequin",
-        "description":
-            "Prototyping a way to showcase accessories on a mannequin"
-    },
-    {
-        "filename": "projects/spacebattle/index.html",
-        "template": "src/projects/spacebattle.pug",
-        "inNav": true,
-        "title": "2942: Space Battle",
-        "topDir": "../../",
-        "imgDir": "static/img/spacebattle/",
-        "icon": "static/img/spacebattle/icon.jpg",
-        "token": "spacebattle",
-        "description": "A video game to fight off alien spaceships"
     }
 ]

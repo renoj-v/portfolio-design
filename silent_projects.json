@@ -18,5 +18,16 @@
         "imgDir": "static/img/subconscious",
         "icon": "static/img/subconscious/icon.jpg",
         "token": "subconscious"
+    },
+    {
+        "filename": "projects/spacebattle/index.html",
+        "template": "src/projects/spacebattle.pug",
+        "inNav": true,
+        "title": "2942: Space Battle",
+        "topDir": "../../",
+        "imgDir": "static/img/spacebattle/",
+        "icon": "static/img/spacebattle/icon.jpg",
+        "token": "spacebattle",
+        "description": "A video game to fight off alien spaceships"
     }
 ]
