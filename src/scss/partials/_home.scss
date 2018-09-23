@@ -138,23 +138,35 @@ html {
     margin: 0 auto;
 }
 
-.center::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url("../../static/img/portals-29.svg") no-repeat;
-    background-size: cover;
-    min-width: 300px;
-    min-height: 300px;
-    animation: spin 300s ease infinite;
-    transition: background 0.4s ease;
+.portfolio-item {
+    .center::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../../static/img/portals-30.svg") no-repeat;
+        background-size: cover;
+        min-width: 300px;
+        min-height: 300px;
+        animation: spin 300s ease infinite;
+        transition: background 0.4s ease;
+    }
 }
-
-.portfolio-item:hover .center::before {
-    background: url("../../static/img/portals-30.svg") no-repeat;
+.active {
+    .portfolio-link {
+        opacity: 1;
+    }
+    .portfolio-item {
+        .center::before {
+            background: url("../../static/img/portals-29.svg") no-repeat;
+        }
+        &:hover {
+            .center::before {
+                background: url("../../static/img/portals-30.svg") no-repeat;
+            }
+        }
+    }
 }
-
 .container {
     display: inline-flex;
     justify-content: center;
