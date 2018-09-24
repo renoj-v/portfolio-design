@@ -20,6 +20,18 @@
         "token": "subconscious"
     },
     {
+        "filename": "projects/mannequin/index.html",
+        "template": "src/projects/mannequin.pug",
+        "inNav": true,
+        "title": "Projection Mapping",
+        "topDir": "../../",
+        "imgDir": "static/img/mannequin",
+        "icon": "static/img/mannequin/icon.jpg",
+        "token": "mannequin",
+        "description":
+            "Projection mapping wearable tech and prototyping retail displays"
+    },
+    {
         "filename": "projects/spacebattle/index.html",
         "template": "src/projects/spacebattle.pug",
         "inNav": true,
