@@ -13,9 +13,9 @@
         "generate": "node generate.js",
         "new": "node add-project.js",
         "silence":
-            "npm run move-project './current_projects.json' './silent_projects.json'",
+            "node move-project.js './current_projects.json' './silent_projects.json'",
         "voice":
-            "npm run move-project  './silent_projects.json' './current_projects.json'"
+            "node move-project.js './silent_projects.json' './current_projects.json'"
     },
     "repository": {
         "type": "git",
