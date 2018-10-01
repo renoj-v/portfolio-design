@@ -4,10 +4,13 @@
     padding: 20px 10px;
     z-index: 2;
     a {
-        color: white;
-        opacity: 0.8;
+        color: $white;
         &:hover {
-            opacity: 1;
+            color: $gold;
+        }
+        font-size: 4vw;
+        @include min-tablet {
+            font-size: 18px;
         }
     }
 }
