@@ -1,16 +1,5 @@
 [
     {
-        "filename": "projects/acroart/index.html",
-        "template": "src/projects/acroart.pug",
-        "inNav": true,
-        "title": "Acro Art",
-        "topDir": "../../",
-        "imgDir": "static/img/acroart/",
-        "icon": "static/img/acroart/icon.jpg",
-        "token": "acroart",
-        "description": "Illustrations showcasing moves in the circus"
-    },
-    {
         "filename": "projects/sanskriti/index.html",
         "template": "src/projects/sanskriti.pug",
         "inNav": true,
@@ -34,6 +23,32 @@
         "description":
             "A React.js app to connect you with your government representatives"
     },
+
+    {
+        "filename": "projects/musicvisualiser/index.html",
+        "template": "src/projects/musicvisualiser.pug",
+        "inNav": true,
+        "title": "Web Music Visualiser",
+        "topDir": "../../",
+        "imgDir": "static/img/musicvisualiser/",
+        "icon": "static/img/musicvisualiser/icon.jpg",
+        "token": "musicvisualiser",
+        "description":
+            "Turning sound into colors, shapes, and movement in WebGL"
+    },
+    {
+        "filename": "projects/mannequin/index.html",
+        "template": "src/projects/mannequin.pug",
+        "inNav": true,
+        "title": "Projection Mapping",
+        "topDir": "../../",
+        "imgDir": "static/img/mannequin/",
+        "icon": "static/img/mannequin/icon.jpg",
+        "token": "mannequin",
+        "description":
+            "Projection mapping wearable tech and prototyping retail displays"
+    },
+
     {
         "filename": "projects/ccmc/index.html",
         "template": "src/projects/ccmc.pug",
@@ -47,15 +62,14 @@
             "UI/UX for a medical app that ranks antibiotics for different diseases"
     },
     {
-        "filename": "projects/musicvisualiser/index.html",
-        "template": "src/projects/musicvisualiser.pug",
+        "filename": "projects/acroart/index.html",
+        "template": "src/projects/acroart.pug",
         "inNav": true,
-        "title": "Web Music Visualiser",
+        "title": "Acro Art",
         "topDir": "../../",
-        "imgDir": "static/img/musicvisualiser/",
-        "icon": "static/img/musicvisualiser/icon.jpg",
-        "token": "musicvisualiser",
-        "description":
-            "Turning sound into colors, shapes, and movement in WebGL"
+        "imgDir": "static/img/acroart/",
+        "icon": "static/img/acroart/icon.jpg",
+        "token": "acroart",
+        "description": "Illustrations showcasing moves in the circus"
     }
 ]
