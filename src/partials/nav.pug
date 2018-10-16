@@ -18,7 +18,7 @@ mixin nav(nav,topDir)
             ul.nav-list
                 li.nav-list-item 
                     a(href=topDir)
-                        .logo
+                        | Renoj Varghese
                 li.nav-list-item
                     +dropnavlist(nav.projects, "Projects", topDir)
                 each item in nav.others
