@@ -6,11 +6,11 @@ a,
 a:focus,
 a:visited {
     text-decoration: none;
-    color: #bd772a;
+    color: $tea-brown;
     &.link {
         transition: all 0.2s ease;
         &:hover {
-            color: #3915ea;
+            color: $purple;
         }
     }
 }
@@ -76,4 +76,18 @@ img {
 }
 .weak {
     font-size: 10px;
+}
+.break {
+    width: 100%;
+    background: url("../../static/img/separator.png") no-repeat center center;
+    height: 20px;
+    margin-top: 80px;
+}
+.main-logo {
+    max-width: $logo-width-wide;
+    margin: 0 auto;
+    position: relative;
+    bottom: $logo-width-wide/2;
+}
+.push-right {
 }

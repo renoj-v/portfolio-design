@@ -30,40 +30,13 @@ html {
     padding: 0;
     color: #5f3507;
 }
-
-.cls-1 {
-    stroke-width: 2px;
+.intro-header {
+    margin: 10px;
 }
-
-.cls-2 {
-    stroke-width: 5px;
+.intro-paragraph {
+    margin: 10px;
+    margin-bottom: 30px;
 }
-
-.cls-3 {
-    fill: #bd772a;
-    /*animation: shineFill .5s ease-in forwards .5s;*/
-    transition: fill 2s ease;
-    stroke-width: 0.1px;
-}
-
-.portal:hover .cls-3 {
-    fill: #61007e;
-}
-
-.cls-1,
-.cls-2 {
-    fill: none;
-    stroke: #bd772a;
-    transition: stroke 2s ease;
-    /*     animation: shineStroke .5s ease-in forwards .5s;*/
-    stroke-miterlimit: 10;
-}
-
-.portal:hover .cls-1,
-.portal:hover .cls-2 {
-    stroke: #3915ea;
-}
-
 .portal {
     animation: spin 300s ease infinite;
     margin: 10px 3%;
