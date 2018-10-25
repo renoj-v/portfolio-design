@@ -33,7 +33,7 @@ module.exports = {
     nav: {
         home: home,
         others: others,
-        socials: socials.slice(0, 2),
+        socials: socials,
         projects: current_projects
     },
     footer: {
