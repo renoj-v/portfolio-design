@@ -1,6 +1,4 @@
 .footer {
-    background: $dark-brown;
-    color: $white;
     position: relative;
     margin-top: $logo-width;
 }
@@ -12,7 +10,7 @@
         padding: 30px 35px;
     }
     .footer-header {
-        color: $gold;
+        color: $dark-brown;
         font-size: 5vw;
         margin: 0;
         @include min-tablet {
@@ -26,9 +24,8 @@
         }
     }
     a {
-        color: $white;
         &:hover {
-            color: $gold;
+            color: $purple;
         }
         font-size: 3vw;
         @include min-tablet {

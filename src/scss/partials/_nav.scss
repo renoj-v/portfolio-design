@@ -1,13 +1,12 @@
 .nav {
-    background: #211406;
     position: relative;
     padding: 20px 10px;
     z-index: 2;
     a {
         transition: 0.1s all ease;
-        color: $white;
+
         &:hover {
-            color: $gold;
+            color: $purple;
         }
         font-size: 4vw;
         @include min-tablet {
@@ -44,9 +43,8 @@
     margin: 0 auto;
     padding: 15px;
 }
-.nav-list-item {
-}
-.nav-link {
+.nav-link-ext {
+    margin: 0 15px;
 }
 .home {
     display: block;
@@ -57,23 +55,30 @@
 .drop-down {
     position: relative;
     display: inline-block;
-    background: $dark-brown;
+
     .drop-down-list {
-        background: $dark-brown;
+        background: $tan;
         padding: 20px 0 10px;
         position: absolute;
         left: 0;
         opacity: 0;
         width: 200px;
         flex-direction: column;
-        display: none;
+        display: block;
+
         li {
             padding: 5px 10px;
             display: block;
         }
+        height: 0%;
+        transition: all 0.3s ease;
+        .nav-list-item {
+            background: $tan;
+            border-left: 3px solid $tea-brown;
+        }
     }
     &:hover .drop-down-list {
-        display: block;
+        height: 100%;
         opacity: 1;
     }
 }
