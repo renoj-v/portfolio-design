@@ -22,7 +22,7 @@ html(lang="en")
         +break
         .content
             block content
-        +break
+        +break-no-logo
         +footer(footer)
         each js in self.htmlWebpackPlugin.files.js
             script(type='text/javascript', src=js)
