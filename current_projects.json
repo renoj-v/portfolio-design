@@ -23,7 +23,6 @@
         "description":
             "A React.js app to connect you with your government representatives"
     },
-
     {
         "filename": "projects/musicvisualiser/index.html",
         "template": "src/projects/musicvisualiser.pug",
