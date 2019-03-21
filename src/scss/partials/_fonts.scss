@@ -2,11 +2,14 @@
 
 .sans-serif,
 body {
-    font-family: "Lora";
+    font-family: "Lora", sans-serif;
     font-weight: 400;
 }
 .serif,
 .header {
     font-family: "Lora", serif;
+    font-weight: 700;
+}
+.bold {
     font-weight: 700;
 }

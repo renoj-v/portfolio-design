@@ -3,6 +3,15 @@ extends ../layout
 block content
     .project-container
         h1.project-title Hello. 
-        h2.project-header This page is currently under development
-        h3.project-header come back later, please
-        p.project-p I'm currently cooking something up.
+        +section("Background")
+        +external
+          +link("")
+            | View Link
+        +problem("Problem Statement")
+        +section("Process")
+        +section("Solution")
+        +section("Next Steps")
+        +external
+          +link("")
+            | View Link
+        +backHome(topDir)

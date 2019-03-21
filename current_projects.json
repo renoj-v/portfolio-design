@@ -8,8 +8,7 @@
         "imgDir": "static/img/sanskriti/",
         "icon": "static/img/sanskriti/icon.jpg",
         "token": "sanskriti",
-        "description":
-            "Designing the logo for UConn's traditional Indian culture club"
+        "description": "Designing the logo for UConn's traditional Indian culture club"
     },
     {
         "filename": "projects/govcontact/index.html",
@@ -20,8 +19,7 @@
         "imgDir": "static/img/govcontact/",
         "icon": "static/img/govcontact/icon.jpg",
         "token": "govcontact",
-        "description":
-            "A React.js app to connect you with your government representatives"
+        "description": "A React.js app to connect you with your government representatives"
     },
     {
         "filename": "projects/musicvisualiser/index.html",
@@ -32,8 +30,7 @@
         "imgDir": "static/img/musicvisualiser/",
         "icon": "static/img/musicvisualiser/icon.jpg",
         "token": "musicvisualiser",
-        "description":
-            "Turning sound into colors, shapes, and movement in WebGL"
+        "description": "Turning sound into colors, shapes, and movement in WebGL"
     },
     {
         "filename": "projects/mannequin/index.html",
@@ -44,10 +41,8 @@
         "imgDir": "static/img/mannequin/",
         "icon": "static/img/mannequin/icon.jpg",
         "token": "mannequin",
-        "description":
-            "Prototyping augmented reality clothing and retail displays with projections"
+        "description": "Prototyping augmented reality clothing and retail displays with projections"
     },
-
     {
         "filename": "projects/ccmc/index.html",
         "template": "src/projects/ccmc.pug",
@@ -57,8 +52,7 @@
         "imgDir": "static/img/ccmc/",
         "icon": "static/img/ccmc/icon.jpg",
         "token": "ccmc",
-        "description":
-            "UI/UX for a medical app that ranks antibiotics for different diseases"
+        "description": "UI/UX for a medical app that ranks antibiotics for different diseases"
     },
     {
         "filename": "projects/acroart/index.html",
@@ -70,5 +64,16 @@
         "icon": "static/img/acroart/icon.jpg",
         "token": "acroart",
         "description": "Illustrations showcasing moves in the circus"
+    },
+    {
+        "filename": "projects/subconscious/index.html",
+        "template": "src/projects/subconscious.pug",
+        "inNav": true,
+        "title": "Subconscious Contributor Program Redesign",
+        "topDir": "../../",
+        "imgDir": "static/img/subconscious/",
+        "icon": "static/img/subconscious/icon.jpg",
+        "token": "subconscious",
+        "description": "Improving the author experience of a mental health blog"
     }
 ]

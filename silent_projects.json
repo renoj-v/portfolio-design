@@ -10,16 +10,6 @@
         "token": "blizzard"
     },
     {
-        "filename": "projects/subconscious/index.html",
-        "template": "src/projects/subconscious.pug",
-        "inNav": true,
-        "title": "Subconscious",
-        "topDir": "../../",
-        "imgDir": "static/img/subconscious/",
-        "icon": "static/img/subconscious/icon.jpg",
-        "token": "subconscious"
-    },
-    {
         "filename": "projects/spacebattle/index.html",
         "template": "src/projects/spacebattle.pug",
         "inNav": true,

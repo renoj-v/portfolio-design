@@ -2,11 +2,13 @@ mixin image(src, alt)
     .img-container
         img(src=src alt=alt)
 
-mixin img(src, alt) 
+mixin img(src, alt)
     - if (images)  {src = images + src}
     .img-container(class!=attributes.class)
         img(src=src alt=(alt ? alt : "images"))
-
+mixin problem(p)
+    h2.problem=p
+    
 mixin youtube(key, alt)
     .img-container
         .video-wrapper
@@ -24,11 +26,28 @@ mixin section(title)
     h2.project-header=title
     p.project-p
         block
-
+          
+mixin external
+    .external-links
+        block
+          
 mixin link(href)
     a.btn(href=href)
         .label
             block
+              
+mixin note(n)
+    .note 
+        span.note-text=n 
+        
+mixin list
+    ul.project-list
+      block
+      
+mixin listItem
+    li.project-list-item
+      block
+        
 mixin backHome(dir)
     - if (!dir) { dir = topDir}
     .back-home    
