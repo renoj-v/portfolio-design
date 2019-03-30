@@ -6,6 +6,11 @@ mixin img(src, alt)
     - if (images)  {src = images + src}
     .img-container(class!=attributes.class)
         img(src=src alt=(alt ? alt : "images"))
+mixin role(r)
+    .role-container
+        label.role-name="Role: " + r + ". "
+        block
+
 mixin problem(p)
     h2.problem=p
     
@@ -21,10 +26,15 @@ mixin break
 
 mixin break-no-logo
     .break
-                    
+                
 mixin section(title) 
     h2.project-header=title
     p.project-p
+        block
+          
+mixin subsection(title)
+    h3.project-subheader=title
+    p.projecti-subp
         block
           
 mixin external
@@ -44,8 +54,10 @@ mixin list
     ul.project-list
       block
       
-mixin listItem
+mixin listItem(str)
     li.project-list-item
+      strong
+        str
       block
         
 mixin backHome(dir)
