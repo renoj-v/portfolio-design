@@ -1,5 +1,27 @@
 [
     {
+        "filename": "projects/motion/index.html",
+        "template": "src/projects/motion.pug",
+        "inNav": true,
+        "title": "Motion Design Gallery",
+        "topDir": "../../",
+        "imgDir": "static/img/motion/",
+        "icon": "static/img/motion/icon.jpg",
+        "token": "motion",
+        "descripiion": "A collection of my animations. See some of my motion design projects"
+    },
+    {
+        "filename": "projects/Graphic Design Gallery/index.html",
+        "template": "src/projects/graphic.pug",
+        "inNav": true,
+        "title": "Graphic Design Gallery",
+        "topDir": "../../",
+        "imgDir": "static/img/graphic/",
+        "icon": "static/img/graphic/icon.jpg",
+        "token": "graphic",
+        "description": "A collection of graphics. A good way to understand my visual design skills"
+    },
+    {
         "filename": "projects/sanskriti/index.html",
         "template": "src/projects/sanskriti.pug",
         "inNav": true,
