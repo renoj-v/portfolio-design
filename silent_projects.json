@@ -19,5 +19,38 @@
         "icon": "static/img/spacebattle/icon.jpg",
         "token": "spacebattle",
         "description": "A video game to fight off alien spaceships"
+    },
+    {
+        "filename": "projects/sanskriti/index.html",
+        "template": "src/projects/sanskriti.pug",
+        "inNav": true,
+        "title": "Sanskriti",
+        "topDir": "../../",
+        "imgDir": "static/img/sanskriti/",
+        "icon": "static/img/sanskriti/icon.jpg",
+        "token": "sanskriti",
+        "description": "Designing the logo for UConn's traditional Indian culture club"
+    },
+    {
+        "filename": "projects/musicvisualiser/index.html",
+        "template": "src/projects/musicvisualiser.pug",
+        "inNav": true,
+        "title": "Web Music Visualiser",
+        "topDir": "../../",
+        "imgDir": "static/img/musicvisualiser/",
+        "icon": "static/img/musicvisualiser/icon.jpg",
+        "token": "musicvisualiser",
+        "description": "Turning sound into colors, shapes, and movement in WebGL"
+    },
+    {
+        "filename": "projects/acroart/index.html",
+        "template": "src/projects/acroart.pug",
+        "inNav": true,
+        "title": "Acro Art",
+        "topDir": "../../",
+        "imgDir": "static/img/acroart/",
+        "icon": "static/img/acroart/icon.jpg",
+        "token": "acroart",
+        "description": "Illustrations showcasing moves in the circus"
     }
 ]
