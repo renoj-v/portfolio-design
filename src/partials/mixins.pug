@@ -18,6 +18,13 @@ mixin youtube(key, alt)
     .img-container
         .video-wrapper
             iframe(src="https://www.youtube.com/embed/"+key alt=alt allowfullscreen  frameborder="0")
+
+mixin vimeo(key, alt)
+    .img-container
+        .video-wrapper
+          iframe(src="https://player.vimeo.com/video/"+key alt=alt webkitallowfullscreen mozallowfullscreen allowfullscreen)
+
+
 mixin break
     .break
         .main-logo
@@ -27,10 +34,11 @@ mixin break
 mixin break-no-logo
     .break
                 
-mixin section(title) 
-    h2.project-header=title
-    p.project-p
-        block
+mixin section(title)
+      h2.project-header=title
+      div.project-content(class!=attributes.class)
+        p.project-p
+            block
           
 mixin subsection(title)
     h3.project-subheader=title
