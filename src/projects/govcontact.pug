@@ -30,6 +30,7 @@ block content
               +listItem()
                   There ought to be an easier look up system
                 
+              
         +section("Process")
             span.
         +section("User Stories")
@@ -50,10 +51,18 @@ block content
                 The colors and icons for the app. I went with the classic red, white, and blue, 
                 since I was focusing on government representatives in the U.S.A.
             +img("style-guide.png", "styles").white-bg
-        +section("Prototype")
+        +section("Solution")
             span.
                 The final app was created using React.js and Google Civic API. Here are screenshots of the final 
-                app. 
+                app. Testing the app revealed that:
+            +list()
+              +listItem("Less red, white and blue")
+                  | Users tended to prefer a more neutral color palette. Maybe the app could be expanded to other countries than the U.S.
+              +listItem("Possible find user's location automatically")
+                  | Though it was never mentioned, a later thought was to be able to track a user's location through their browser.
+                  | It would eliminate any steps a person would need to take to find a government official
+              +listItem("Would be best as a mobile app")
+                  | One user commented how GovContact would be better as a mobile app. It would be like having your senator as one of your personal contacts.
             +img("final-result.png", "final")
             +img("final-result2.png", "final")
             

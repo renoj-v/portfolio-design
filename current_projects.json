@@ -1,14 +1,47 @@
 [
     {
-        "filename": "projects/motion/index.html",
-        "template": "src/projects/motion.pug",
+        "filename": "projects/subconscious/index.html",
+        "template": "src/projects/subconscious.pug",
         "inNav": true,
-        "title": "Motion Design Gallery",
+        "title": "UX Case Study: Subconscious Contributor Program Redesign",
         "topDir": "../../",
-        "imgDir": "static/img/motion/",
-        "icon": "static/img/motion/icon.jpg",
-        "token": "motion",
-        "descripiion": "A collection of my animations. See some of my motion design projects"
+        "imgDir": "static/img/subconscious/",
+        "icon": "static/img/subconscious/icon.jpg",
+        "token": "subconscious",
+        "description": "Improving the author experience of a mental health blog"
+    },
+    {
+        "filename": "projects/govcontact/index.html",
+        "template": "src/projects/govcontact.pug",
+        "inNav": true,
+        "title": "UX Case Study: GovContact",
+        "topDir": "../../",
+        "imgDir": "static/img/govcontact/",
+        "icon": "static/img/govcontact/icon.jpg",
+        "token": "govcontact",
+        "description": "A React.js app to connect you with your government representatives"
+    },
+    {
+        "filename": "projects/ccmc/index.html",
+        "template": "src/projects/ccmc.pug",
+        "inNav": true,
+        "title": "UX Case Study: Antibiotics App",
+        "topDir": "../../",
+        "imgDir": "static/img/ccmc/",
+        "icon": "static/img/ccmc/icon.jpg",
+        "token": "ccmc",
+        "description": "UI/UX for a medical app that ranks antibiotics for different diseases"
+    },
+    {
+        "filename": "projects/mannequin/index.html",
+        "template": "src/projects/mannequin.pug",
+        "inNav": true,
+        "title": "UX Case Study: Fashion Tech",
+        "topDir": "../../",
+        "imgDir": "static/img/mannequin/",
+        "icon": "static/img/mannequin/icon.jpg",
+        "token": "mannequin",
+        "description": "Prototyping augmented reality clothing and retail displays with projections"
     },
     {
         "filename": "projects/Graphic Design Gallery/index.html",
@@ -22,47 +55,14 @@
         "description": "A collection of graphics. A good way to understand my visual design skills"
     },
     {
-        "filename": "projects/govcontact/index.html",
-        "template": "src/projects/govcontact.pug",
+        "filename": "projects/motion/index.html",
+        "template": "src/projects/motion.pug",
         "inNav": true,
-        "title": "GovContact",
+        "title": "Motion Design Gallery",
         "topDir": "../../",
-        "imgDir": "static/img/govcontact/",
-        "icon": "static/img/govcontact/icon.jpg",
-        "token": "govcontact",
-        "description": "A React.js app to connect you with your government representatives"
-    },
-    {
-        "filename": "projects/mannequin/index.html",
-        "template": "src/projects/mannequin.pug",
-        "inNav": true,
-        "title": "Fashion Tech",
-        "topDir": "../../",
-        "imgDir": "static/img/mannequin/",
-        "icon": "static/img/mannequin/icon.jpg",
-        "token": "mannequin",
-        "description": "Prototyping augmented reality clothing and retail displays with projections"
-    },
-    {
-        "filename": "projects/ccmc/index.html",
-        "template": "src/projects/ccmc.pug",
-        "inNav": true,
-        "title": "Antibiotics App",
-        "topDir": "../../",
-        "imgDir": "static/img/ccmc/",
-        "icon": "static/img/ccmc/icon.jpg",
-        "token": "ccmc",
-        "description": "UI/UX for a medical app that ranks antibiotics for different diseases"
-    },
-    {
-        "filename": "projects/subconscious/index.html",
-        "template": "src/projects/subconscious.pug",
-        "inNav": true,
-        "title": "Subconscious Contributor Program Redesign",
-        "topDir": "../../",
-        "imgDir": "static/img/subconscious/",
-        "icon": "static/img/subconscious/icon.jpg",
-        "token": "subconscious",
-        "description": "Improving the author experience of a mental health blog"
+        "imgDir": "static/img/motion/",
+        "icon": "static/img/motion/icon.jpg",
+        "token": "motion",
+        "description": "A collection of my animations. See some of my motion design projects"
     }
 ]
