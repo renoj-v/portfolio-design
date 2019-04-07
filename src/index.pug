@@ -1,5 +1,5 @@
 extends ./layout
-        
+
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
     
@@ -7,16 +7,12 @@ block content
         .hero.fade-in.delay-little
             h1="Renoj Varghese\'s Portfolio"
             .display-flex
-                p.about-me.grid-md-6.
-                  Digital Interactions are magical. They can be anything and everything. 
-                  And just like a spell, a single interaction can have a large impact, sometimes good and sometimes bad.
-                  My job is to make sure this magic is both benevolent and effective.
-                  Here you can take a look at a few of my spells
-                p.about-me.grid-md-6.
-                  Digital Interactions are magical. They can be anything and everything. 
-                  And just like a spell, a single interaction can have a large impact, sometimes good and sometimes bad.
-                  My job is to make sure this magic is both benevolent and effective.
-                  Here you can take a look at a few of my spells
+                .about-me.grid-md-6
+                  h2.about-me-header="About me"
+                  p.about-me-p.
+                    Hi. My name is Renoj. I am a user experience deigner.
+                    I work right between 
+
         .container.clearfix
             each page in subpages
                 a.portfolio-link(href=page.filename)
@@ -38,3 +34,4 @@ block css-before
 block js
     script.
         document.getElementById("projects").classList.add("active")
+//-intro
