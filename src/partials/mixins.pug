@@ -39,12 +39,11 @@ mixin section(title)
       div.project-content(class!=attributes.class)
         p.project-p
             block
-          
-mixin subsection(title)
+
+mixin subheader(title)
     h3.project-subheader=title
-    p.projecti-subp
-        block
-          
+    block
+
 mixin external
     .external-links
         block
