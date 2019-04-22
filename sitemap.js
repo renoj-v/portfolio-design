@@ -9,7 +9,8 @@ const home = {
 
 const current_projects = require("./current_projects.json");
 
-const others = [];
+const others = [
+];
 
 const socials = [
     {

@@ -36,7 +36,7 @@
         "filename": "projects/mannequin/index.html",
         "template": "src/projects/mannequin.pug",
         "inNav": true,
-        "title": "UX Case Study: Fashion Tech",
+        "title": "Case Study: Fashion Tech",
         "topDir": "../../",
         "imgDir": "static/img/mannequin/",
         "icon": "static/img/mannequin/icon.jpg",

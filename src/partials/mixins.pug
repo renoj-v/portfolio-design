@@ -2,10 +2,11 @@ mixin image(src, alt)
     .img-container
         img(src=src alt=alt)
 
-mixin img(src, alt)
+mixin img(src, alt, caption)
     - if (images)  {src = images + src}
     .img-container(class!=attributes.class)
         img(src=src alt=(alt ? alt : "images"))
+        .caption=caption
 mixin role(r)
     .role-container
         label.role-name="Role: " + r + ". "
@@ -63,8 +64,7 @@ mixin list
       
 mixin listItem(str)
     li.project-list-item
-      strong
-        str
+      strong=str + ": "
       block
         
 mixin backHome(dir)

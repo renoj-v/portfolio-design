@@ -7,22 +7,35 @@ block content
         .hero.fade-in.delay-little
             h1="Renoj Varghese\'s Portfolio"
             .display-flex
-                .about-me.grid-md-6
-                  h2.about-me-header="About me"
+                .about-me.grid-6
+                  h2.about-me-header="About Me"
                   p.about-me-p.
                     Hi. My name is Renoj. I am a user experience deigner.
-                    I work right between 
-
-        .container.clearfix
-            each page in subpages
-                a.portfolio-link(href=page.filename)
-                    .portfolio-item
-                        .center.rotate-high
-                            .img-container
-                                img(src=page.icon alt=page.title)            
-                        .center-text 
-                        h3.center-header.header=page.title
-                        p.center-paragraph=page.description
+                    My background is in user research, graphic design, animation, and prototyping. 
+                    I'm best in a interdiscplinary role where I can combine my skills to make something really meaningful.
+                    Also a big fan of approriately-used serif fonts. 
+                .process.grid-6
+                  h2.proces-header="My Process"
+                  p.process-p.
+                    It all starts with a defined, specific problem.
+                    Next step is to research and understand how to tackle the problem.
+                    I draft ideas on paper or on a digital tool.
+                    Then, I communicate my ideas to others using wireframes, style guides, and prototypes.
+                    Finally, it is time to craft the final deliverables and get feedback
+                    Then rinse and repeat as needed :)
+                    
+        .container.all-projects
+          h2 Case Studies and Galleries
+          .container.clearfix
+              each page in subpages
+                  a.portfolio-link(href=page.filename)
+                      .portfolio-item
+                          .center.rotate-high
+                              .img-container
+                                  img(src=page.icon alt=page.title)            
+                          .center-text 
+                          h3.center-header.header=page.title
+                          p.center-paragraph=page.description
 
 block css-before
     style.
