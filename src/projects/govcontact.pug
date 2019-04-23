@@ -9,9 +9,9 @@ block content
                 GovContact allows you to search and find your government representatives.
                 The purpose is to be able to contact those who have legislative power. The idea for the application
                 came from the Battle for Net Neutrality campaign, which displayed every representative's 
-                contact information. I wanted to replicate that in a more general app.
+                contact information. I wanted to replicate that in a more general web application, where everyone could acccess this information with just a link.
             +role("UX Researcher & UX/UI Designer")
-                | As part of a class project, I conducted a competitive analysis on similar apps, wrote user stories based on what was missing, created wireframes to put my ideas on paper, and a final prototype to test the app.
+                | As part of a class project, I conducted a competitive analysis on similar web apps, wrote user stories based on what was missing, created wireframes to put my ideas on paper, and a final prototype to test the app.
             +external
                 +link("https://gov-contact.herokuapp.com")
                     | View First Prototype
@@ -25,7 +25,7 @@ block content
         +section("Research")
             +subheader("Initial Project Pitch")
                 span.
-                    By pitching my idea to the class, I was able to get some initial insight on how to design this app.
+                    By pitching my idea to the class, I was able to get some initial insight on how to design this web app.
                     The main piece of feedback I received was to keep the application simple as possible for someone to learn about their representatives.
                     This meant leaving out any signup forms, providing a simple set of set of instructions, and mapping the fewest number of steps to lead people to contact their representative. 
             //-- insert pitch to class all at voting age
@@ -61,15 +61,57 @@ block content
             span.
                 The following user stories represent what GovContact is able to do.
                 Writing user stories helped me think inside the shoes of someone who might use this app.
+                I considered how Terry could find the names of the state legislators making a decision on a free tuition bill.
+                Briana should be able to use GovContact to find channels to communicate with a politician directly, such as through phone, email or social media. 
             +img("govcontact_user-stories.jpg", "user stories")
         +section("Wireframes")
             //-- explain process of what info to put on card
             //-- place graph from that website
             //-- explain how we chose four contact ways
+            +subheader("Deciding What Contact Information To Have")
             span.
-                After writing user stories, I went to design the interface for GovContact.
-                I chose to showcase government representatives in a card style to encapsulate all the information
-                about that representative in one place.
+                One of the main challenges of this app is to decide which forms of contact to provide to citizens.
+                Every Government representative has a phone line and email, and a strong majority of officials utilize social media. 
+                Representatives also have websites as well.
+                People can also send in hand letters to a physical address. There's also the question of showcasing the political party which each official belongs to.
+                With so many options it was difficult to choose what contact info to show.
+                
+                Examples of my information experiments can be found below
+              
+            +img("govcontact_wireframes-cards.png", "wireframes")
+            span.
+                To make a final decision, I considered solving the problem by balancing:
+            +list()
+                +listItem("What is most accessible to someone using this app")
+                    | Considering the web platform, it is easy to assume that someone has internet connection and is on their laptop/phone.
+                    | Briana and Terry would both need contact information that they could immediately use
+                    | The fastest ways to contact a representative would be through email, social media, and a phone call.
+                +listItem("What are the most effective ways to contact a representative")
+                    | For this portion, I conducted some online research to learn what contact methods are most influentional.
+                    | From an 
+                    a(href="https://www.nytimes.com/2016/11/22/us/politics/heres-why-you-should-call-not-email-your-legislators.html")
+                      | article 
+                    | by Daniel, it seemed that phone calls were effective to contact a representative directly or atleast their office.
+                    | It was also considered to be more effective in state and local governments. This is particuraly important for Terry, who trying to get a state law to pass, and Briana who hopes the law will support her local community. 
+                    | According to a 
+                    a(href="https://www.azavea.com/blog/2017/10/03/whats-the-best-way-to-contact-your-representatives/")
+                      | study 
+                    |  done by Azavea where 1000 government officials were surveyed,
+                    | the top 3 forms of contact were email (77% approved), social media (13%), and phone (11%)
+                    | With email with such strong approval and accessiblity, an email address should be provided.
+                    | Alongside email, there should be some social media handles. Based on a 
+                    a(href="https://www.quorum.us/data-driven-insights/congress-social-media-2018/412/")
+                      | survey on social media 
+                    | done by a site called Quorum, it seemed that politicians were most active on Facebook and Twitter. 
+      
+            +subheader("Final Wireframes")
+            span.
+                The final decision for contact info was to include a phone number, an email address, and links to at least Twitter and Facebook.
+            //- show politicial party
+            span.
+                To keep it as simple, the web app is a search screen, similar to Google or another search engine. 
+                The query is to type in a home address, which is the most accurate key to find a person's representatives. 
+                
             +img("govcontact_wireframes.jpg", "wireframes")
             +subheader("Styles and Icons")
             //-- not subheader
@@ -88,15 +130,18 @@ block content
                 Testing the app revealed that:
             +list()
               +listItem("Less red, white and blue")
-                  | Users tended to prefer a more neutral color palette. Maybe the app could be expanded to other countries than the U.S.
+                  | Users tended to prefer a more neutral color palette. The app could be expanded to other countries than the U.S.
+                  | As a designer, it's tough to hear that colors don't work well. But maybe there's a better way to give the right feel for GovContact.
                   //- took in advice
               +listItem("Possibly find user's location automatically")
                   | Though it was never mentioned, a later thought was to be able to track a user's location through their browser.
                   | It would eliminate any steps a person would need to take to find a government official
               +listItem("Would be best as a mobile app")
                   | Almost every interviewee said they would be unlikely to go onto the site when they wanted to talk to their represenative.  
-                  | It would be more likely that a user would use Google to find the person they wished to contact.
+                  | They were more likely to use a search engine instead. 
                   | One user commented how GovContact would be better as a mobile app. It would be like having your senator as one of your personal contacts.
+                  | Even though this was only one user's input, the feedback hinted on the other users' needs. It is easy to forget a link or use a search engine instead.
+                  | But as a mobile app, GovContact is given greater weight and semblance inside a user's phone. 
                   //-justificaiton for ^^^
             +img("final-result.png", "final")
             +img("final-result2.png", "final") 
