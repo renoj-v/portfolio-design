@@ -4,57 +4,81 @@ block content
     .project-container
         h1.project-title GovContact
         +section("Background")
+            //-talk about class project
             span.
                 GovContact allows you to search and find your government representatives.
                 The purpose is to be able to contact those who have legislative power. The idea for the application
                 came from the Battle for Net Neutrality campaign, which displayed every representative's 
                 contact information. I wanted to replicate that in a more general app.
             +role("UX Researcher & UX/UI Designer")
-                | To create the app, I conducted a competitive analysis on similar apps, wrote user stories based on what was missing, created wireframes to put my ideas on paper, and a final prototype to test the app.
+                | As part of a class project, I conducted a competitive analysis on similar apps, wrote user stories based on what was missing, created wireframes to put my ideas on paper, and a final prototype to test the app.
             +external
                 +link("https://gov-contact.herokuapp.com")
                     | View First Prototype
                 +link("https://invis.io/HSRFG9VWNAQ")
                     | View Second Iteration Prototype
         +problem("How might we make it simpler to find a government representative?")
-        +section("Research")
-            span.
-              There are many applications (mobile and web) that can find U.S. governmental offcials.
-              My methodology for research was to understand their user experience and see what could be improved. 
-              The research spanned government, non-profit, and commercial organizations. 
-              I conducted a competitive analysis, looking at where this app could make an impact.
-              Here are some of my insights that I wanted to bring to GovContact:
-            +list()
-              +listItem("Do not focus on specific issues")
-                  | A couple of the applications were focused on highlighting specific issues.
-                  | Though it encouraged people to contact their representatives, this app should be more neutral
-              +listItem("No requirement for creating an account or signing up by email")
-                  | One aspect that GovContact should avoid is trying to get citizens to sign up for an app.
-                  | The onboarding process should be as quick as possible and limited to entering a physical address
-              +listItem("Lower complexity")
-                  | For this app, I wanted to create a tool people could quickly and simply reach their representatives.
-                  | Something that would be 
-              +img("govcontact_analysis.jpg", "wireframes", "Part of the matrix for my competitive analysis.")
-              
+        //-insert process
+        //-update process image
         +section("Process")
-            +img("govcontact_process.jpg", "wireframes")
-            +subheader("User Stories")
+            +img("govcontact_process.jpg", "process")
+        +section("Research")
+            +subheader("Initial Project Pitch")
+                span.
+                    By pitching my idea to the class, I was able to get some initial insight on how to design this app.
+                    The main piece of feedback I received was to keep the application simple as possible for someone to learn about their representatives.
+                    This meant leaving out any signup forms, providing a simple set of set of instructions, and mapping the fewest number of steps to lead people to contact their representative. 
+            //-- insert pitch to class all at voting age
+            //-- insights were  
+                //- 1) make it as simple as possible -  no signups, easy instructions, fewest possible steps
+            +subheader("Competitive Analysis")
+                span.
+                  There are many applications (mobile and web) that can find U.S. governmental offcials.
+                  My methodology for research was to understand their user experience and see what could be improved. 
+                  The research spanned government, non-profit, and commercial organizations. 
+                  I conducted a competitive analysis, looking at where this app could make an impact.
+                  Here are some of my insights that I wanted to bring to GovContact:
+                +list()
+                  +listItem("Do not focus on specific issues")
+                      | A couple of the applications were focused on highlighting specific issues.
+                      | Though it encouraged people to contact their representatives, this app should be more neutral
+                  +listItem("No requirement for creating an account or signing up by email")
+                      | One aspect that GovContact should avoid is trying to get citizens to sign up for an app.
+                      | The onboarding process should be as quick as possible and limited to entering a physical address
+                  +listItem("Lower complexity")
+                      | For this app, I wanted to create a tool people could quickly and simply reach their representatives.
+                      | Something that would be 
+                  +img("govcontact_analysis.jpg", "wireframes", "Part of the matrix for my competitive analysis.")
+            //- add screenshots of various apps that drew inspiration
+            +subheader("Personas")
+                span.
+                    Personas helped me think about user needs and how someone might use GovContact.
+                    I tackled the problem from two perspectives. One is Briana Jackson, who could use GovContact on a regular basis when she wants to talk to a politician or give a supporter a way to find their representative.
+                    Another perspective is Terry Mendoza, who would use the app for a limited time to tell his story to his legislators. 
+                +img("persona_briana.png", "Persona Briana Jackson")
+                +img("persona_terry.png", "Persona Terry Mendoza")
+        +section("User Stories")
             span.
                 The following user stories represent what GovContact is able to do.
                 Writing user stories helped me think inside the shoes of someone who might use this app.
-            +img("govcontact_user-stories.jpg", "wireframes")
-            +subheader("Wireframes")
+            +img("govcontact_user-stories.jpg", "user stories")
+        +section("Wireframes")
+            //-- explain process of what info to put on card
+            //-- place graph from that website
+            //-- explain how we chose four contact ways
             span.
                 After writing user stories, I went to design the interface for GovContact.
                 I chose to showcase government representatives in a card style to encapsulate all the information
                 about that representative in one place.
             +img("govcontact_wireframes.jpg", "wireframes")
             +subheader("Styles and Icons")
+            //-- not subheader
+            //- justification for styles
             span.
                 The colors and icons for the app. I went with the classic red, white, and blue, 
                 since I was focusing on government representatives in the U.S.A.
             +img("style-guide.png", "styles").white-bg
-        +section("Solution and Feedback")
+        +section("Feedback")
             span.
                 The first prototype was created using React.js and Google Civic API. Here are screenshots of the 
                 first prototype. It can also be found by clicking 
@@ -65,28 +89,45 @@ block content
             +list()
               +listItem("Less red, white and blue")
                   | Users tended to prefer a more neutral color palette. Maybe the app could be expanded to other countries than the U.S.
-              +listItem("Possible find user's location automatically")
+                  //- took in advice
+              +listItem("Possibly find user's location automatically")
                   | Though it was never mentioned, a later thought was to be able to track a user's location through their browser.
                   | It would eliminate any steps a person would need to take to find a government official
               +listItem("Would be best as a mobile app")
                   | Almost every interviewee said they would be unlikely to go onto the site when they wanted to talk to their represenative.  
                   | It would be more likely that a user would use Google to find the person they wished to contact.
                   | One user commented how GovContact would be better as a mobile app. It would be like having your senator as one of your personal contacts.
+                  //-justificaiton for ^^^
             +img("final-result.png", "final")
             +img("final-result2.png", "final") 
-        +section("Second Iteration")
+            //-add specific features
+        +section("Solution")
             span.
                 Taking this feedback, I made a second prototype as a mobile app. A lesson I learned was that code prototypes take a long time.
                 This prototype was done in Invision and can be found 
             a.link(href="https://invis.io/HSRFG9VWNAQ")
                 | here
             +img("govcontact_second-it-mock.jpg", "second mocks")
+            //-- user flow
+            //-- onboarding process in 2 steps
+            //-- designed with thumb in mind
+            //-- Style talk
+                //-- colors, photos, overlays
+                
+        +section("Reflection and Next Steps")
+            //- user interviews from the beginning
+            //- possibly provide prompts or templates to interact with representatives
+                //- could template email, or script for a phone call. 
+                //- make it even simpler to tell a representative what a citizen thinks
+            //- ready for development
+                //- could test with real people
+                //- see if it helps people contact their representatives more often
         +external
             +link("https://gov-contact.herokuapp.com")
                 | View First Prototype
             +link("https://invis.io/HSRFG9VWNAQ")
                 | View Second Iteration Prototype
-            //-add link to prototype
+
         +backHome(topDir)
 
 
