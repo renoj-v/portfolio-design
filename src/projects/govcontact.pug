@@ -24,7 +24,7 @@ block content
             +img("govcontact_process.jpg", "process")
         +section("Research")
             +subheader("Initial Project Pitch")
-                span.
+                span.project-p.
                     By pitching my idea to the class, I was able to get some initial insight on how to design this web app.
                     The main piece of feedback I received was to keep the application simple as possible for someone to learn about their representatives.
                     This meant leaving out any signup forms, providing a simple set of set of instructions, and mapping the fewest number of steps to lead people to contact their representative. 
@@ -32,7 +32,7 @@ block content
             //-- insights were  
                 //- 1) make it as simple as possible -  no signups, easy instructions, fewest possible steps
             +subheader("Competitive Analysis")
-                span.
+                span.project-p.
                   There are many applications (mobile and web) that can find U.S. governmental offcials.
                   My methodology for research was to understand their user experience and see what could be improved. 
                   The research spanned government, non-profit, and commercial organizations. 
@@ -45,20 +45,20 @@ block content
                   +listItem("No requirement for creating an account or signing up by email")
                       | One aspect that GovContact should avoid is trying to get citizens to sign up for an app.
                       | The onboarding process should be as quick as possible and limited to entering a physical address
-                  +listItem("Lower complexity")
+                  +listItem("Keep it Simple")
                       | For this app, I wanted to create a tool people could quickly and simply reach their representatives.
                       | Something that would be 
                   +img("govcontact_analysis.jpg", "wireframes", "Part of the matrix for my competitive analysis.")
             //- add screenshots of various apps that drew inspiration
             +subheader("Personas")
-                span.
+                span.project-p.
                     Personas helped me think about user needs and how someone might use GovContact.
                     I tackled the problem from two perspectives. One is Briana Jackson, who could use GovContact on a regular basis when she wants to talk to a politician or give a supporter a way to find their representative.
                     Another perspective is Terry Mendoza, who would use the app for a limited time to tell his story to his legislators. 
                 +img("persona_briana.png", "Persona Briana Jackson")
                 +img("persona_terry.png", "Persona Terry Mendoza")
         +section("User Stories")
-            span.
+            span.project-p.
                 The following user stories represent what GovContact is able to do.
                 Writing user stories helped me think inside the shoes of someone who might use this app.
                 I considered how Terry could find the names of the state legislators making a decision on a free tuition bill.
@@ -69,7 +69,7 @@ block content
             //-- place graph from that website
             //-- explain how we chose four contact ways
             +subheader("Deciding What Contact Information To Have")
-            span.
+            span.project-p.
                 One of the main challenges of this app is to decide which forms of contact to provide to citizens.
                 Every Government representative has a phone line and email, and a strong majority of officials utilize social media. 
                 Representatives also have websites as well.
@@ -79,7 +79,7 @@ block content
                 Examples of my information experiments can be found below
               
             +img("govcontact_wireframes-cards.png", "wireframes")
-            span.
+            span.project-p.
                 To make a final decision, I considered solving the problem by balancing:
             +list()
                 +listItem("What is most accessible to someone using this app")
@@ -105,20 +105,22 @@ block content
                     | done by a site called Quorum, it seemed that politicians were most active on Facebook and Twitter. 
       
             +subheader("Final Wireframes")
-            span.
+            span.project-p.
                 The final decision for contact info was to include a phone number, an email address, and links to at least Twitter and Facebook.
-            //- show politicial party
-            span.
-                To keep it as simple, the web app is a search screen, similar to Google or another search engine. 
-                The query is to type in a home address, which is the most accurate key to find a person's representatives. 
                 
+            span.project-p.
+                To keep it as simple, the web app is a search screen, similar to Google or another search engine. 
+                The query is to type in a home address, which is the most accurate key to find a person's representatives.
             +img("govcontact_wireframes.jpg", "wireframes")
-            +subheader("Styles and Icons")
-            //-- not subheader
-            //- justification for styles
-            span.
+        +section("Styles and Icons")
+            span.project-p.
                 The colors and icons for the app. I went with the classic red, white, and blue, 
-                since I was focusing on government representatives in the U.S.A.
+                since I was focusing on government representatives in the U.S.A. 
+                To convey the governmental nature of the app, graphics were designed around stars, flags, and government buildings.
+                The colors helped accent this tone. 
+                Color was also important to indicate political party.
+                Democrats would be given a blue icon, republicans would given a red icon, an independents/moderates/unknown party would not given an icon.
+                The fonts Lato and Roboto offered strong readability. Varying fonts better highlighted information (e.g. Lato Bold for a representative's name)
             +img("style-guide.png", "styles").white-bg
         +section("Feedback")
             span.
@@ -126,23 +128,24 @@ block content
                 first prototype. It can also be found by clicking 
             a.link(href="https://gov-contact.herokuapp.com")
                 | here. 
-            span.
+            span.project-p.
                 Testing the app revealed that:
             +list()
               +listItem("Less red, white and blue")
-                  | Users tended to prefer a more neutral color palette. The app could be expanded to other countries than the U.S.
+                  | Users tended to prefer a more neutral color palette. The app could be expanded to other countries than the U.S. The use of red and blue may have conveyed the feeling of political parties more than government itself. 
                   | As a designer, it's tough to hear that colors don't work well. But maybe there's a better way to give the right feel for GovContact.
-                  //- took in advice
+              //- differentiate federal vs state vs local  
               +listItem("Possibly find user's location automatically")
                   | Though it was never mentioned, a later thought was to be able to track a user's location through their browser.
                   | It would eliminate any steps a person would need to take to find a government official
-              +listItem("Would be best as a mobile app")
+              +listItem("Would likely not be used on a website")
                   | Almost every interviewee said they would be unlikely to go onto the site when they wanted to talk to their represenative.  
                   | They were more likely to use a search engine instead. 
+              +listItem("Would be better as a mobile app")
                   | One user commented how GovContact would be better as a mobile app. It would be like having your senator as one of your personal contacts.
                   | Even though this was only one user's input, the feedback hinted on the other users' needs. It is easy to forget a link or use a search engine instead.
                   | But as a mobile app, GovContact is given greater weight and semblance inside a user's phone. 
-                  //-justificaiton for ^^^
+                  
             +img("final-result.png", "final")
             +img("final-result2.png", "final") 
             //-add specific features
@@ -167,6 +170,9 @@ block content
             //- ready for development
                 //- could test with real people
                 //- see if it helps people contact their representatives more often
+            //- features to test 
+                //- templates for what to say during a call, tweet, email
+                
         +external
             +link("https://gov-contact.herokuapp.com")
                 | View First Prototype
