@@ -6,11 +6,13 @@ block content
         +section("Background")
             //-talk about class project
             span.
-                Don't know if it's just me, but I've been frustrated with politics in the U.S. over the past few years.
+                How we engage in politics could use some improvement. 
                 Conversations between citizens happen over social media, but there should more communication with legistators: those who have the immediate power to make effective change.
                 As part of a class project, I decided to tackle this specific problem by designing an app that helps citizens contact their representatives more often.
+                UX design can play a role in political activisim by ideating the technology to help us better communicate.
             +role("UX Researcher & UX/UI Designer")
                 | Conducted a competitive analysis on similar web apps, wrote user stories based on what was missing, created wireframes to put my ideas on paper, made prototypes of the app, and tested it with real users.
+                | Aftewards I created a second prototype from the new ideas that came from user testing.
         +problem("How might we help U.S. citizens contact their representatives to create effective change?")
         +section("Research")
             +subheader("Initial Focus Group")
@@ -35,7 +37,7 @@ block content
               |, 
               a(href="https://www.azavea.com/blog/2017/10/03/whats-the-best-way-to-contact-your-representatives/")
                 | some effective ways of contact 
-              |, 
+              |, and
               a(href="https://www.quorum.us/data-driven-insights/congress-social-media-2018/412/")
                 | active representatives are on social media
               | .
@@ -57,17 +59,28 @@ block content
             +img("persona_terry.png", "Persona Terry Mendoza")
             +subheader("Key Insights")
             +list()
-              +listItem("Represenative information varies greatly between apps")
+              +listItem("Representative information varies greatly between apps") 
+                | Some apps show only Congressmen. Some show only state legislators. 
+                | For GovContact, it is important to show representatives at every level: federal, state, local.
+                | Local officials can have just a large an impact on daily life as a Senator. All reps should be available to a citizen.
               +listItem("Finding contact info can take some time")
-                | account creation + 
+                | Many applications I found are bogged down with account creation and email registration. These are a barrier that might prevent citizens from contacting their reps.
               +listItem("Political neutrality is important")
-              +listItem("Ads should be avoided")
+                | From the focus group and reading user reviews of current apps, citizens would care about political neutrality in an app.
+                | It wouldn't be fair to be bias towards a political party. On the same logic, the app shouldn't push specific issues or include advertisements.
+              //- +listItem("Citizens are likely to not know who their representatives are")
+                | Based on the focus group and online research, we cannot expect citizens to know who all their representatives are. People might be able to idenitfy their Congressmen or Governor. But it is less likely people will know who occupies smaller offices.
               +listItem("Frequency is the key to getting through")
-                | From the conversations with representatives' offices, it seemed that it is more effective for citizens to contact representatives frequently on issues.
-                | A citizen's stance is usually recorded as part of a tally. 
+                | From the conversations with representatives' offices, it seemed that citizens need to contact their representatives frequently to be effective.
+                | A call or email may take 5 minutes. If this action were taken by many people at the same time, government officials would have to listen.
+                | GovContact should be that app that help citizens take this action to make effective change.
             
         +section("Initial Idea: Web App")
-        
+        .project-p.
+            The first idea was to create GovContact as a web application. It would be accessible to anyone with internet access.
+            There would be no app to download. And it can provide up-to-date information on a consistent basis. Briana and Terry could use a simple link to have access to their representatives when they needed to make their voices heard.
+            
+            
         +section("User Stories")
             span.project-p.
                 The following user stories represent what GovContact is able to do.
@@ -135,43 +148,119 @@ block content
             +img("final-result2.png", "final") 
         +section("User Testing")
             span.project-p.
-                Testing the app revealed that:
+                The web app was tested with 5 participants in an informal interview setting. Each participant explored the site on their own and was asked follow up questions.
+                Testing the app revealed: 
             +list()
-              +listItem("Less red, white and blue")
-                  | Users tended to prefer a more neutral color palette. The app could be expanded to other countries than the U.S. The use of red and blue may have conveyed the feeling of political parties more than government itself. 
-                  | As a designer, it's tough to hear that colors don't work well. But maybe there's a better way to give the right feel for GovContact.
-              //- differentiate federal vs state vs local  
-              +listItem("Possibly find user's location automatically")
-                  | Though it was never mentioned, a later thought was to be able to track a user's location through their browser.
-                  | It would eliminate any steps a person would need to take to find a government official
-              +listItem("Would likely not be used on a website")
-                  | Almost every interviewee said they would be unlikely to go onto the site when they wanted to talk to their represenative.  
-                  | They were more likely to use a search engine instead. 
-              +listItem("Would be better as a mobile app")
-                  | One user commented how GovContact would be better as a mobile app. It would be like having your senator as one of your personal contacts.
-                  | Even though this was only one user's input, the feedback hinted on the other users' needs. It is easy to forget a link or use a search engine instead.
-                  | But as a mobile app, GovContact is given greater weight and semblance inside a user's phone. 
-                  
+              +listItem("Filtering and Sorting Options")
+                | Most participants spent a lot of time scrolling to learn about representatives. Every participant had some diffculty when asked to find a specific representative
+                | A sorting or filtering option would help solve this usability issue.
+              //- +listItem("Increase text size of links")
+                | Another common usuability issue was that participants had trouble finding and hovering over links to contact information e.g. a Twitter handle. The root of the problem was the text size, as people tended to squint when hovering over a link. 
+              +listItem("Web may not be right platform")
+                | Most participants they were more likely to use a search engine if they were already on a browser. As a website, GovContact may not provide as much value.
+              
+              //- Users unsure about who candidates are    
             
             //-add specific features
-        +section("Solution")
+        +section("Turn to a Mobile App")
             span.
-                Taking this feedback, I made a second prototype as a mobile app. A lesson I learned was that code prototypes take a long time.
-                This prototype was done in Invision and can be found 
-            a.link(href="https://invis.io/HSRFG9VWNAQ")
-                | here
-            +img("govcontact_second-it-mock.jpg", "second mocks")
-            div(style="width: 50%; display: flex; justify-content: space-between;")
-              +img("gc_rep-card.png")
-              +img("gc_rep-card-expand.png")
+              To provide better value, GovContact should be a mobile app. There wouldn't be any link to follow. 
+              By taking up visual space inside a phone, the app would also serve as a reminder to a citizen.
+              A mobile would also allow a person to call a representative directly from their phone.
+        +section("Style Update")
+            span.
+              After user testing, I decided to update the brand of GovContact.
+              Instead of contrasting, polarized colors of red and blue, the primary color is a purple, the unity of the former.
+              To convey the feeling of government, I used photographs of building and monuments.
+            +img("visual-design.png", "visual design")
+        +section("Solution")
+            +subheader("2-step Onboarding")
+            span.
+              GovContact doesn't require anyone to create an account or provide an email.
+              The only required information is a physical address that can be used to find the correpsonding reps.
+            .display-flex
+               .grid-6
+                 +img("gc_start.png", "start")
+               .grid-6
+                 +img("gc_address.png", "enter address")
+            +subheader("Finding your rep")
+            span.
+              Each of the three levels of government has a different impact on a citizens life, so each represenative is chunked into their proper group.
+              Finding a rep is the same process as finding a contact in Messenger or Whatsapp.
+              I borrowed the familiar layout such that Briana or Terry could use GovContact as they would any other messaging app. 
+            .display-flex
+               .grid-6
+                 +img("gc_home.png", "home")
+               .grid-6
+                 +img("gc_search.png", "search")
+            +subheader("Everything you need to know")
+            span.
+              Based on the online research and interviews with government employees, the contact information for each rep is ordered by availability and effectiveness.
+              Although no political party is mentioned, Briana and Terry can understand how each of their reps stands on the issues. 
+            .display-flex
+               .grid-6
+                 +img("rep.png", "rep")
+               .grid-6
+                 +img("rep-expanded.png", "rep expanded")
+            +subheader("Made for mobile")
+            span.
+              When desiging the mobile, I used a diagram I found in an 
+            a(href="https://www.smashingmagazine.com/2016/09/the-thumb-zone-designing-for-mobile-users/")
+              | article by Smashing Magazine 
+            span.
+              to have the main actions of every screen at a natural reach to the user.
+            +img("mobile-designed.png", "mobibly designed")
+            +subheader("User Flow")
+            span.
+              I created a user flow to illustrate how each screen connects to one another. 
+              It was important to consider all the default and error states a user might encounter.
+              A link to the high fidelity user flow can be found 
+            a(href="overflow.io/s/IPM5WU")
+              | here
+            +subheader("InVision Prototype")
+            span.
+              The final step in the solution was to create a click-through prototype.
+              Time was a little short and there were no complex interactions, so a click-through prototype was more appropriate. 
+              An embed of the prototype can be found below.
+              
+            +invision("CFRFG9WYVBE")
             //-- user flow
             //-- onboarding process in 2 steps
             //-- designed with thumb in mind
             //-- Style talk
                 //-- colors, photos, overlays
-                
         +section("Reflection and Next Steps")
-            //- user interviews from the beginning
+          +subheader("Summary")
+          span.
+            GovContact is an app to connect citizens to their representatives. 
+            The process involved research, interviewing users, wireframing, branding, prototyping, and user testing.
+            The final solution was a mobile app in which citizens could learn about their representatives and contact them quickly.
+          +subheader("Future Steps")
+          span.
+            The next steps for the app would be to test the click-through prototype with real users.
+            The purpose of the usability test is to identify the UX problems that ought to be fixed before development
+            Afterwards, and iOS and Anroid app can be programmed and deployed to their respective stores. 
+          +subheader("Possible Features")
+          +list()
+            +listItem("Contact Templates")
+              | One additional feature to explore is templates for what to say to a representative. 
+              |This could take the form of a script before calling or a template form for an email or social media post
+            +listItem("Social Sharing")
+              |Another important feature is having citizens encourage their friends and followers to contact their represenatives.
+              |Government representatives are more likely to listen to a request if it came from a multitude of citizens.
+              |If GovContact could have a social sharing feature, it might encourage other citizens to take action.
+          +subheader("Lessons")
+          +list()
+            +listItem("Understanding how to use brand")
+              | There was huge change in brand. It was in respect to better communicating the feeling of government, while also refraining from the colors of political parties.
+              | In this manner, I was learned how to explore brand beyond the expected to create something unique.
+            +listItem("Knowing what type to prototype")
+              | I utilized two types of prototypes: code prototypes and click-through prototypes.
+              | The web prototype made in React.js was useful for testing how someone would be most likely to interact with the app
+              | However programming took up a lot of time compared to the click-through protoype, which I could focus more on the design of GovContact.
+              | The lesson I learned was when to use each kind of prototype.
+          
+          //- user interviews from the beginning
             //- possibly provide prompts or templates to interact with representatives
                 //- could template email, or script for a phone call. 
                 //- make it even simpler to tell a representative what a citizen thinks
@@ -180,6 +269,7 @@ block content
                 //- see if it helps people contact their representatives more often
             //- features to test 
                 //- templates for what to say during a call, tweet, email
+                //- make
     //- ***** Honorable Mentions - templates for sm, phone | news articles | show upcoming bills
     //- ***** Challenge 1 - Card Info, Challenge 2 - React.js 
     //- ***** Fix pop-up menu

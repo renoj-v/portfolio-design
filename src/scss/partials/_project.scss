@@ -20,12 +20,12 @@
 .project-subheader {
     font-family: "Lora", serif;
     margin: 15px 0px;
-    font-size:20px;
+    font-size: 1.25rem;
 }
 .project-p, .project-content span, .project-list {
     text-indent: 40px;
     line-height: 2;
-    font-size:16px;
+    font-size:1rem;
 }
 .external-links {
     display: flex;
@@ -35,10 +35,10 @@
 }
 .role-container {
     line-height: 2;
-    font-size:18px;
+    font-size: 1rem;
     .role-name {
       font-weight: 700;
-      font-size: 18px;
+      font-size: 1rem;
     }
 }
 a.btn {
@@ -46,7 +46,7 @@ a.btn {
     padding-top: 4px;
     padding-bottom: 2px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.25rem;
     .label {
         display: inline-block;
         position: relative;
@@ -59,14 +59,21 @@ a.btn {
         }
     }
 }
+.project-container a {
+  text-decoration: underline;
+  color:$purple;
+  &:hover {
+    color:$purple
+  }
+}
 .project-list {
-  font-size: 16px;
+  font-size: 1rem;
   .project-list-item {
     margin: 15px;
   }
 }
 .back-home {
-    font-size: 24px;
+    font-size: 1.5px;
     margin-top: 50px;
     text-align: center;
 }

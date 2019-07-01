@@ -3,7 +3,7 @@
         "filename": "projects/subconscious/index.html",
         "template": "src/projects/subconscious.pug",
         "inNav": true,
-        "title": "UX Case Study: Subconscious Contributor Program Redesign",
+        "title": "UX Research: Subconscious Contributor Program Redesign",
         "topDir": "../../",
         "imgDir": "static/img/subconscious/",
         "icon": "static/img/subconscious/icon.jpg",
@@ -19,7 +19,7 @@
         "imgDir": "static/img/govcontact/",
         "icon": "static/img/govcontact/icon.jpg",
         "token": "govcontact",
-        "description": "A React.js app to connect you with your government representatives"
+        "description": "An app to connect you with your government representatives"
     },
     {
         "filename": "projects/ccmc/index.html",
@@ -36,7 +36,7 @@
         "filename": "projects/mannequin/index.html",
         "template": "src/projects/mannequin.pug",
         "inNav": true,
-        "title": "Case Study: Fashion Tech",
+        "title": "Creative Experiment: Fashion Tech",
         "topDir": "../../",
         "imgDir": "static/img/mannequin/",
         "icon": "static/img/mannequin/icon.jpg",

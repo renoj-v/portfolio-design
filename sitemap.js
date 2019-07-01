@@ -19,7 +19,7 @@ const socials = [
     },
     {
         name: "Behance",
-        link: "https://www.behance.net/renojvargh78ed"
+        link: "https://www.behance.net/renojvarghese"
     },
     {
         name: "LinkedIn",
