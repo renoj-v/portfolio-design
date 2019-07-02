@@ -11,9 +11,10 @@ block content
                 As part of a class project, I decided to tackle this specific problem by designing an app that helps citizens contact their representatives more often.
                 UX design can play a role in political activisim by ideating the technology to help us better communicate.
             +role("UX Researcher & UX/UI Designer")
-                | Conducted a competitive analysis on similar web apps, wrote user stories based on what was missing, created wireframes to put my ideas on paper, made prototypes of the app, and tested it with real users.
+                | Conducted user research, ideated personas to empathize with, wrote user stories on their needs, 
+                | created wireframes to put my ideas on paper, made prototypes of the app, and tested it with real users.
                 | Aftewards I created a second prototype from the new ideas that came from user testing.
-        +problem("How might we help U.S. citizens contact their representatives to create effective change?")
+        +problem("How might we help U.S. citizens contact their government representatives?")
         +section("Research")
             +subheader("Initial Focus Group")
             span.
@@ -37,12 +38,12 @@ block content
               |, 
               a(href="https://www.azavea.com/blog/2017/10/03/whats-the-best-way-to-contact-your-representatives/")
                 | some effective ways of contact 
-              |, and
+              |, and 
               a(href="https://www.quorum.us/data-driven-insights/congress-social-media-2018/412/")
-                | active representatives are on social media
+                | how active representatives are on social media
               | .
-              | The research helped picture what were the best methods of contacting a representative in both terms of efficacy and availability
-              | It crucial to understand this when deciding what contact info (email, phone, social media handles etc) to provide.
+              | The research helped picture what were the best methods of contacting a representative in both terms of efficacy and availability.
+              | It is crucial to understand this when deciding what contact info (email, phone, social media handles etc) to provide.
             +subheader("Contacting my own Representatives")
             span.
               The best way to understand the process of contacting a government representative is to contact a government representative. 
@@ -53,8 +54,8 @@ block content
             +subheader("Personas")
             span.
               The culminating result of the previous research: the personas to empathize with during the design process.
-              I tackled the problem from two perspectives. One is Briana Jackson, a nurse who 
-              Another perspective is Terry Mendoza, who would use the app for a limited time to tell his story to his legislators. 
+              I tackled the problem from two perspectives. One is Briana Jackson, a nurse who could reguarly use this app in her activism.
+              Another perspective is Terry Mendoza, who would use the app for a limited time to tell his story to legislators. 
             +img("persona_briana.png", "Persona Briana Jackson")
             +img("persona_terry.png", "Persona Terry Mendoza")
             +subheader("Key Insights")
@@ -64,7 +65,8 @@ block content
                 | For GovContact, it is important to show representatives at every level: federal, state, local.
                 | Local officials can have just a large an impact on daily life as a Senator. All reps should be available to a citizen.
               +listItem("Finding contact info can take some time")
-                | Many applications I found are bogged down with account creation and email registration. These are a barrier that might prevent citizens from contacting their reps.
+                | Many applications I found are bogged down with account creation and email registration. 
+                | These barriers might prevent citizens from contacting their reps.
               +listItem("Political neutrality is important")
                 | From the focus group and reading user reviews of current apps, citizens would care about political neutrality in an app.
                 | It wouldn't be fair to be bias towards a political party. On the same logic, the app shouldn't push specific issues or include advertisements.
@@ -96,17 +98,18 @@ block content
             span.project-p.
                 One of the main challenges of this app is to decide which forms of contact to provide to citizens.
                 Every Government representative has a phone line and email, and most officials utilize social media. 
-                Representatives also have websites as well.
-                People can also send in hand letters to a physical address. There's also the question of showcasing the political party which each official belongs to.
-                With so many options it was difficult to choose what contact info to show.
+                Representatives have websites as well.
+                People can also send in hand letters to a physical address. 
+                With so many options it was difficult to choose what contact info to show. 
+                It is better to choose a small subset of information to showcase rather than overwhelm the user with all the contact information.
                 
-                Examples of my information experiments can be found below
+                Examples of my information experiments can be found below:
             +img("govcontact_wireframes-cards.png", "wireframes")
             +subheader("Final Wireframes")
             span.project-p.
                 The final decision for contact info was to include a phone number, an email address, and links to at least Twitter and Facebook.
-                The online research on the efficacy as well as the digital availability and convenience supported my decision. 
-                Interviews with represenatives' offices showed that phone and emails were also the most effective forms of contact.
+                The online research and interviews with government employees supported my decision on three areas: (1) efficacy, (2) digital availability, and (3) convenience of each contact.
+                
             span.project-p.
                 To keep it simple, the web app is a search screen, similar to Google or another search engine. 
                 The query is to type in a home address, which is the most accurate key to find a person's representatives.
@@ -118,8 +121,8 @@ block content
                 To convey the governmental nature of the app, graphics were designed around stars, flags, and government buildings.
                 The colors helped accent this tone. 
                 Color was also important to indicate political party.
-                Democrats would be given a blue icon, republicans would given a red icon, an independents/moderates/unknown party would not given an icon.
-                The fonts Lato and Roboto offered strong readability. Varying fonts better highlighted information (e.g. Lato Bold for a representative's name)
+                Democrats would be given a blue icon, republicans would given a red icon, an independents/moderates/unknown party would not be given an icon.
+                The fonts Lato and Roboto offered strong readability. Varying fonts better highlighted information (e.g. Lato Bold for headers; Roboto for paragraph fonts and labels)
             +img("style-guide.png", "styles").white-bg
         
         +section("Prototyping")
@@ -145,6 +148,7 @@ block content
             span.
               The second half of the app is to display all the representatives' information in a card format, which was decided upon in the wireframe stage.
               Every representative is required to have atleast an email and phone number. A Twitter or Facebook handle will also be displayed.
+              All of this takes place on the same screen, right below the search bar.
             +img("final-result2.png", "final") 
         +section("User Testing")
             span.project-p.
@@ -152,24 +156,36 @@ block content
                 Testing the app revealed: 
             +list()
               +listItem("Filtering and Sorting Options")
-                | Most participants spent a lot of time scrolling to learn about representatives. Every participant had some diffculty when asked to find a specific representative
+                | Most participants spent a lot of time scrolling to learn about representatives. 
+                | Every participant had some diffculty when asked to find a specific representative.
                 | A sorting or filtering option would help solve this usability issue.
               //- +listItem("Increase text size of links")
-                | Another common usuability issue was that participants had trouble finding and hovering over links to contact information e.g. a Twitter handle. The root of the problem was the text size, as people tended to squint when hovering over a link. 
+                | Another common usuability issue was that participants had trouble finding and hovering over links to contact information e.g. a Twitter handle. The root of the problem was the text size, as people tended to squint when hovering over a link.
+              +listItem("Evaluating brand")
+                | Participants were asked to rate how well a given adjective described GovContact.
+                | When given the adjective "politically neutral," most participants said it did not describe GovContact well.
+                | Political party was the only thing that a citizen would know about a representative. 
+                | There might be a better way to use color and brand to showcase GovContact in a more neutral way. 
               +listItem("Web may not be right platform")
-                | Most participants they were more likely to use a search engine if they were already on a browser. As a website, GovContact may not provide as much value.
+                | Most participants they were more likely to use a search engine if they were already on a browser. 
+                | As a website, GovContact may not provide as much value.
               
               //- Users unsure about who candidates are    
             
             //-add specific features
         +section("Turn to a Mobile App")
             span.
-              To provide better value, GovContact should be a mobile app. There wouldn't be any link to follow. 
+              To provide better value, GovContact should be a mobile app. 
+              The idea came from a user testing participant who might store a representative's contact information on their mobile phone.
+              Although it was only a single participant who thought of this, the comment inspired an idea to create a contact book of government representatives.
+              There wouldn't be any link to follow. 
               By taking up visual space inside a phone, the app would also serve as a reminder to a citizen.
               A mobile would also allow a person to call a representative directly from their phone.
+              The concept is to put your Senator in your contact book. 
+              
         +section("Style Update")
             span.
-              After user testing, I decided to update the brand of GovContact.
+              After user feedback, I decided to update the brand of GovContact. 
               Instead of contrasting, polarized colors of red and blue, the primary color is a purple, the unity of the former.
               To convey the feeling of government, I used photographs of building and monuments.
             +img("visual-design.png", "visual design")
@@ -238,7 +254,7 @@ block content
           +subheader("Future Steps")
           span.
             The next steps for the app would be to test the click-through prototype with real users.
-            The purpose of the usability test is to identify the UX problems that ought to be fixed before development
+            The purpose of the usability test is to identify the UX problems that ought to be fixed before development.
             Afterwards, and iOS and Anroid app can be programmed and deployed to their respective stores. 
           +subheader("Possible Features")
           +list()
@@ -256,7 +272,7 @@ block content
               | In this manner, I was learned how to explore brand beyond the expected to create something unique.
             +listItem("Knowing what type to prototype")
               | I utilized two types of prototypes: code prototypes and click-through prototypes.
-              | The web prototype made in React.js was useful for testing how someone would be most likely to interact with the app
+              | The web prototype made in React.js was useful for testing how someone would be most likely to interact with the app.
               | However programming took up a lot of time compared to the click-through protoype, which I could focus more on the design of GovContact.
               | The lesson I learned was when to use each kind of prototype.
           
