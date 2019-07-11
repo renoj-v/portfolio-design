@@ -23,24 +23,91 @@ block content
                     | View Full Mockups
                 +link(images+"CCMCWireframes.pdf")
                     | View Full Wireframes
-        +problem("How might we help doctors prescribe the proper antibiotic?")
+        +problem("How might we help doctors prescribe the right antibiotic?")
+
+        +section("Research")
+            +subheader("Stakeholder Interviews")
+            +subheader("Key Insights")
+            +list()
+              +listItem("The key user base will be doctors, with medical training to diagnose patients")
+              +listItem("Medical facilities may not have the recommended antibiotic on hand, but substitute medication might be available")
+              +listItem("Doctors are likely to have a mobile device")
+              +listItem("Wi-fi may not be reliable, so we have to reduce load time")
+              +listItem("Medical Information on the app has to be updated by a medical professional")
+            +subheader("Personas")
+              //- describe who we are designing for
+        +section("Two Part Solution")
+          +subheader("Part 1: Mobile App for Doctors")
+          +subheader("Part 2: Web Content Management System")
+        //- img("how systems interact")
+        //-+section("User Journeys")
+          +subheader("Combining both user stories into one timeline")
+        //- img("user stories")
+        
+        
         +section("Process")
             +img("docs_process-diagram.jpg")
-        +section("Research")
-            span.project-p.
-                When I was onboarded onto the project, most of the research and requirements were already completed. Here are the insights we had:
-            +list()
-                +listItem("The antibiotic a doctor recommends can change with where they received their training")
-                +listItem("A medical facility may not always have the recommended antibiotic on hand")
-                +listItem("The information about antibiotics needed to be easily editable by doctors at CCMC")
-        
         +section("User Stories")
             span.project-p.
                 These are some of the requirements for the Antibiotics application. 
                 The goal of the project of the project was to provide doctors a way to provide better a diagnosis and medication
             +img("docs_user-stories.jpg", "user stories")
-            
+      
         +section("Wireframes")
+          +subheader("Technical Challenges")
+          span.
+          +subheader("Mobile App for Doctors")
+          .display-flex
+            .grid-6
+                +img("mock-diagnosis-wire.png", "diagnosis")
+            .grid-6.pad-15
+                +subheader("Diagnosis Information")
+                span.
+                  When a doctor finds the diagnosis that they are looking for, 
+                  they are given a list of antibiotics that could be used to treat the disease as well as 
+                  the organisms that might be repsonsible.
+            .grid-6
+                +img("mock-search-wire.png", "search screen")
+          
+          
+          
+          +subheader("CMS for Admins")
+          +img("mocks-antibiotic-search-wire.png", "antibiotic search")
+          +img("mocks-dashboard-search-wire.png", "antibiotic search")
+          +img("mocks-edit-diagnosis-wire.png", "antibiotic search")
+        
+        +section("User Flow")
+        +section("Styles and Icons")
+          +subheader("UI choices")
+          +subheader("Icons to navigate app")
+          
+          
+        +section("Solution")
+          +img("mocks-diagnosis.png", "diagnosis")
+          +img("mocks-search-result.png", "search screen")
+          +img("mocks-antibiotic-cms.png", "antibiotic search")
+          +img("mocks-edit-diagnosis.png", "antibiotic search")
+          +subheader("Mobile App: Search for Diagnosis")
+          +subheader("Mobile App: Find Recommended Medication & Causal Organism")
+          +subheader("CMS: Dashboard")
+          +subheader("CMS: Adding New Content")
+        
+        +section("Conclusion")
+          +subheader("Project on hold")
+          +subheader("Next Steps")
+            +list()
+              +listItem("User Testing")
+              //-How and Why?
+              +listItem("Passing Documents to Developers")
+          +subheader("Lessons")
+            +list()
+              +listItem("Work with other designers and developers")
+              +listItem("Understanding technical limitions")
+              
+            
+            
+            
+    //-    +section("Wireframes")
             span.project-p.
                 After receiving the user stories, another designer and set out to wireframe the best way to organize application.
                 The biggest UX consideration were how to connect information about medical diagnoses, 
@@ -70,7 +137,7 @@ block content
             //- feature: search for a a diagnosis, antibiotic, or organims
             //- feature: diagnosis page
             //- feature: CMS add diagnosis
-            //-- feature: connect diagnosis to antibioitc and oragnism
+            //-- feature: connect diagnosis to antibiotic and oragnism
         .external-links
             +link(images+"CCMCMockups.pdf")
                 | View Full Mockups

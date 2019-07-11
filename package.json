@@ -64,7 +64,7 @@
             "script": "yarn build",
             "commit": "next build",
             "user": {
-                "email": "renoj.varghese@uconn.edu",
+                "email": "renoj.creates@gmail.com",
                 "name": "Renoj Varghese"
             }
         }
