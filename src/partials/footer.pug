@@ -1,18 +1,2 @@
 mixin footer(footer)
     footer.footer
-        .super-container
-            .footer-inner 
-                .get-in-touch.footer-section
-                    h3.footer-header.header
-                        |Get in Touch
-                    p.footer-p Say hello at 
-                        a(href="mailto:renoj@uconn.edu") renoj@uconn.edu
-                    p.weak This site was proudly built in Pug, SASS, and Webpack
-                    
-                .footer-socials.footer-section
-                    h3.footer-header.header Checkout More
-                    ul.socials-list
-                        each social in footer.socials
-                            li.socials-item 
-                                a.socials-link(href=social.link)=social.name
-                    a(href=topDir + "static/docs/resumeRenojVarghese.pdf")="View Resume"

@@ -21,7 +21,6 @@ html(lang="en")
         +nav(nav, topDir)
         .content
             block content
-        +break-no-logo
         +footer(footer)
         each js in self.htmlWebpackPlugin.files.js
             script(type='text/javascript', src=js)

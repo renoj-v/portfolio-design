@@ -3,38 +3,4 @@ extends ./layout
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
     
-    .super-container#projects
-
-        .hero.fade-in.delay-little.align-center
-            h1.header.bold="Renoj Varghese\'s Portfolio"
-            .display-flex
-            
-                .about-me.grid-6
-                  h2.align-left="About Me"
-                  p.about-me-p.
-                    Hi. My name is Renoj. I am a front end developer.
-                    My broad background is in computer science, UX/UI design, user research, motion design, and graphic design.
-                    Front end development is a great fit because it provides balance between all of my experiences.
-                    I work best in a interdiscplinary role where I can combine my skills to make something really meaningful.
-                
-                .process.grid-6
-                  h2.align-left="Background"
-                  p.process-p.
-                    I'm also a recent grad of the University of Connecticut.
-                    My majors were Digital Media & Design and Computer Science.
-                    With my background, I am able to bring user experience to life. 
-                    
-        .container.all-projects
-          h2.home-header.bold.header="Front End Developent Projects"
-          .container.clearfix
-              each page in subpages
-                  .portfolio-link
-                      .portfolio-item.display-flex
-                          .center.rotate-high.grid-4.pad-20
-                              .img-container
-                                  img(src=page.icon alt=page.title)            
-                          .grid-8.pad-20
-                            h3.center-header.header=page.title
-                            p.center-paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae mollis est. Mauris id accumsan leo, sit amet hendrerit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut pulvinar mi, nec malesuada massa. Cras eu accumsan tortor. In ultricies in dolor nec dictum. Proin sit amet luctus diam. Praesent finibus sapien ut sollicitudin dignissim. Cras sit amet magna at lacus venenatis dictum ac vel tortor. Maecenas eu vestibulum lectus."
-                            a(href=page.filename).bold
-                              | Read the Case Study
+    .hello="Renoj"
