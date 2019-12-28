@@ -1,227 +1,35 @@
-@keyframes spin {
-    0% {
-        transform: rotateZ(0deg) translateZ(0);
-        /*help use GPU*/
-    }
 
-    100% {
-        transform: rotateZ(360deg) translateZ(0);
-    }
-}
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-.fade-in {
-    opacity: 0;
-    animation: fade-in 0.5s ease-in forwards 0.1s;
-}
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: #5f3507;
-}
-.intro-header {
-    margin: 10px;
-}
-.intro-paragraph {
-    margin: 10px;
-    margin-bottom: 30px;
-}
-.portal {
-    animation: spin 300s ease infinite;
-    margin: 10px 3%;
-    transition: 0.4s all ease;
-}
-
-.portal:hover {
-    -webkit-filter: drop-shadow(0px 3px 15px white);
-    filter: drop-shadow(0px 0px 0px white);
-    filter: drop-shadow(0px 3px 15px white);
-}
-
-.delay-little {
-    animation-delay: 0.2s;
-}
-.delay-medium {
-    animation-delay: 0.3s;
-}
-.delay-high {
-    animation-delay: 0.4s;
-}
-
-.center-text {
-    text-align: center;
-    position: relative;
-    top: -15px;
-}
-
-.center-header,
-.center-paragraph {
-    transition: color 0.2s ease;
-}
-.center-paragraph {
-    font-size: 14px;
-}
-.portfolio-item:hover .center-header,
-.portfolio-item:hover .center-paragraph {
-    color: #262261;
-}
-
-.hero {
-    padding-top: 40px;
-    max-width: 950px;
-    margin: 0 auto;
-    text-align: center;
-    .center-text {
-        margin-top: 60px;
-    }
-}
-.all-projects {
-  margin-top: 15px;
-}
-#hero-img {
-    max-width: 500px;
-    margin: 0 auto;
-}
-.title {
-    margin-bottom: 0;
-}
-.rotation-control {
-    display: inline-block;
-    transform: rotateZ(120deg);
-    transform-origin: 50% 50% 0 !important;
-    -webkit-transform-origin: 50% 50%;
-}
-
-.center {
-    position: relative;
-    margin: auto;
-    min-width: 300px;
-    min-height: 300px;
-    transition: background 0.4s ease;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.portfolio-item {
-    .center::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: url("../../static/img/portals-30.svg") no-repeat;
-        background-size: cover;
-        min-width: 300px;
-        min-height: 300px;
-        animation: spin 300s ease infinite;
-        transition: background 0.4s ease;
-    }
-}
-.active {
-    .portfolio-link {
-        opacity: 1;
-    }
-    .portfolio-item {
-        .center::before {
-            background: url("../../static/img/portals-29.svg") no-repeat;
-        }
-        &:hover {
-            .center::before {
-                background: url("../../static/img/portals-30.svg") no-repeat;
-            }
-        }
-    }
-}
 .container {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  padding:30px;
 }
 
-.portfolio-item:hover .img-container:after {
-    opacity: 1;
-}
-
-.rotate-slight {
-    transform: rotateZ(45deg);
-}
-
-.rotate-slight .img-container {
-    transform: rotateZ(-45deg);
-}
-
-.rotate-medium {
-    transform: rotateZ(90deg);
-}
-
-.rotate-medium .img-container {
-    transform: rotateZ(-90deg);
-}
-
-.rotate-high {
-    transform: rotateZ(135deg);
-}
-
-.rotate-high .img-container {
-    transform: rotateZ(-135deg);
-}
 
 .portfolio-link {
-    opacity: 0;
     transition: all 0.4s ease 0.4s;
+    margin: 10px 10px 75px;
 }
 
 .portfolio-item {
-    text-align: center;
-    max-width: 300px;
     margin: 0 10px;
-    opacity: 0;
     transition: all 0.4s ease;
-    animation: fade-in 0.4s ease-in forwards 0.1s;
+    width:100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
 }
 .portfolio-item .img-container {
     position: relative;
-    width: 200px;
-    height: 200px;
-    top: 50px;
-    left: 50px;
+    max-width: 320px;
+    max-height: 320px;
+
     overflow: hidden;
-    border-radius: 100%;
     transition: 0.4s all ease 0.1s;
 
 }
-.portfolio-item .img-container:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    transition: 0.4s all ease 0.1s;
-    background: radial-gradient(
-        ellipse at center,
-        rgba(30, 87, 153, 0.1) 0%,
-        rgba(101, 45, 144, 0.4) 100%
-    );
-    opacity: 0;
-}
+
 .portfolio-item img {
     width:100%;
     min-width: 100%;
-    width: auto;
-    height: 100%;
-    max-width: none;
 }
 
 .about-me-p, .process-p {
@@ -229,4 +37,8 @@ html {
   font-size: 16px;
   line-height: 1.5;
   padding: 15px;
+}
+
+.home-header {
+  padding-left:65px;
 }
