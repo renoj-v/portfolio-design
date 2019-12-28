@@ -1,23 +1,21 @@
 body {
-    background: #ffebd7;
     margin: 0;
 }
 a,
 a:focus,
 a:visited {
     text-decoration: none;
-    color: $tea-brown;
+    color:$purple;
     &.link {
         transition: all 0.2s ease;
-        &:hover {
-            color: $purple;
 
-        }
+    }
+    &:hover {
+        text-decoration: underline;
     }
 }
 h1 {
     font-size: 42px;
-    color: #bd772a;
 }
 h2 {
     font-size: 32px;
@@ -81,18 +79,7 @@ iframe {
 .weak {
     font-size: 10px;
 }
-.break {
-    width: 100%;
-    background: url("../../static/img/separator.png") no-repeat center center;
-    height: 20px;
-    margin-top: 20px;
-}
-.main-logo {
-    max-width: $logo-width-wide;
-    margin: 0 auto;
-    position: relative;
-    bottom: 42px;
-}
+
 .problem {
   text-align: center;
 }
@@ -102,10 +89,19 @@ iframe {
 box-sizing: border-box;
   padding:15px;
 }
+.pad-20 {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;
+  padding:20px;
+}
 .caption {
   text-align:center;
   padding:10px;
   padding-top: 5px;
   font-style:italic;
   font-size:16px;
+}
+.align-left {
+  text-align: left;
 }
