@@ -1,27 +1,6 @@
-mixin navitem(page, topDir)
-    li.nav-list-item
-        a.nav-link(href=topDir+ page.filename)=page.title
-mixin externallink(name, link)
-        a.nav-link-ext(href=link)=name
-mixin dropnavlist(pages, name, topDir)
-    .drop-down
-        a.drop-down-trigger=name
-        ul.nav-list.drop-down-list
-            each page in pages
-                +navitem(page, topDir)
+
 
 mixin nav(nav,topDir)
-    nav.nav.fade-in.delay-little
-        .super-container
-            
-            ul.nav-list
-                li.nav-list-item 
-                    a(href=topDir)
-                        | Renoj Varghese
-                li.nav-list-item.push-right
-                    each item in nav.others
-                        +externallink(item.name, item.link)
-                    each item in nav.socials
-                        +externallink(item.name, item.link)
+    nav.nav
         
             
