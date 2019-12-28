@@ -48,6 +48,7 @@ const scss = {
             }
         },
         "postcss-loader",
+        "resolve-url-loader",
         "sass-loader"
     ]
 };
@@ -60,6 +61,14 @@ const images = {
         }
     }
 };
+const fonts = {
+    test: /\.(woff2?|ttf|otf|eot|svg)$/,
+    exclude: /node_modules/,
+    loader: 'file-loader',
+    options: {
+        name: '[path][name].[ext]'
+    }
+}
 const config = {
     entry: { main: "./src/main.js" },
     output: {
@@ -67,7 +76,7 @@ const config = {
         filename: "[name].js"
     },
     module: {
-        rules: [babel, pug, scss, images]
+        rules: [babel, pug, scss, images,fonts]
     },
     devServer: {
         contentBase: path.join(__dirname, "/dist/"),

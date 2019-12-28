@@ -35,6 +35,7 @@ current_projects.unshift({
     imgDir: "static/img/" + token + "/",
     icon: "static/img/" + token + "/icon.jpg",
     token: token,
+    tags: [],
     descripiion: description
 });
 
