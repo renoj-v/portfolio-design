@@ -36,7 +36,7 @@ current_projects.unshift({
     icon: "static/img/" + token + "/icon.jpg",
     token: token,
     tags: [],
-    descripiion: description
+    description: description
 });
 
 fs.writeFileSync(

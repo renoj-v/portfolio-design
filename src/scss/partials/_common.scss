@@ -1,7 +1,101 @@
+* {
+    transition: all .1s linear;
+}
+body {
+    margin:0;
+    padding:0;
+}
+img {
+    max-width: 100%;
+}
 .content-container {
+    padding: 30px;
     max-width: 50rem;
     margin:0 auto;
-    @media (max-width: 1280px) {
-        padding: 30px;
+    @media (min-width: 1280px) {
+        padding:0;
     }
+}
+.content-med-container {
+    padding: 30px;
+    max-width: 60rem;
+    margin:0 auto;
+    @media (min-width: 1280px) {
+        padding:0;
+    }
+    
+}
+.content-large-container {
+    padding: 30px;
+    max-width: 70rem;
+    margin:0 auto;
+    @media (min-width: 1280px) {
+        padding:0;
+    }
+    
+}
+.project-container {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+.whole-height {
+    min-height: 100vh;
+}
+
+.flex {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.grid-2-item {
+    width:48.5%;
+    &.left {
+        padding-right:1.5%;
+    }
+    &.right {
+        padding-left:1.5%;
+    }
+}
+.grid-3-item {
+    width: 31.25%;
+    &.left {
+        padding-right:1.5%;
+    }
+    &.middle {
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+    }
+    &.right {
+        padding-left: 1.5%;
+    }
+}
+.grid-3-2-item {
+    width:62.5%;
+    &.left {
+        padding-right:1.5%;
+    }
+}
+.mb-s {
+    margin-bottom: .5rem;
+}
+.mb-m {
+    margin-bottom: 1rem;
+}
+.mb-l {
+    margin-bottom: 1.5rem;
+}
+.mb-xl {
+    margin-bottom: 2rem;
+}
+.mr-xl {
+    margin-right: 2rem;
+}
+
+.small-caps {
+    font-variant: small-caps;
+    letter-spacing: .0625rem;
+}
+ul {
+    list-style: none;
+    padding-left:0;
 }

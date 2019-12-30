@@ -2,19 +2,21 @@ extends ./layout
 
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
-    
-    .content-container
-        h1 Hello
-        h2 My name is Renoj
-        h3 This is my Portfolio
-        h4 I'm so glad you could be here
-        h5 Say hi when you get a chance
-        h6 product design
-        p 
-            .
-                My name is Renoj
-                kjdalkdjakljdaksjdlkasjda
-                d
-                sdajsdlajsda
-                sdadkjaslkdjalksdjalksd
-                adjaksljdlaskjdlwjq oeqp wojqmdw adjaodasjdla
+    .content-med-container.home-hero
+        .align-middle
+            h1.mb-xl Renoj, a product designer with a technical mind and creative heart.
+            h5 Check out my work below
+            h5 And make sure to say “Hi” at renoj@uconn.edu
+    .projects
+        each project in subpages
+            - const bg_url = project.icon
+            div(class="project " + project.token)
+                .project-background
+                    +img_absolute(images + project.token + "/icon.png")
+                .content-large-container.flex
+                    .project-text-block
+                        h3.mb-s=project.title
+                        p.mb-xl=project.description
+                        a(href=project.filename) 
+                            h4 Read More
+        

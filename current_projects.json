@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "filename": "projects/simon/index.html",
+        "template": "src/projects/simon.pug",
+        "inNav": true,
+        "title": "Simon Says the Weather",
+        "topDir": "../../",
+        "imgDir": "static/img/simon/",
+        "icon": "static/img/simon/icon.png",
+        "token": "simon",
+        "tags": [],
+        "description": "A mobile app to help those who aren't always prepared for the weather. It can make or break our day. Let's make sure we're prepared"
+    }
+]

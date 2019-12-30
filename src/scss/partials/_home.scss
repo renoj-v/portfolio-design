@@ -1,0 +1,32 @@
+.home-hero {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+}
+.project {
+    position:relative; 
+    @media (min-width: 1024px) {
+        height:100vh;
+        &.simon {
+            color: #ffffff;
+        }
+    }
+   
+}
+.project-background {
+    width:100%;
+    height:auto;
+    @media (min-width: 1024px) {
+        width: 100%;
+        height: 100%;
+    }
+}
+.project-text-block {
+
+    @media (min-width: 1024px) {
+        width: 30rem;
+        position: absolute;
+        top: 50%;
+        right: 5rem;
+        transform: translateY(-50%);
+    }
+}

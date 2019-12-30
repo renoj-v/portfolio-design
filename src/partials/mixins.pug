@@ -1,0 +1,9 @@
+mixin img(source, alt_text)
+    .img-container
+        img(src=images+source, alt=alt_text)
+        block
+
+mixin img_absolute(source, alt_text)
+    .img-container
+        img(src=source, alt=alt_text)
+        block

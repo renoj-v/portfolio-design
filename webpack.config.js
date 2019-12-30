@@ -81,7 +81,8 @@ const config = {
     devServer: {
         contentBase: path.join(__dirname, "/dist/"),
         watchContentBase: true,
-        port: 8000
+        port: 8000,
+        disableHostCheck: true
     },
     plugins: [
         ...plugins,
