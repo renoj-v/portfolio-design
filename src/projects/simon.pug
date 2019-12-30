@@ -1,0 +1,122 @@
+extends ../layout
+
+block content
+    .project
+      .hero.solution-block
+        +img("simon-hero-large.png")
+      .intro.content-container.project-container
+        h1.project-title Simon Says the Weather
+        h2 Problem
+        h3 How might we inform busy adults about the weather so they can plan their day?
+        p.
+          The weather affects everyone, from what we wear to our daily schedule. It can be quite unpredictable, especially in my area. If we are not prepared, then our whole day can be thrown off. The goal of this app to make sure busy adults, those who may not always be thinking about the weather, are informed and ready to act.
+      .solution-block
+        .content-container
+          h2 Solution
+          .solution.grid.grid-2.flex
+            .grid-2-item.left
+                h3 Meet Simon, a personal assistant to help you with the weather
+                p Similar to voice assistants, like Amazon Alexa, Google Home, and Siri, Simon is a user's personal weatherman. He works as hard as the busy people he informs about the weather.
+            .grid-2-item.right
+                +img("sol-1.png")
+          .solution
+            +img("sol-2.png")
+            h3 Widgets prepare you for the weather outside the app
+            p.
+              Instead of bringing people to the forecast, let's bring the forecast to the people. Widgets allow Simon to report the weather on the platforms busy adults use.
+          .solution.grid-3
+            .grid-3-2-item
+              +img("sol-3.png")
+            h3 Notifications to report the weather when you need it
+            p.
+              Research showed that people check the weather the most during the morning. Notifications can report the weather in the morning while also alerting busy adults to weather changes throughout the day.
+      .content-container
+          h2 Research
+          h3 User Interviews and Analysis
+          p.
+            My first step in the process was to talk to my potential users: busy adults. In conducted 5 interviews with individuals in my area to understand how often they check the weather and how it affects their day.
+          .quote-box
+            h2.quote One thing my weather app doesn’t do is greet me … something like ‘Hey Carrie! It’s going to be a sunny day. Wear suncscreen.’
+            h5.quote-source Carrie
+          .quote-box
+            h2.quote I check my Outlook calendar first thing in the morning. I’d be more informed about the weather if the forecast showed up there
+            h5.quote-source Matt
+          h3 Competitive Analysis
+          p.
+            Some of the users I interviewed already used a weather app. I investigated the following applications to understand their experiences
+      .insights-opportunities.content-container
+          .i-o
+            h4.insight Busy adults already use many digital applications for work and play 
+            p.opportunity Maybe we could design a way to provide the forecast in apps busy adults already use
+          .i-o
+            h4.insight Users spend a lot of time thinking about how to dress for the weather
+            p.opportunity Maybe we could make suggestions on how busy adults could prepare what they wear 
+          .i-o
+            h4.insight Weather apps vary in features and in how they visualize the forecast
+            p.opportunity Maybe we could think of a new way to report the weather and adapt existing heuristics 
+      .content-container
+          h3 Personas
+          p.
+            Personas summarized my research efforts and helped me take a user-centered design approach. When considering ideas and concepts, I considered what Jennifer and David would need in a weather app
+          +img("personas.png")
+      .content-container
+          h2 Design
+          h3 Wireframe Prototypes
+          p.
+            After research, I went directly to wireframes and prototyping ideas to test with my users. The goal was to get out different concepts and gauge user reactions and feedback
+          .grid.grid-3.flex
+            .grid-3-item.left
+              +img("wire-1.png")
+              caption As a control, this weather app reflects interfaces I saw in my competitive analysis 
+            .grid-3-item.middle
+              +img("wire-2.png")
+              caption This stage, I tried out the idea of Widgets to provide the forecast in apps people already use
+            .grid-3-item.right
+              +img("wire-3.png")
+              caption I experimented with the idea of a friendly personal assistant, an Alexa for the weather.
+          h3 Guerilla Testing with Users
+          p.
+            I tested the both concepts with 5 user interviews. Participants were asked to find current information about the weather and compare their experiences across the different concepts.
+      .insights-opportunities.content-container
+          .i-o
+            h4 4/5 participants were able to understand how to use widgets and how it would affect other apps they use
+          .i-o
+            h4 Participants liked the idea of having a personal weatherman, but were unlikely to interact with a chat
+            p Maybe the personal weatherman idea could influence the app in a different way
+          .i-o
+            h4 Each of the three concepts had something valuable
+            p Maybe we could combine the three concepts into a single app
+      .content-container
+          h3 Wireflow
+          p.
+            Widgets were a strong concept that participants enjoyed. To tie them into a common weather app, I created different user flows to see how they might fit in.
+          caption Here’s the final user flow I landed on
+          +img("user-flow.png") 
+          h3 Character and Visual Design
+          p.
+            The weatherman concept came around when considering visual design. Creating the character of Simon helped define the colors and fonts that would support his style
+          +img("styleguide.png")
+      .conclusion.content-container
+          h2 Conclusion
+          h3 Results
+          +img("results.png")
+block css
+  style.
+    body {
+      background: #fcfeff;
+    }
+    .solution-block {
+      background: #80ACED
+    }
+    .solution-block h1 {
+      color: #fcfeff
+    }
+    .solution-block h2 {
+      color: #fcfeff
+    }
+    .solution-block h3 {
+      color: #fcfeff;
+    }
+    .solution-block p {
+      color: #fcfeff;
+    }
