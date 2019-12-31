@@ -10,5 +10,54 @@
         "token": "simon",
         "tags": [],
         "description": "A mobile app to help those who aren't always prepared for the weather. It can make or break our day. Let's make sure we're prepared"
+    },
+    {
+        "filename": "projects/govcontact/index.html",
+        "template": "src/projects/govcontact.pug",
+        "inNav": true,
+        "title": "GovContact",
+        "topDir": "../../",
+        "imgDir": "static/img/govcontact/",
+        "icon": "static/img/govcontact/icon.png",
+        "token": "govcontact",
+        "tags": [],
+        "description": "A mobile app to increase civic engagement in the U.S. The goal is to reframe how we engage in politics to make sure everyone's voice is heard"
+    },
+    {
+        "filename": "projects/subconscious/index.html",
+        "template": "src/projects/subconscious.pug",
+        "inNav": true,
+        "title": "Subconscious Mental Health Storytelling Platform Redesign",
+        "topDir": "../../",
+        "imgDir": "static/img/subconscious/",
+        "icon": "static/img/subconscious/icon.png",
+        "token": "subconscious",
+        "tags": [],
+        "description": "Subconscious is a non-profit dedicated to telling real people's mental health stories. My role was to investigate how we could engage in storytelling in a mental health community."
+    },
+    {
+        "filename": "projects/jobhunting/index.html",
+        "template": "src/projects/jobhunting.pug",
+        "inNav": true,
+        "title": "JobHunting Animated Film",
+        "topDir": "../../",
+        "imgDir": "static/img/jobhunting/",
+        "icon": "static/img/jobhunting/icon.png",
+        "token": "jobhunting",
+        "tags": [],
+        "description": "A satirical animation about the job search process. The idea came from the shared experiences my friends and I had looking for jobs/internships."
+    },
+    {
+        "filename": "projects/sanskriti/index.html",
+        "template": "src/projects/sanskriti.pug",
+        "inNav": true,
+        "title": "Sanskriti Logo Design",
+        "topDir": "../../",
+        "imgDir": "static/img/sanskriti/",
+        "icon": "static/img/sanskriti/icon.png",
+        "token": "sanskriti",
+        "tags": [],
+        "description": "Sanskriti is the University of Connecticut’s traditional Indian culture club. I was hired as a freelance graphic designer to help them redesign their logo."
     }
+
 ]

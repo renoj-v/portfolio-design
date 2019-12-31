@@ -7,7 +7,9 @@ body {
 }
 img {
     max-width: 100%;
+    display: block;
 }
+
 .content-container {
     padding: 30px;
     max-width: 50rem;
@@ -18,7 +20,7 @@ img {
 }
 .content-med-container {
     padding: 30px;
-    max-width: 60rem;
+    max-width: 50rem;
     margin:0 auto;
     @media (min-width: 1280px) {
         padding:0;
@@ -47,48 +49,41 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.grid-2-item {
-    width:48.5%;
-    &.left {
-        padding-right:1.5%;
+.grid-2-item, .grid-3-item, .grid-3-2-item {
+    margin-top: 2rem;
+}
+@media (min-width:768px) {
+    .grid-2-item {
+        width:48.5%;
+        margin-top: 0;
+        &.left {
+            padding-right:1.5%;
+        }
+        &.right {
+            padding-left:1.5%;
+        }
     }
-    &.right {
-        padding-left:1.5%;
+    .grid-3-item {
+        width: 31.25%;
+        margin-top: 0;
+        &.left {
+            padding-right:1.5%;
+        }
+        &.middle {
+            padding-right: 1.5%;
+            padding-left: 1.5%;
+        }
+        &.right {
+            padding-left: 1.5%;
+        }
     }
-}
-.grid-3-item {
-    width: 31.25%;
-    &.left {
-        padding-right:1.5%;
+    .grid-3-2-item {
+        margin-top: 0;
+        width:62.5%;
+        &.left {
+            padding-right:1.5%;
+        }
     }
-    &.middle {
-        padding-right: 1.5%;
-        padding-left: 1.5%;
-    }
-    &.right {
-        padding-left: 1.5%;
-    }
-}
-.grid-3-2-item {
-    width:62.5%;
-    &.left {
-        padding-right:1.5%;
-    }
-}
-.mb-s {
-    margin-bottom: .5rem;
-}
-.mb-m {
-    margin-bottom: 1rem;
-}
-.mb-l {
-    margin-bottom: 1.5rem;
-}
-.mb-xl {
-    margin-bottom: 2rem;
-}
-.mr-xl {
-    margin-right: 2rem;
 }
 
 .small-caps {
@@ -98,4 +93,5 @@ img {
 ul {
     list-style: none;
     padding-left:0;
+    margin-top:0;
 }

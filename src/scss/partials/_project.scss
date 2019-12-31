@@ -1,5 +1,5 @@
 .hero {
-    height:30vw;
+    height:35vw;
     position: relative;
     overflow: hidden;
     .img-container {
@@ -17,4 +17,32 @@
 .solution {
     padding-top: 10vh;
     padding-bottom: 10vh;
+}
+.project-container {
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh; 
+}
+.project-extra-padding {
+    padding-top:15vh;
+    padding-bottom:15vh;
+}
+.project-p {
+    margin-bottom: 3rem;
+}
+.quote {
+    margin-bottom: 1rem;
+}
+
+.tint-box {
+    background: #F1F1F1;
+}
+.insights-opportunities {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.i-o-header {
+    margin-bottom: 3rem;
+}
+.i-o {
+    margin-bottom: 2rem;
 }
