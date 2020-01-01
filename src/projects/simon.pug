@@ -11,16 +11,13 @@ block content
         //p.project-p.
           The weather can be quite unpredictable, especially where I live in the Northeast. If we're not prepared, then our whole day can be thrown off. The goal of this app to make sure busy adults, those who may not always be thinking about the weather, are informed and ready to act.
         h3 Overview
-        
-          
-      
           h4 Role
           p.mb-l Product Designer, UX Researcher
           h4 Team
           p.mb-l Solo, with help from mentors and professors
           h4 Duration
           p 6 weeks
-      .solution-block.project-container
+      .tint-box.project-container
         .content-container
           
           .solution.grid.grid-2.flex
@@ -116,20 +113,15 @@ block content
           p.project-p.
             The weatherman concept came around when considering visual design. Creating the character of Simon helped define the colors and fonts that would support his style
           +img("styleguide.png")
+
       .conclusion.content-container.project-container
-          
-
-
-      .solution-block
-        .conclusion.content-container.project-container
-          .solution
-            h6 conclusion
-            h3.mb-xxl Final Screens
-            +img("results.png")
+        .solution
+          h6 conclusion
+          h3.mb-xxl Final Screens
+          +img("results.png")
             
-      .content-container.project-container.project-extra-padding
-          a(href=topDir)
-            h3.mb-s.small-caps go back to home
+      +project-end-cta()
+
 block css
   style.
     

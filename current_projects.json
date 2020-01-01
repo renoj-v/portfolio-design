@@ -27,7 +27,7 @@
         "filename": "projects/subconscious/index.html",
         "template": "src/projects/subconscious.pug",
         "inNav": true,
-        "title": "Subconscious Mental Health Storytelling Platform Redesign",
+        "title": "Subconscious: Mental Health Storytelling Platform Redesign",
         "topDir": "../../",
         "imgDir": "static/img/subconscious/",
         "icon": "static/img/subconscious/icon.png",

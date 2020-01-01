@@ -14,3 +14,8 @@ mixin img_absolute(source, alt_text, exclude_container)
         .img-container
             img(src=source, alt=alt_text)
             block
+
+mixin project-end-cta()
+    .content-container.project-container.project-extra-padding
+          a(href=topDir)
+            h3.mb-s.small-caps go back to home

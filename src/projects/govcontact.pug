@@ -2,6 +2,156 @@ extends ../layout
 
 block content
     .project-container.content-container
-        h1.project-title Hello. 
-        h3 This is page is still a work in progress. Check back soon :)
-        a(href=topDir) Take me Home
+        
+        h1.project-title GovContact
+        h6 introduction
+        h2 It's difficult to keep track of who your government representatives are, let alone how to contact them. However, contacting your legislator is one of the simplest and effective ways to use your political voice. UX design has a role in political activism by designing how we can communicate with government officials.
+        h3 Overview
+        h4 Role
+        p.mb-l Product Designer, UX Researcher
+        h4 Team
+        p.mb-l Solo, with help from mentors and professors
+        h4 Duration
+        p 10 weeks
+    .solution-block.project-extra-padding
+        .content-container.project-container
+            h6 solution
+            .solution
+                +img("sol-1.png")
+                h3.mt-xl Help reps introduce themselves and where they stand on issues
+                p.project-p.
+                    One of the challenges of contacting your representatives is know who they are and what they care about. Representatives can create profiles on GovContact to communicate their political stances.
+            .solution.grid.grid-2.flex
+                .grid-2-item.left
+                    h3 Allow citizens to message reps in any format
+                    p.project-p.
+                        There are many ways to message a representative. An easy way is directly through GovContact. Citizens can write messages or share video recording with their representatives.
+                .grid-2-item.right
+                    +img("sol-2.png")
+            .solution
+                +img("sol-3.png")
+                h3.mt-xl A political feed that helps citizens remain informed and take action for petitions and bills
+                p.project-p.
+                    We can utilize primary source information, such as social media posts from representatives, petitions, and bills to help citizens to take little actions. Even making little engagements can make huge impact.
+    .project-extra-padding
+        .content-container.project-container
+            h6 research
+            h3 Focus Group
+            p.project-p.
+                8 of my classmates were able talk about how they might contact a rep and what roadblocks they would encounter.
+                          .quote-box
+            blockquote.quote.
+                It would be nice to have all my representatives' information in one place on my phone, kind of like having my Senator's phone number in my Contacts
+            h4.quote-source – Emily
+        .content-container.project-container
+            h3 Competitive Analysis
+            p.project-p.
+                There are other organizations trying to accomplish the same goal. Some analysis showed what could be improved in civic engagement apps
+            +img("competitive-analysis.png")
+        .content-container.project-container
+            h3 Government Office Interviews
+            p.project-p.
+                I contacted my own reps. I called their offices and conducted surveys on how a citizen could best get their voice heard.
+            h4.mb-xxl Takeaways
+            ul
+                li.mb-m
+                    | Employees in representatives' offices respond to citizens' messages
+                li.mb-m 
+                    | A citizen's message would be passed on to a representative or included as part of a summary report
+                li 
+                    | The best way for a citizen's voice to be heard is frequent, clear, and concise messages
+        .content-container.project-container
+            h3 Online Research
+            p.project-p.
+                A few studies, surveys, and articles revealed some new insights as well as why this problem was worth solving.   
+            .quote-box
+                blockquote.quote.
+                    [Representatives should] highlight their legislative priorities, describe their most recent actions, and spell out their
+                    overall positions on “hot topic” issues.
+                h4.quote-source – Tim Hysom – 
+                    a(href="http://www.congressfoundation.org/storage/documents/CMF_Pubs/cwc_recommendationsreport.pdf") "Communicating with Congress"
+    .tint-box
+        .insights-opportunities.content-container.project-container
+          h3.i-o-header Key Insights and Opportunities
+          .i-o
+            h4.insight So much time would be invested in researching each individual rep
+            p.opportunity Maybe we could present all a citizens' reps and their contact info in one place
+          .i-o
+            h4.insight It's important to citizens to trust the source of information
+            p.opportunity Maybe we could be transparent on where we get political information
+          .i-o.mb-0
+            h4.insight Frequent communication is important to affect real change
+            p.opportunity Maybe we could encourage simple and easy actions that a citizen could do often
+    .project-extra-padding 
+        .content-container.project-container
+            h3 Summarizing and Empathizing with Personas
+            +img("briana.png")
+            .mb-xxl
+            +img("terry.png")
+        .content-container.project-container
+            h6 design 
+            h3 User Stories
+            p.project-p.
+                To boil down the requirements to tackle into individual chunks, I created user story cards to refer to throughout the design process
+            +img("user-stories.png")
+        .content-container.project-container
+            h3 Wireframes
+            p.project-p.
+                The first step was to think of how we could design a tool to foster political communication. These concepts lead to many wireframes and deliberation on what GovContact would be.
+            .caption.mb-l Examples of how I thought we could represent contact info for a rep
+            +img("wireframes.png")
+        .content-container.project-container
+            h3 Rapid Prototype and Test
+            p.project-p
+                To try out different concepts, I tested a prototype with 5 users in an interview format. Their insights helped find what information was most important.
+    .tint-box
+        .insights-opportunities.content-container.project-container
+          h3.i-o-header Key Insights and Opportunities
+          .i-o
+            h4.insight To contact a rep, citizens need to learn what the rep stands for
+            p.opportunity Maybe we could show more political information about a rep
+          .i-o
+            h4.insight Citizens need to trust the source of information
+            p.opportunity Maybe we can include and link to where we are getting political information.
+          .i-o.mb-0
+            h4.insight Citizens need to be able to trust GovContact's neutrality
+            p.opportunity Maybe we can reflect this in other parts of the design
+    .project-extra-padding 
+        .content-container.project-container
+            h3 High Fidelity Mockups User Flow 
+            p.project-p.
+                From user feedback, I continued to iterate on design and construct a user flow.
+            +img("user-flow.png")
+        .content-container.project-container
+            h6 conclusion
+            h3 Results
+            +img("results.png")
+    +project-end-cta()
+
+    
+block css
+    style.
+        .solution-block {
+            background: #DCB167;
+        }
+        .solution-block h1 {
+            color: #fefefa;
+        }
+        .solution-block h2 {
+            color: #fefefa;
+        }
+        .solution-block h3 {
+            color: #fefefa;
+        }
+        h6,blockquote {
+            color: #DCB167;
+        }
+        .solution-block h6 {
+            color: #fefefa;
+        }
+        .solution-block p {
+            color: #fefefa;
+        }
+        .tint-box {
+            background: #F0E2CC;
+        }

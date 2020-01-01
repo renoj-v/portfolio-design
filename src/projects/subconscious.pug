@@ -2,6 +2,124 @@ extends ../layout
 
 block content
     .project-container.content-container
-        h1.project-title Hello. 
-        h3 This is page is still a work in progress. Check back soon :)
-        a(href=topDir) Take me Home
+        h1.project-title Subconscious: Mental Health Storytelling Platform Redesign
+        h6 introduction
+        h2 Subsconsious is a non-profit dedicated to telling real people'e mental health stories. They host a web platform where people can share their stories. The goal is help others with mental illnesses and build empathy with those who do not
+        h2 My mission was redesigning the initial experience readers have with Subconscious's web platform. The first touch is the most important to help the reader understand who the organization is and if they want to come back.
+        h3 Overview
+          h4 Roles
+          p.mb-l UX Researcher, UX Designer
+          h4 Team
+          p.mb-l The Subconscious Team: Cathy Liu, Allison Chang, Robin Kuang, and Jennifer Chiang
+          h4 Duration
+          p 10 weeks
+    .solution-block.project-container
+        .content-container
+            .solution
+                +img("sol-1.png")
+                h3.mt-xl Stories are the stars of the website
+                p.project-p.
+                    Make it easier to search and filter articles based on terms people would search for. 
+            .solution
+                +img("sol-2.png")
+                h3.mt-xl Talk about how and why Subconscious started
+                p.project-p.
+                    Let's increase transparency and introduce the organization by telling where it started and why its founders pursued this mission of storytelling. 
+            .solution.grid-3
+                +img("sol-3.png")
+                h3.mt-xl Donations support the mission
+                p.project-p.
+                    Be clear where donation funds go so that readers can understand why they should support Subconscious. 
+    .tint-box.project-extra-padding
+        .content-container
+            h6 research
+            h3 Research on UserTesting.com
+            p.project-p.
+                The first step in the process was conducting user tests with real people. My main tool was UserTesting.com that provided video and audio recording of people using our site
+        .insights-opportunities.content-container
+          h3.i-o-header Key Insights and Opportunities
+          .i-o
+            h4.insight Finding a story is challenging without navigation or search tools
+            p.opportunity Maybe we could make mental health stories easier to find
+          .i-o
+            h4.insight People want to learn more about the Subconscious organization
+            p.opportunity Maybe we could build trust by sharing more information about Subconscious
+          .i-o.mb-0
+            h4.insight Readers are hesistant to donate because they are unsure where Donations go
+            p.opportunity Maybe we could redesign how donations are presented to be more transparent
+    .project-extra-padding
+        .content-container.project-container
+            h3 Personas and Journey Maps
+            p.project-p.
+                Personas and Journey Maps helped summarize my research results to the Subconscious organization and guide my design work later. With these I was able to have a conversation with organization leaders on how we could better introduce Subconscious to new readers
+            +img("personas-maps.png")
+        .content-container.project-container
+            h3 Frequent Stakeholder Checkins
+            p.project.-p.
+                A key element in the design and research process was frequently meeting with members of the operations, design, and content. Their feedback helped me understand the aspirations for Subconscious and incorporate the team's ideas in the final redesign
+        .content-container.project-container
+            h6 design
+            h3 Sketches and Concepts
+            p.project-p.
+                The next step was to hit the ground running and think of solutions. The best tool for this was paper and pen
+            +img("sketches.png")
+        .content-container.project-container   
+            h3 High Fidelity Prototype
+            p.project-p.
+                Since there was an already established design, I could skip the wireframes and move onto creating a high fidelity prototype. With 2-3 iterations and checking with stakeholders, I was ready to test our new experience
+            +img("mockups.png")
+        .content-container.project-container
+            h3 A/B Testing
+            p.project-p.
+                Again using UserTesting.com, there were two sets of user test focusing on how we could present the Donations page. One prototype contained a Donations page with explicit percentages and another with imagery
+            +img("ab-test.png")
+    .tint-box
+        .insights-opportunities.content-container.project-container
+          h3.i-o-header Key Insights
+          .i-o
+            h4.insight Readers were as likely to donate with version A as with version B
+            p.opportunity There were no significant differences between how readers responded to both versions of the donation page
+          .i-o
+            h4.insight Participants reported they were 40% more likely to donate compared to the original site
+            p.opportunity For both the original site and the redesign participants were asked to rate how likely they would be to donate to Subconscious. The average ratings for the redesign was 40% higher than for the original site
+          .i-o.mb-0
+            h4.insight No issues found finding information about donations or about the Subconscious organization
+            p.opportunity The participants in the redesign reported no problems finding information throughout the site.
+    .content-container.project-container
+        h6 conclusion
+        h3 Results
+        h4.mt-xl.mb-l Solved Navigation Issues to find mental health stories
+        h4.mb-l Updated Get Help page to help readers find trusted, reliable mental health information from experts
+        h4 Increased clarity and transparency about donations and Subconscious
+    .content-container.project-container
+        h3 Final Screens
+        +img("results.png")
+    +project-end-cta()
+
+block css
+    style.
+        .solution-block {
+        background: #F4F8F9;
+        }
+        //- .solution-block h1 {
+        //- color: #fcfffe;
+        //- }
+        //- .solution-block h2 {
+        //- color: #fcfffe;
+        //- }
+        //- .solution-block h3 {
+        //- color: #fcfffe;
+        //- }
+        h6, blockquote {
+        color: #184F5C;
+        }
+        //- .solution-block h6 {
+        //- color: #fcfffe;
+        //- }
+        //- .solution-block p {
+        //- color:#fcfffe;
+        //- }
+        .tint-box {
+            background: #184F5C;
+            color:#fcfffe;
+        }
