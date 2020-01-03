@@ -2,6 +2,62 @@ extends ../layout
 
 block content
     .project-container.content-container
-        h1.project-title Hello. 
+        h1.project-title JobHunting
         h3 This is page is still a work in progress. Check back soon :)
-        a(href=topDir) Take me Home
+        h6 introduction
+        h2 
+    .tint-box.extra-project-padding
+        .project-container.content-container
+            h6 final animation    
+            h3 JobHunting Animation
+            +youtube("https://www.youtube.com/embed/nrPvp_7VKVA")
+    .project-container.content-container
+        h6 inspiration
+        h3 Personal Experience
+        p.project-p
+        h3 Talking to friends
+        p.project-p
+        h3 Finding the right song
+        p.project-p.
+    .tint-box 
+        .project-container.content-container
+            h6 process
+            h3 Storyboards
+            +img("storyboards.png")
+            h3 Style Frames
+            +img("style-frame.png")
+            h3 Challenge: Controlling Volume of Information
+            +img("wireframe-style.png")
+            p.project-p.
+            h3 Final Stills
+            .project-p.
+            +img("final-stills.png")
+    +project-end-cta()
+
+    
+block css
+    style.
+        .solution-block {
+            background: #FFA392;
+        }
+        .solution-block h1 {
+            color: #fffefa;
+        }
+        .solution-block h2 {
+            color: #fffefa;
+        }
+        .solution-block h3 {
+            color: #fffefa;
+        }
+        h6,blockquote {
+            color: #E0573E;
+        }
+        .solution-block h6 {
+            color: #FFA392;
+        }
+        .solution-block p {
+            color: #fefefa;
+        }
+        .tint-box {
+            background: #F8F3F0;
+        }
