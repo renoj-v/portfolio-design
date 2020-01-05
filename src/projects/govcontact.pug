@@ -37,39 +37,92 @@ block content
         .content-container.project-container
             h6 research
             h3 Focus Group
+            //h5
+                | Objective:
+                | Understand the steps people would currently take to contact a representative
             p.project-p.
-                8 of my classmates were able talk about how they might contact a rep and what roadblocks they would encounter.
-                          .quote-box
-            blockquote.quote.
-                It would be nice to have all my representatives' information in one place on my phone, kind of like having my Senator's phone number in my Contacts
-            h4.quote-source – Emily
+                To hit the ground running, I arranged a focus group to receive a large amount of qualitative insights in a short amount of time.
+                Participants were asked to imagine a scenario in which they were looking to contact a representative about education reform. Then participants indivdually went to go find that information. 
+                Afterwards, there was a group discussion about their experiences. 
+            .quote-box
+                h4.quote-question
+                    | What do you wish could be improved in the process of finding your representatives' contact information?
+                blockquote.quote.
+                    It would be nice to have all my representatives' information in one place on my phone, kind of like having my Senator's phone number in my Contacts
+                h4.quote-source – Emily
+            //- .quote-box
+            //-     blockquote.quote.
+            //-         Researching my representatives online is fine for contacting them once. If I had to regularly contact them, I think I would need an app.
+            //-     h4.quote-source – Tori
+            //- h4.quote-question.mt-xl
+            //-     | What types of contact information did you find? 
+            //- blockquote.quote.
+            //-     This site called Common Cause had a lot of information, like their phone, email, website, Facebook page, and office address.
+            //- h4.quote-source – Tori
+            //- h4.quote-question.mt-xl
+            //-     | Which of these contact methods would you be most likely to use: email, phone call, social media, handwritten letter?
+            //- p 5/8 participants said through email
+            //- p 3/8 participants said through phone
+            //- p No participants were likely to use social media or a handwritten letter
         .content-container.project-container
             h3 Competitive Analysis
+            //h5
+                | Objective:
+                | Analyze what is successful and what could be improved in existing civic engagement apps
             p.project-p.
-                There are other organizations trying to accomplish the same goal. Some analysis showed what could be improved in civic engagement apps
+                There are other organizations trying to accomplish the same goal. Some analysis showed what could be improved in civic engagement apps.
+                A few factors include the number of interactions (clicks, scroll) to get to contact info, the levels of representatives (federal, state, and local) shown, and evaluation of features.
             +img("competitive-analysis.png")
+            h4.mb-xxl.mt-xl Takeaways
+            ul
+                li.mb-xl
+                    p One useful feature in the Open States and Capitol Call app was to be able to see current bills on the docket. Knowing the bills a representative has written says a lot about what the representative supports.
+
+                li
+                    p The apps that required the greatest number of intermediate interactions had a long sign-up process, surveys, or account verifications.
+                
         .content-container.project-container
             h3 Government Office Interviews
+            //h5
+                | Objective:
+                | Understand the perspective of represenatatives and employees receiving citizens' messages
             p.project-p.
-                I contacted my own reps. I called their offices and conducted surveys on how a citizen could best get their voice heard.
-            h4.mb-xxl Takeaways
+                To tackle the problem from all angles, I contacted my own reps. I called their offices and conducted surveys on how a citizen could best get their voice heard.
+                It was helpful to understand what happens to a citizen's message.
+            h4.mb-xl Takeaways
             ul
-                li.mb-m
-                    | Employees in representatives' offices respond to citizens' messages
-                li.mb-m 
-                    | A citizen's message would be passed on to a representative or included as part of a summary report
+                li.mb-l
+                    p Employees in representatives' offices respond to citizens' messages rather than representatives themselves
+                li.mb-l 
+                    p A citizen's message would be passed on to a representative or included as part of a summary report
                 li 
-                    | The best way for a citizen's voice to be heard is frequent, clear, and concise messages
+                    p The best way for a citizen's voice to be heard is frequent, clear, and concise messages
         .content-container.project-container
             h3 Online Research
+            //h5
+                | Objective:
+                | Figure out the larger scope of the problem and adapt existing research
+            
             p.project-p.
-                A few studies, surveys, and articles revealed some new insights as well as why this problem was worth solving.   
+                To understand civic engagement on a broader scale, I looked online for previous research. A few studies, surveys, and articles revealed some new insights as well as why this problem was worth solving. 
+                Sources included The Annenberg Public Policy Center, Pew Research Center, Congress Management Foundation, The Boston Globe, and GlobalCitizen.org.
+            //- .quote-box
+            //-     blockquote.quote.
+            //-         77% of representatives said they preferred email as the primary communication over every other option. The main reason? Emails are optimal for archiving requirements. In addition, many officials noted that they can easily forward or cc staff members who can assist. Emails also allow time for a well written and researched response.
+            //-     a(href="https://www.azavea.com/blog/2017/10/03/whats-the-best-way-to-contact-your-representatives/")
+            //-         h4.quote-source – Stephanie Thome, Azavea Research Blog (2017)
+            .quote-box.mb-xxl
+                blockquote.quote 
+                    | The Benenson Strategy Group in Washington, D.C., surveyed 1,000 people between the ages of 18 and 34 and found that while 91% of those surveyed claimed they were likely to vote in the next presidential election, 77% could not name one of their state senators.
+                h4.quote-source – 
+                    a(href="https://www.bostonglobe.com/magazine/2015/03/28/how-many-people-know-their-senators/yfgXyHR96X7YGhesaNQbnM/story.html") Emeralde Jensen Roberts, Boston Globe
             .quote-box
-                blockquote.quote.
-                    [Representatives should] highlight their legislative priorities, describe their most recent actions, and spell out their
-                    overall positions on “hot topic” issues.
-                h4.quote-source – Tim Hysom – 
-                    a(href="http://www.congressfoundation.org/storage/documents/CMF_Pubs/cwc_recommendationsreport.pdf") "Communicating with Congress"
+                blockquote.quote 
+                    | When asked "In your opinion, how important are the following for understanding
+                    | constituents' views and opinions?", 70% of communication staffers ranked personalized messages (emails, phone calls, letters) as "Very Important"
+                h4.quote-source – 
+                    a(href="http://www.congressfoundation.org/storage/documents/CMF_Pubs/cwc-perceptions-of-citizen-advocacy.pdf") Congress Management Foundation, "Communicating with Congress"
+            
     .tint-box
         .insights-opportunities.content-container.project-container
           h3.i-o-header Key Insights and Opportunities
@@ -122,7 +175,7 @@ block content
             p.project-p.
                 From user feedback, I continued to iterate on design and construct a user flow.
             +img("user-flow.png")
-        .content-container.project-container
+    .content-container.project-container
             h6 conclusion
             h3 Results
             +img("results.png")

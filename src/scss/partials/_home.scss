@@ -10,14 +10,34 @@
 }
 .project {
     position:relative; 
+
 }
+// @keyframes float {
+// 	0% {
+
+// 		transform: translatey(0px) translateY(-50%);
+//     }
+// 	50% {
+
+// 		transform: translatey(-20px) translateY(-50%);
+// 	}
+// 	100% {
+
+// 		transform: translatey(0px) translateY(-50%);
+// 	}
+// }
 .project-background {
     display:none;
     @media (min-width: 550px) {
         display:block;
+        // position:relative;
+        // left: 80px;
+        // width: 40%;
+        // top: 50%;
+        // transform: translateY(-50%);
+        // animation: float 4s ease-in-out infinite;
     }
     @media (min-width: 1024px) {
-        
     }
 }
 .project-text-block {
@@ -27,11 +47,11 @@
         bottom: 2px;
     }
     &.simon {
-        background: $simon-bg;
         color: $simon-fg;
         a::before {
             background: $simon-fg
         }
+
     }
     &.govcontact {
         background: $govcontact-bg;

@@ -3,25 +3,25 @@
         "filename": "projects/simon/index.html",
         "template": "src/projects/simon.pug",
         "inNav": true,
-        "title": "Simon Says the Weather",
+        "title": "Simon Says the Weather: Mobile App Design",
         "topDir": "../../",
         "imgDir": "static/img/simon/",
         "icon": "static/img/simon/icon.png",
         "token": "simon",
         "tags": [],
-        "description": "A mobile app to help those who aren't always prepared for the weather. It can make or break our day. Let's make sure we're prepared"
+        "description": "A mobile app to help those who aren't always prepared for the weather"
     },
     {
         "filename": "projects/govcontact/index.html",
         "template": "src/projects/govcontact.pug",
         "inNav": true,
-        "title": "GovContact",
+        "title": "GovContact: Civic Engagement Mobile App Design",
         "topDir": "../../",
         "imgDir": "static/img/govcontact/",
         "icon": "static/img/govcontact/icon.png",
         "token": "govcontact",
         "tags": [],
-        "description": "A mobile app to increase civic engagement in the U.S. The goal is to reframe how we engage in politics to make sure everyone's voice is heard"
+        "description": "Reframe how we engage in politics to make sure we communicate with our government representatives"
     },
     {
         "filename": "projects/subconscious/index.html",
@@ -33,31 +33,31 @@
         "icon": "static/img/subconscious/icon.png",
         "token": "subconscious",
         "tags": [],
-        "description": "Subconscious is a non-profit dedicated to telling real people's mental health stories. My role was to investigate how we could engage in storytelling in a mental health community."
+        "description": "Investigating how we could engage in storytelling in a mental health community."
     },
     {
         "filename": "projects/jobhunting/index.html",
         "template": "src/projects/jobhunting.pug",
         "inNav": true,
-        "title": "JobHunting Animated Film",
+        "title": "JobHunting: Animated Film",
         "topDir": "../../",
         "imgDir": "static/img/jobhunting/",
         "icon": "static/img/jobhunting/icon.png",
         "token": "jobhunting",
         "tags": [],
-        "description": "A satirical animation about the job search process. The idea came from the shared experiences my friends and I had looking for jobs/internships."
+        "description": "A satirical animation about the job search process. Accepted in the Metropolitan Computer Animation Festival (2019)."
     },
     {
         "filename": "projects/sanskriti/index.html",
         "template": "src/projects/sanskriti.pug",
         "inNav": true,
-        "title": "Sanskriti Logo Design",
+        "title": "Sanskriti: Logo Design and Branding",
         "topDir": "../../",
         "imgDir": "static/img/sanskriti/",
         "icon": "static/img/sanskriti/icon.png",
         "token": "sanskriti",
         "tags": [],
-        "description": "Sanskriti is the University of Connecticut’s traditional Indian culture club. I was hired as a freelance graphic designer to help them redesign their logo."
+        "description": "Reflecting traditional Indian culture for a local club at the University of Connecticut."
     }
 
 ]
