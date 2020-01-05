@@ -5,7 +5,7 @@ block content
         
         h1.project-title GovContact
         h6 introduction
-        h2 It's difficult to keep track of who your government representatives are, let alone how to contact them. However, contacting your legislator is one of the simplest and effective ways to use your political voice. UX design has a role in political activism by designing how we can communicate with government officials.
+        h2 Contacting your legislator is one of the simplest and effective ways to use your political voice. The goal of GovContact is to put that power at a citizen's fingertips. UX design has a role in political activism by designing how we can communicate with government officials.
         h3 Overview
         h4 Role
         p.mb-l Product Designer, UX Researcher
@@ -120,7 +120,94 @@ block content
         .content-container.project-container
             h3 Design Evolution
             p.project-p.
-                There were 3 iterations of design and testing to get towards the final solution. At each stage, I incorporated feedback from users and mentors. Let's go through the evolution together. 
+                There were 3 iterations of design and testing to get towards the final solution. At each stage, I incorporated feedback from users and mentors. Let's go through the evolution together.
+            .grid-3.flex
+                .grid-3-item
+                    +img("wireframe.png")
+                .grid-3-2-item.pl-xxxl
+                    h4 Concepting and Wireframing
+                    p.project-p.
+                        The initial step was to come with different ways of showcasing a representative. For the first prototype, experiments focused on what type of contact information would be important. I chose a card style interface at first to allow users to quickly scan multiple reps 
+                    //- p.project-p
+                    //-     strong Frustrations Solved:
+                    //-     |
+                    //- p.project-p
+                    //-     strong Feedback
+                    //-     |
+            .grid-3.flex.mt-separate
+                .grid-3-item
+                    +img("first-prototype.png")
+                .grid-3-2-item.pl-xxxl
+                    h4 First Prototype
+                    p.project-p.
+                        Building upon wireframes, I added a layer of visual design that focused on the red, white, and blue that appears in many political campaigns.
+                        After conducting user tests, I found that citizens needed more information about a representative than just their party affiliation and contact information.
+                    //- p.project-p
+                    //-     strong Frustrations Solved:
+                    //-     |
+                    //- p.project-p
+                    //-     strong Feedback
+                    //-     |
+            .grid-3.flex.mt-separate
+                .grid-3-item
+                    +img("second-prototype.png")
+                .grid-3-2-item.pl-xxxl
+                    h4 Second Prototype
+                    p.project-p.
+                        Incorporating the insights from user testing, I went towards a profile feature that representatives could fill out to connect with citizens.
+                        This information could also be scraped from their social media or bills that they have written. This information would be more helpful in understanding a representative than their political party affiliation.
+                    //- p.project-p
+                    //-     strong Frustrations Solved:
+                    //-     |
+                    //- p.project-p
+                    //-     strong Feedback
+                    //-     |
+            .grid-3.flex.mt-separate
+                .grid-3-item
+                    +img("final-rep.png")
+                .grid-3-2-item.pl-xxxl
+                    h4 Current Solution
+                    p.project-p.
+                        After testing the second prototype and receiving feedback from mentors, I learned that the information was too tightly packed. 
+                        For the final set of information, I gave information more room to breathe and further developed the visual design.
+                    //- p.project-p
+                    //-     strong Frustrations Solved:
+                    //-     |
+                    //- p.project-p
+                    //-     strong Feedback
+                    //-     |
+            .grid-3.flex.mt-xl
+                .grid-3-item
+                    +img("final-feed.png")
+                .grid-3-2-item.pl-xxxl
+                    h4 Current Solution Pt.2
+                    p.project-p.
+                        One of the features after the second prototype was a Political Feed feature, where citizens could keep up with representatives' social media, petitions being called upon, and bills up for vote.
+                        This information would come directly from representatives, government sites, and petition websites, like Change.org. It relies less on news outlets that may have bias. Citizens are given the primary source.
+                    //- p.project-p
+                    //-     strong Frustrations Solved:
+                    //-     |
+                    //- p.project-p
+                    //-     strong Feedback
+                    //-     |
+    .content-container.project-container
+        h3 Visual Design Elements
+        +img("visual-design.png")
+    .content-container.project-container
+        h3 User Flows from Personas
+        p.project-p.
+            To consider how well my solution would work, I considered the paths that Terry and Briana would take to accomplish their goals.
+            Both need to learn where their representatives stand on the issues. Terry could directly message his state representatives voting on the free tuition bill. 
+            Briana could stay updated with her representatives, message representatives immediately, and share GovContact with her advocacy group.
+        //+img("briana-terry-flow.png")
+        .mt-xl
+            +img("onboarding-flow.png")
+        .mt-xl
+            +img("learning-flow.png")
+        .mt-xl
+            +img("terry-message.png")
+        .mt-xl
+            +img("briana-message.png")
     .content-container.project-container
             h6 conclusion
             h3 Results
