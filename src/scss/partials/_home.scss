@@ -47,9 +47,10 @@
         bottom: 2px;
     }
     &.simon {
+        background: $simon-bg;
         color: $simon-fg;
         a::before {
-            background: $simon-fg
+            background: $simon-fg;
         }
 
     }
