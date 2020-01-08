@@ -21,6 +21,25 @@
 .project-container {
     padding-top: 7.5vh;
     padding-bottom: 7.5vh; 
+    li {
+        position:relative;
+        padding-left:18px;
+        &:before {
+            content:"";
+            display:block;
+            position:absolute;
+            top: 5px;
+            left: 2px;
+            width: 5px;
+            height: 90%;
+            background:#000;
+            opacity:.075;
+        }
+    }
+}
+.project-med-padding {
+    padding-top:8.75vh;
+    padding-bottom:8.75vh;
 }
 .project-extra-padding {
     padding-top:15vh;

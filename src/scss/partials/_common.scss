@@ -1,5 +1,6 @@
 * {
     transition: all .1s linear;
+    box-sizing: border-box;
 }
 body {
     margin:0;
@@ -22,9 +23,15 @@ img {
         position:absolute;
     }    
 }
+.invision-container {
+    height: 500px;
+    iframe {
+        transform: scale(.5) translateY(-50%);
+    }
+}
 .content-container {
     padding: 30px;
-    max-width: 50rem;
+    max-width: 55rem;
     margin:0 auto;
     @media (min-width: 1280px) {
         padding:0;
@@ -96,14 +103,15 @@ img {
         width: 31.25%;
         margin-top: 0;
         &.left {
-            padding-right:1.5%;
+            padding-right: 2%;
+            
         }
         &.middle {
-            padding-right: 1.5%;
-            padding-left: 1.5%;
+            padding-right: 1%;
+            padding-left: 1%;
         }
         &.right {
-            padding-left: 1.5%;
+            padding-left: 2%;
         }
     }
     .grid-3-2-item {
@@ -117,6 +125,7 @@ img {
 
 .small-caps {
     font-variant: small-caps;
+    text-transform: lowercase;
     letter-spacing: .0625rem;
 }
 ul {

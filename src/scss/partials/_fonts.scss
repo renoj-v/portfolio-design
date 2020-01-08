@@ -19,13 +19,13 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i&display=swap');
+// @font-face {
+//     font-family: 'Open Sans';
+//     src: url('fonts/OpenSans-Regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 $header: "Gilroy", Arial, sans-serif;
 $body: "Open Sans", Helvetica, sans-serif;
@@ -61,7 +61,7 @@ h2 {
     font-family: $body;
     font-weight: 400;
     font-size: 2rem;
-    line-height: 1.4;
+    line-height: 1.6;
     margin: 0 0 2rem;
 }
 h3 {
@@ -72,7 +72,7 @@ h3 {
 }
 h4 {
     font-family: $header;
-    font-size:  1.5rem;
+    font-size:  1.625rem;
     line-height: 1.5;
     margin: 0 0 .5rem;
     
@@ -89,6 +89,7 @@ h6 {
     font-size: 1.25rem;
     line-height: 1.6;
     font-variant: small-caps;
+    text-transform: lowercase;
     letter-spacing: .0625rem;
     margin: 0 0 .5rem;
 }
@@ -96,14 +97,20 @@ h6 {
 .caption {
     font-family: $body;
     font-size: 1rem;
+    line-height:1.8;
+    margin: .25rem 0 .5rem;
+}
+.caption-small {
+    font-family: $body;
+    font-size: 1rem;
     line-height:1.6;
-    margin: 1rem 0 .5rem;
+    margin: .25rem 0 .5rem;
 }
 blockquote {
     font-family: $header;
     font-weight: bold;
     line-height: 1.4;
-    font-size: 2em;
+    font-size: 1.75em;
     margin: 1rem 0 .5rem;
 }
 a {
@@ -128,7 +135,22 @@ a {
     }
     &:hover, &:active, &:focus {
         &:before {
-            width:120%;
+            width:100%;
         }
     }
+}
+.bold {
+    font-weight: 700;
+}
+.med-weight {
+    font-weight: 400;
+}
+.light {
+    font-weight: lighter;
+}
+.header {
+    font-family: $header;
+}
+.body {
+    font-family: $body;
 }
