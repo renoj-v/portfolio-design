@@ -53,7 +53,7 @@ const scss = {
     ]
 };
 const images = {
-    test: /\.(jpg|png|svg|pdf|zip)$/,
+    test: /\.(jpg|png|svg|pdf|zip|mp4)$/,
     use: {
         loader: "file-loader",
         options: {

@@ -15,13 +15,20 @@ mixin img_absolute(source, alt_text, exclude_container)
             img(src=source, alt=alt_text)
             block
 mixin youtube(source) 
-    .video-container
+    .youtube-container
         iframe( width="420" height="315" src=source frameborder="0" allowfullscreen)
 
 mixin invision(source) 
     .invision-container
         iframe(width="442", height="935", src=source frameborder="0" allowfullscreen)
-
+mixin video(source,token)
+    .video-container
+        .video-inner-container
+            video(width="100%" autoplay loop id=token)
+                source(src=images + source)
+                | Your browser does not support the video tag.
+        .controls
+            h6(id=`${token}_ctrl` class="video-ctrl" target=token) Play
 
 mixin project-end-cta()
     .content-container.project-container.project-extra-padding

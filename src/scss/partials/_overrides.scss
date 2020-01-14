@@ -37,11 +37,56 @@
 .pt-0 {
     padding-top: 0;
 }
+.pt-m {
+    padding-top:1rem;
+}
 .pl-xxxl {
     box-sizing: border-box;
-    padding-left: 4rem;
+    @media (min-width: 769px) {
+        padding-left: 4rem;
+    }
+}
+.pr-xxxl {
+    box-sizing: border-box;
+    @media (min-width: 769px) {
+        padding-right: 4rem;
+    }
+}
+.pl-xl {
+    box-sizing: border-box;
+    @media (min-width: 769px) {
+        padding-left: 2rem;
+    }
+}
+.pr-xl {
+    box-sizing: border-box;
+    @media (min-width: 769px) {
+        padding-right: 2rem;   
+    }
 }
 .plr-m {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mlr-m {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.ml-m {
+    margin-left: 1rem;
+}
+.ptb-0-mt {
+    @media (max-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+}
+.plr-0-mt {
+    @media (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+   
 }

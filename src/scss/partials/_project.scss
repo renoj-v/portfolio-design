@@ -14,9 +14,12 @@
     }
 }
 
-.solution {
+.solution-block {
     padding-top: 10vh;
     padding-bottom: 10vh;
+}
+.solution {
+    margin-top:4rem;
 }
 .project-container {
     padding-top: 7.5vh;
@@ -28,10 +31,10 @@
             content:"";
             display:block;
             position:absolute;
-            top: 5px;
+            top: 0px;
             left: 2px;
             width: 5px;
-            height: 90%;
+            height: 100%;
             background:#000;
             opacity:.075;
         }
@@ -61,6 +64,9 @@
 }
 .i-o-header {
     margin-bottom: 3rem;
+}
+.insight {
+    margin-bottom: 0rem;
 }
 .i-o {
     margin-bottom: 2rem;

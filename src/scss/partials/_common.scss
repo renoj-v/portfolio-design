@@ -10,7 +10,7 @@ img {
     max-width: 100%;
     display: block;
 }
-.video-container{
+.youtube-container{
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
@@ -23,10 +23,30 @@ img {
         position:absolute;
     }    
 }
+.video-container {
+    max-width: 300px;
+    position:relative;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .controls {
+        position: absolute;
+        margin: 0 auto;
+        top:-40px;
+        text-align: center;
+        width:100%;
+    }
+    .video-ctrl {
+        font-size: 24px;
+        &:hover {
+            cursor: pointer;   
+        }
+    }
+}
 .invision-container {
     height: 500px;
+    margin-bottom: 200px;
     iframe {
-        transform: scale(.5) translateY(-50%);
+        transform: scale(.75) translateY(-15%) translateX(0);
     }
 }
 .content-container {

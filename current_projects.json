@@ -1,17 +1,5 @@
 [
     {
-        "filename": "projects/simon/index.html",
-        "template": "src/projects/simon.pug",
-        "inNav": true,
-        "title": "Simon Says the Weather: Mobile App Design",
-        "topDir": "../../",
-        "imgDir": "static/img/simon/",
-        "icon": "static/img/simon/icon.png",
-        "token": "simon",
-        "tags": [],
-        "description": "A mobile app to help those who aren't always prepared for the weather"
-    },
-    {
         "filename": "projects/govcontact/index.html",
         "template": "src/projects/govcontact.pug",
         "inNav": true,
@@ -22,6 +10,18 @@
         "token": "govcontact",
         "tags": [],
         "description": "Reframe how we engage in politics to make sure we communicate with our government representatives"
+    },
+    {
+        "filename": "projects/simon/index.html",
+        "template": "src/projects/simon.pug",
+        "inNav": true,
+        "title": "Simon Says the Weather: Mobile App Design",
+        "topDir": "../../",
+        "imgDir": "static/img/simon/",
+        "icon": "static/img/simon/icon.png",
+        "token": "simon",
+        "tags": [],
+        "description": "A mobile app to help those who aren't always prepared for the weather"
     },
     {
         "filename": "projects/subconscious/index.html",
