@@ -16,6 +16,12 @@ document.querySelectorAll(".video-ctrl").forEach( ctrl => {
             ctrl.innerHTML = play;
         }
     }
-    ctrl_function();
     ctrl.onclick = ctrl_function
+
+    if (video.paused) {
+        ctrl.innerHTML = play;
+    }
+    else {
+        ctrl.innerHTML = stop;
+    }
 })

@@ -31,12 +31,13 @@ img {
     .controls {
         position: absolute;
         margin: 0 auto;
-        top:-40px;
+        top:-45px;
         text-align: center;
         width:100%;
     }
     .video-ctrl {
-        font-size: 24px;
+        font-size: 1.25rem;
+        display:inline;
         &:hover {
             cursor: pointer;   
         }
