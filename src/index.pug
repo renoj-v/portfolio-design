@@ -2,13 +2,15 @@ extends ./layout
 
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
-    .content-med-container.home-hero
-        .align-middle
-            h1 Renoj, Product/UX Designer with a technical mind and creative heart
-            h2.mb-0 Check out my work below
-            h2 And make sure to say “Hi” at 
-                a(href="mailto:renoj@uconn.edu")
-                    | renoj@uconn.edu
+    .hero-block
+        +nav(nav,topDir)
+        .content-med-container.home-hero
+            .align-middle
+                h1 Renoj, Product/UX Designer with a technical mind and creative heart
+                h2.mb-0 Check out my work below
+                h2 And make sure to say “Hi” at 
+                    a(href="mailto:renoj@uconn.edu")
+                        | renoj@uconn.edu
     .projects
         each project in subpages
             - const bg_url = project.icon

@@ -1,6 +1,7 @@
 extends ../layout
 
 block content
+    +nav(nav, topDir)
     .project
       .intro.content-container.project-container
         h1.project-title Simon Says the Weather
@@ -22,31 +23,34 @@ block content
         //p.project-p.
           The weather can be quite unpredictable, especially where I live in the Northeast. If we're not prepared, then our whole day can be thrown off. The goal of this app to make sure busy adults, those who may not always be thinking about the weather, are informed and ready to act.
         h3 Overview
-          h4 Role
-          p.mb-l Product Designer, UX Researcher
-          h4 Team
-          p.mb-l Solo, with help from mentors and professors
-          h4 Duration
-          p 6 weeks
+        p.mb-l
+            strong Role: 
+            | Product Designer, UX Researcher
+        p.mb-l 
+            strong Team: 
+            | Solo, with help from mentors and professors
+        p
+            strong Duration: 
+            | 6 Weeks
       .tint-box.project-container
         .content-container
           
           .solution.grid.grid-2.flex.project-container
             .grid-2-item.left
                 h6 solution
-                h3 Meet Simon, a personal assistant to help you with the weather
+                h4 Meet Simon, a personal assistant to help you with the weather
                 p Similar to voice assistants, like Amazon Alexa, Google Home, and Siri, Simon is a user's personal weatherman. He works as hard as the busy people he informs about the weather.
             .grid-2-item.right
                 +img("sol-1.png")
           .solution.project-container
             +img("sol-2.png")
-            h3.mt-xl Widgets prepare you for the weather outside the app
+            h4.mt-xl Widgets prepare you for the weather outside the app
             p.project-p.
               Instead of bringing people to the forecast, let's bring the forecast to the people. Widgets allow Simon to report the weather on the platforms people already use.
           .solution.grid-3.project-container
             .grid-3-2-item
               +img("sol-3.png")
-            h3.mt-xl Notifications to report the weather when you need it
+            h4.mt-xl Notifications to report the weather when you need it
             p.project-p.
               Research showed that people check the weather the most during the morning. Notifications can report the weather in the morning while also alerting users to weather changes throughout the day.
       .content-container.project-container.project-extra-padding
@@ -155,9 +159,15 @@ block content
           +img("user-flow.png") 
       .content-container.project-container
           h3 Giving Character to an AI Assistant
-          p.project-p.
-            Participants enjoyed the concept of having a personal weather reporter. I adapted the idea to a central character of the weather app: Simon the Weather Man. 
-            Although I only started with one character, a future feature would be to allow users to choose one of many weather reporters, each reflecting different races, genders, and body types.
+          p.project-p
+            | Participants enjoyed the concept of having a personal weather reporter. I adapted the idea to a central character of the weather app: Simon the Weather Man. 
+            | His purpose is the be a ray of 
+            strong sunshine 
+            | no matter what the sky looks like. His words and expressions show that 
+            strong brightness 
+            | and 
+            strong playfulness.
+          //Although I only started with one character, a future feature would be to allow users to choose one of many weather reporters, each reflecting different races, genders, and body types.
           +img("character-design.png")
       //.content-container.project-container
           h3 Character and Visual Design
@@ -198,24 +208,20 @@ block content
         .solution
           h6 conclusion
           h3 Results
-          ul
-            li.mb-l
-              h5 A Personal Weatherman
-              | Created a personal weatherman to help people with the weather. In contrast to more informational approach, Simon Says the Weather is a more playful approach to reporting to the weather.
-            li 
-              h5 Widget Plugins
-              | Designed a Widgets feature to allow people to receive the forecast in the applications they already use. The purpose is to make sure people are prepared for the weather, even if they don't have the time to check the weather.
+          h5 A Personal Weatherman
+          p.mb-l Created a personal weatherman to help people with the weather. In contrast to more informational approach, Simon Says the Weather is a more playful approach to reporting to the weather.
+          h5 Widget Plugins
+          p.mb-xxxl Designed a Widgets feature to allow people to receive the forecast in the applications they already use. The purpose is to make sure people are prepared for the weather, even if they don't have the time to check the weather.
+          
           h3.mt-separate Challenges and Lessons
-          ul
-            li.mb-l
-              h5 Incorporating Illustrations into a UI
-              | One of the challenges was finding a balance between illustration and information. A weather app has to be informative, but I wanted to also give it a more playful spin with illustrations. 
-              | Trying different layouts and positions for Simon the Weatherman taught me how illustrations could not only be a part of the UI, but also support its accompanying information.
+          h5 Incorporating Illustrations into a UI
+          p.mb-xxxl.
+            One of the challenges was finding a balance between illustration and information. A weather app has to be informative, but I wanted to also give it a more playful spin with illustrations. 
+            Trying different layouts and positions for Simon the Weatherman taught me how illustrations could not only be a part of the UI, but also support its accompanying information.
+          
           h3.mt-separate Next Steps
-          ul
-            li.mb-l
-              h5 Inclusive Design
-              | If I had more time on this project, I would want to design more weather reporters who would represent different races, gender expressions, and body types. The goal would be for users to be able to select the weatherman that reflects them best.
+          h5 Inclusive Design
+          p.mb-xxxl If I had more time on this project, I would want to design more weather reporters who would represent different races, gender expressions, and body types. The goal would be for users to be able to select the weatherman that reflects them best.
           h3.mb-xxl.mt-separate Final Screens
           +img("results.png")
             

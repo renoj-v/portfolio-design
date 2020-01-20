@@ -6,6 +6,10 @@ body {
     margin:0;
     padding:0;
 }
+.content {
+    max-width:1920px;
+    margin: 0 auto;
+}
 img {
     max-width: 100%;
     display: block;
@@ -69,13 +73,10 @@ img {
 }
 .content-large-container {
     padding: 30px;
-    max-width: 70rem;
+    max-width: 65rem;
     margin:0 auto;
-    @media (min-width: 1280px) {
-        padding:0;
-    }
     @media (min-width: 1920px) {
-        max-width: 1920px;
+        max-width: 1800px;
     }
     
 }
@@ -93,7 +94,10 @@ img {
     justify-content: flex-start;
 }
 .grid-2-item, .grid-3-item, .grid-3-2-item {
-    margin-top: 2rem;
+
+    p,li {
+        line-height: 1.65
+    }
 }
 
 .bullet {

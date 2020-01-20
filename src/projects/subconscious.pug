@@ -1,36 +1,68 @@
 extends ../layout
 
 block content
+    +nav(nav, topDir)
     .project-container.content-container
         h1.project-title Subconscious: Mental Health Storytelling Platform Redesign
         h6 introduction
-        h2 Subsconsious is a non-profit dedicated to telling real people'e mental health stories. They host a web platform where people can share their stories. The goal is help others with mental illnesses and build empathy with those who do not
-        h2 My mission was redesigning the initial experience readers have with Subconscious's web platform. The first touch is the most important to help the reader understand who the organization is and if they want to come back.
+        //h2 Subsconsious is a non-profit dedicated to telling real people's mental health stories. They host a web platform where people can share their stories. The goal is help others with mental illnesses and build empathy with those who do not.
+        //h2 My mission was redesigning the initial experience readers have with Subconscious's web platform. The first touch is the most important experience to help the reader understand who the organization is and if they want to come back.
+        h2 Subsconsious is a non-profit dedicated to telling real people's mental health stories. 
+            | My mission was redesigning the initial experience readers have with Subconscious's web platform.
+            | The first touchpoint is important to convince the reader the value of mental health storytelling. 
+        //- h3 Overview
+        //-   h4 Roles
+        //-   p.mb-l UX Researcher, UX Designer
+        //-   h4 Team
+        //-   p.mb-l The Subconscious Team: Cathy Liu, Allison Chang, Robin Kuang, and Jennifer Chiang
+        //-   h4 Duration
+        //-   p 10 weeks
+        .goals.grid-3.flex.mt-xxl
+            .grid-3-item.left
+                p.bold Goal 1
+                p.project-p Simplify finding mental health stories and resources.
+            .grid-3-item.middle
+                p.bold Goal 2
+                p.project-p Introduce the Subconscious organization, its mission, and history.
+            .grid-3-item.right
+                p.bold Goal 3
+                p.project-p Showcase how donations support Subconcious's mission.
         h3 Overview
-          h4 Roles
-          p.mb-l UX Researcher, UX Designer
-          h4 Team
-          p.mb-l The Subconscious Team: Cathy Liu, Allison Chang, Robin Kuang, and Jennifer Chiang
-          h4 Duration
-          p 10 weeks
+        p.mb-l
+            strong Role: 
+            | UX Researcher, UX Designer
+        p.mb-l 
+            strong Team: 
+            | The Subconscious Team: Cathy Liu (Operations), Allison Chang (Operations), Robin Kuang (Design Mentor), and Jennifer Chiang (Content)
+        p.mb-l 
+            strong Contributions: 
+            | User Testing, Personas, Journey Maps, Final Redesigns
+        p
+            strong Duration: 
+            | 10 Weeks
     .solution-block.project-container
         .content-container
             .solution
-                +img("sol-1.png")
-                h3.mt-xl Stories are the stars of the website
+                .plr-xxxl
+                    +img("sol-1.png")
+                h4.mt-xl Stories are the stars of the website
                 p.project-p.
                     Make it easier to search and filter articles based on terms people would search for. 
+                
+                
             .solution
-                +img("sol-2.png")
+                .plr-xxxl
+                    +img("sol-2.png")
                 h3.mt-xl Talk about how and why Subconscious started
                 p.project-p.
                     Let's increase transparency and introduce the organization by telling where it started and why its founders pursued this mission of storytelling. 
-            .solution.grid-3
-                +img("sol-3.png")
-                h3.mt-xl Donations support the mission
+            .solution
+                .plr-xxxl
+                    +img("sol-3.png")
+                h3.mt-xl Be clear how donations support the mission
                 p.project-p.
-                    Be clear where donation funds go so that readers can understand why they should support Subconscious. 
-    .tint-box.project-extra-padding
+                    Show where donation funds go so that readers can understand why they should support Subconscious. 
+    .project-extra-padding
         .content-container
             h6 research
             h3 Research on UserTesting.com
@@ -47,7 +79,6 @@ block content
           .i-o.mb-0
             h4.insight Readers are hesistant to donate because they are unsure where Donations go
             p.opportunity Maybe we could redesign how donations are presented to be more transparent
-    .project-extra-padding
         .content-container.project-container
             h3 Personas and Journey Maps
             p.project-p.
@@ -66,31 +97,102 @@ block content
         .content-container.project-container   
             h3 High Fidelity Prototype
             p.project-p.
-                Since there was an already established design, I could skip the wireframes and move onto creating a high fidelity prototype. With 2-3 iterations and checking with stakeholders, I was ready to test our new experience
-            +img("mockups.png")
+                Since there was an already established design system, I could skip the wireframes and move onto creating a high fidelity prototype. With 2-3 iterations and checking with stakeholders, I was ready to test our new experience.
+            //+img("mockups.png")
+            .grid-2.flex
+                .grid-2-item.pr-xl
+                    +img("home-search.png")
+                    .mt-xl
+                    +img("get-help.png")
+                .grid-2-item
+                    h5 Goal 1
+                    p.caption.
+                        Simplify finding mental health stories and resources.
+                    h5.mb-med Proposed Solution
+                    ul
+                        li.mb-m Include a search feature that could suggest topics to read about.
+                        //li.mb-m Citizens could learn about reps through social media links
+                    h5.mb-m Rationale
+                    ul
+                        li.mb-m 4/7 participants failed to find the story they were looking for.
+                        li.mb-m Provide a search tool that gives readers an idea of what they can find.
+                .grid-2.flex.mt-separate
+                    .grid-2-item.pr-xl
+                        +img("our-story copy.png")
+                        
+                    .grid-2-item
+                        h5 Goal 2
+                        p.caption.
+                            Introduce the Subconscious organization, its mission, and history.
+                        h5.mb-med Proposed Solution 
+                        ul
+                            li.mb-m Redesign the About Us page to include how Subconsious started and its storytelling mission.
+                            li.mb-m Update Get Help page to provide a reliable source of mental health resources. 
+                            //li.mb-m Citizens could learn about reps through social media links
+                        h5.mb-m Rationale
+                        ul
+                            li.mb-m 5/7 Participants had repeated questions about why Subconscious started.
+                .grid-2.flex.mt-separate
+                    .grid-2-item.pr-xl
+                        +img("donate-grid copy.png")
+                    .grid-2-item.pl-xl
+                        h5 Goal 3
+                        p.caption.
+                            Showcase how donations support Subconcious's mission.
+                        h5.mb-med Proposed
+                        ul
+                            li.mb-m In-depth Look at how donations are spent.
+                            //li.mb-m Citizens could learn about reps through social media links
+                        h5.mb-m Rationale
+                        ul
+                            li.mb-m 5/7 participants discussed questions about where donation money goes
+                            li.mb-m This uncertainty made them less likely to donate. 
         .content-container.project-container
             h3 A/B Testing
             p.project-p.
-                Again using UserTesting.com, there were two sets of user test focusing on how we could present the Donations page. One prototype contained a Donations page with explicit percentages and another with imagery
-            +img("ab-test.png")
+                With the redesign ready, it was time to test. Using UserTesting.com again, I conducted two sets of user test focusing on how we could present the Donations page. One prototype contained a Donations page with explicit percentages and another with imagery.
+            //+img("ab-test.png")
+            .grid-2.flex
+                .grid-2-item.pr-xl
+                    +img("test-a.png")
+                    p.project-p.mt-l
+                        strong Version A 
+                        | Same test, except donations are stated with explicit percentages.
+                .grid-2-item.pl-xl
+                    +img("test-b.png")
+                    p.project-p.mt-l
+                        strong Version B 
+                        | Same test, except donations are represented by graphical icons.
     .tint-box
         .insights-opportunities.content-container.project-container
-          h3.i-o-header Key Insights
+          h3.i-o-header Testing Results
           .i-o
             h4.insight Readers were as likely to donate with version A as with version B
             p.opportunity There were no significant differences between how readers responded to both versions of the donation page
           .i-o
             h4.insight Participants reported they were 40% more likely to donate compared to the original site
-            p.opportunity For both the original site and the redesign participants were asked to rate how likely they would be to donate to Subconscious. The average ratings for the redesign was 40% higher than for the original site
+            p.opportunity For both the original site and the redesign participants were asked to rate how likely they would be to donate to Subconscious. The average ratings for the redesign was 40% higher than for the original site.
           .i-o.mb-0
             h4.insight No issues found finding information about donations or about the Subconscious organization
             p.opportunity The participants in the redesign reported no problems finding information throughout the site.
-    .content-container.project-container
+    .content-container.project-container.project-extra-padding
         h6 conclusion
-        h3 Results
-        h4.mt-xl.mb-l Solved Navigation Issues to find mental health stories
-        h4.mb-l Updated Get Help page to help readers find trusted, reliable mental health information from experts
-        h4 Increased clarity and transparency about donations and Subconscious
+        h3 Summary
+        ul 
+            li.mb-m Told the story of Subconscious, a mission driven non-profit dedicated to people's mental health stories.
+            li.mb-m Solved navigation issues to find mental health stories through search tools
+            li.mb-m Updated Get Help page to help readers find trusted, reliable mental health information from experts
+            li.mb-m Developed the About Us page to show readers how the organization started
+            li Increased clarity and transparency about donations and Subconscious.
+        h3.mt-separate Challenges and Lessons
+        h5 CopyWriting
+        p.project-p When redesigning the site, I focused more on layout and hierarchy, using dummy text for copy. 
+            | But to test with users, I needed more realistic copy for readers to get an understanding of who Subconscious is
+            | The Operations and Content teams volunteered to do copywriting, while I could focus on the design.
+        h3.mt-separate Next Steps
+        h5 Getting the Site Live
+        p.project-p The current redesign is under development. Check back soon to see the site shipped and live. 
+        
     .content-container.project-container
         h3 Final Screens
         +img("results.png")
@@ -99,26 +201,11 @@ block content
 block css
     style.
         .solution-block {
-        background: #F4F8F9;
+        background: #FdFfFa;
         }
-        //- .solution-block h1 {
-        //- color: #fcfffe;
-        //- }
-        //- .solution-block h2 {
-        //- color: #fcfffe;
-        //- }
-        //- .solution-block h3 {
-        //- color: #fcfffe;
-        //- }
-        h6, blockquote {
-        color: #184F5C;
+        h6 {
+            color: #184F5C;
         }
-        //- .solution-block h6 {
-        //- color: #fcfffe;
-        //- }
-        //- .solution-block p {
-        //- color:#fcfffe;
-        //- }
         .tint-box {
             background: #184F5C;
             color:#fcfffe;

@@ -1,11 +1,28 @@
 extends ../layout
 
 block content
+    +nav(nav, topDir)
     .project-container.content-container
         h1.project-title Sanskriti Logo Design
-        h3 This is page is still a work in progress. Check back soon :)
         h6 introduction
-        h2
+        h2 Sanskriti brings traditional Indian culture to UConn through dance, music, and cultural celebrations. I was hired as a freelance graphic deisgner to help the club with its logo.
+        .goals.grid-3.flex.mt-xxl
+            .grid-2-item.left
+              p.bold Goal 1
+              p.project-p Represent the traditional Indian culture Sanskriti brings to UConn.
+            .grid-2-item.right
+              p.bold Goal 2
+              p.project-p Reflect the perfomance and dance nature of the organization. 
+        h3 Overview
+        p.mb-l
+            strong Role: 
+            | Graphic Designer
+        p.mb-l 
+            strong Team: 
+            | Solo
+        p
+            strong Duration: 
+            | 4 Weeks
     .tint-box.project-extra-padding
         .project-container.content-container
             .grid-2.flex
@@ -18,24 +35,79 @@ block content
     .project-extra-padding
         .project-container.content-container
             h6 research
-            h3 Stakeholder Interviews
+            h3 Frequent Stakeholder Checkins
             p.project-p.
-            h3 Visual research
+                Throughout the process, I met with the executive board to discuss art direction. To capture a logo that represented UConn's traditional Indian culture club, it was helpful to meet with its leaders and collaborate on a single solution.
+            h5 Takeaways
+            ul
+                li.mb-m The main way Sanskriti revives traditional Indian culture is through dance and music. The final logo needed to reflect the passion they put behind each performance. 
+                li.mb-m The club focuses on two types of Indian dance: Kuchipudi and Bharatnatyam. This helped drive research into the poses and garb utilized in performances. 
+            h3.mt-separate Visual research
             p.project-p.
+                
             +img("visual-research.png")
-            h3 Getting the Form and Shape
+            h3.mt-separate Getting the Form and Shape
             p.project-p.
             +img("shape.png")
-            h3 Playing with Fonts
+            h3.mt-separate Playing with Fonts
             p.project-p.
             +img("typeface.png")
-            h3 Colors
+            h3.mt-separate Colors
             p.project-p.
             +img("color.png")
     .tint-box.project-extra-padding
         .project-container.content-container
             h6 Conclusion
-            h3 Final Logo
-            +img("final.png")
+            h3 Results
+            .grid-2.flex
+                .grid-2-item.left
+                    +img("final.png")
+                .grid-2-item.right
+                    h5 Keywords
+                    p.mb-s Passion
+                    p.mb-s Ornate
+                    p.mb-s Intricate
+                    p.mb-s Artistic
+                    p.mb-s Revival
             h3.mt-separate In Use
             +img("results.png")
+            h3.mt-separate Challenges and Lessons
+            h5 Finding the Right Form
+            p.mb-l 
+                | A majority of the project was spent to find the right shape for the logo. 
+                | Abstracting away color and fonts for later helped me focus on the graphic that mattered. 
+            h5 Delve into The Culture
+            p.mb-l The greatest takeaway was to always consider the context around a design. 
+                | After researching the historical, cultural, and religious context around traditional Indian dance, 
+                | I was able to find important symbols (e.g. the lotus) and dance poses that led to the final logo. 
+            h3.mt-separate What I Would Do Differently
+            h5 Take a Traditional Indian Dance Class 
+            p I wish I had asked for the opportunity to attend Sanskriti practice or learn some poses. 
+                | It would have helped me gain new reference poses and a first-hand perspective on what it's like to be a part of Sanskriti.
+            +project-end-cta()
+block css
+    style.
+        .solution-block {
+            background: #9C1539;
+        }
+        .solution-block h1 {
+            color: #fffefa;
+        }
+        .solution-block h2 {
+            color: #fffefa;
+        }
+        .solution-block h3 {
+            color: #fffefa;
+        }
+        h6, blockquote {
+            color: #9C1539;
+        }
+        .solution-block h6 {
+            color: #FFA392;
+        }
+        .solution-block p {
+            color: #fefefa;
+        }
+        .tint-box {
+            background: #FFFbF8;
+        }

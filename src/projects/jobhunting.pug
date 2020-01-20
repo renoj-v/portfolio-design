@@ -1,11 +1,32 @@
 extends ../layout
 
 block content
+    +nav(nav, topDir)
     .project-container.content-container
+
         h1.project-title JobHunting
-        h3 This is page is still a work in progress. Check back soon :)
         h6 introduction
-        h2 
+        h2 The job search process is far from perfect. JobHunting highlights some of the problems jobseekers face. 
+        .goals.grid-2.flex.mt-xxl
+          .grid-2-item.left
+              p.bold Goal 1
+              p.project-p Talk about what problems people face when searching for a job.
+          .grid-2-item.right
+              p.bold Goal 2
+              p.project-p Take a more satrical and comical approach on the situation. Give people a good laugh. 
+          
+        //p.project-p.
+          The weather can be quite unpredictable, especially where I live in the Northeast. If we're not prepared, then our whole day can be thrown off. The goal of this app to make sure busy adults, those who may not always be thinking about the weather, are informed and ready to act.
+        h3 Overview
+        p.mb-l
+            strong Role: 
+            | Motion Designer, Animator
+        p.mb-l 
+            strong Team: 
+            | Solo, with help from peers and professors
+        p
+            strong Duration: 
+            | 4 Weeks
     .tint-box.extra-project-padding
         .project-container.content-container
             h6 final animation    
@@ -14,24 +35,46 @@ block content
     .project-container.content-container
         h6 inspiration
         h3 Personal Experience
-        p.project-p
-        h3 Talking to friends
-        p.project-p
-        h3 Finding the right song
         p.project-p.
-    .tint-box 
+            This animation was a way for me to open up about my painpoints in the job search process. 
+            It was a way to talk about it without having to say anything at all. 
+        h3 Talking to friends
+        p.project-p.
+            When talking to friends about their experiences with the job search process, we had a lot in common. 
+            I incorporated these common experiences into the final animation. 
+
+    .project-extra-padding
         .project-container.content-container
             h6 process
             h3 Storyboards
             +img("storyboards.png")
-            h3 Style Frames
+            h3.mt-separate Style Frames
             +img("style-frame.png")
-            h3 Challenge: Controlling Volume of Information
+            //h3.mt-separate Challenge: Controlling Volume of Information
+            .mt-xl
             +img("wireframe-style.png")
-            p.project-p.
-            h3 Final Stills
-            .project-p.
+            h3.mt-separate Final Stills
             +img("final-stills.png")
+    .project-container.content-container.project-extra-padding
+        h6 conclusion
+        h3 Results
+        p.project-p.
+            The final animation was featured in the Metropolitan Computer Animation Festival. It also won the "Most Comedic" award in my Motion Graphics class.
+
+        +youtube("https://www.youtube.com/embed/nrPvp_7VKVA")
+        h3.mt-separate Challenges and Lessons
+        
+        h5 Finding the Right Song
+        p.mb-l One the main challenges was finding the right audio. A lot of music is copyrighted and could not be used in my animation.
+                | It took some time to find the right song, one that had the right sense of humor.
+        h5 Timing is Everything
+        p.mb-l Like a dancer has to time themself to the music, I had to time my animation to the audio I chose. Storyboarding and creating After Effects Markers helped me time my animations to the music
+        //h3.mt-separate If I Had Unlimited Time, I Would
+        //ul
+            li.mb-m 
+                h5 Develop a Richer Design Language
+                | If I had more time, I'd want to develop the colors and motion further. There could be more integration of the Principles of Animation. Another place to improve is the color language beyond just two or three colors. 
+        
     +project-end-cta()
 
     

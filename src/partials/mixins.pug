@@ -24,7 +24,7 @@ mixin invision(source)
 mixin video(source,token)
     .video-container
         .video-inner-container
-            video(width="100%" loop id=token)
+            video(width="100%" autoplay loop id=token)
                 source(src=images + source)
                 | Your browser does not support the video tag.
         .controls

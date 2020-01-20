@@ -19,6 +19,9 @@
 .mb-xxl {
     margin-bottom:2.5rem;
 }
+.mb-xxxl {
+    margin-bottom: 3rem;
+}
 .mt-m {
     margin-top:1rem;
 }
@@ -27,6 +30,9 @@
 }
 .mt-xl {
     margin-top:2rem;
+}
+.mt-xxxl {
+    margin-top:3rem;
 }
 .mt-separate {
     margin-top: 15vh;
@@ -68,6 +74,10 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.plr-xxxl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 
 .mlr-m {
     margin-left: 1rem;
@@ -75,6 +85,9 @@
 }
 .ml-m {
     margin-left: 1rem;
+}
+.m-0 {
+    margin: 0;
 }
 .ptb-0-mt {
     @media (max-width: 768px) {
