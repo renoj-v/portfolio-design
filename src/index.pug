@@ -3,18 +3,19 @@ extends ./layout
 block content
     - const subpages = self.htmlWebpackPlugin.options.pages.slice(1)
     .hero-block
+
         +nav(nav,topDir)
         .content-med-container.home-hero
             .align-middle
-                h1 Renoj, Product/UX Designer with a technical mind and creative heart
-                h2.mb-0 Check out my work below
-                h2 And make sure to say “Hi” at 
+                h1.animate.fade.slide-down Renoj, Product/UX Designer with a technical mind and creative heart
+                h2.mb-0.animate.fade.slide-down.delay-small Check out my work below
+                h2.animate.fade.slide-down.delay-small And make sure to say “Hi” at 
                     a(href="mailto:renoj@uconn.edu")
                         | renoj@uconn.edu
-    .projects
+    .projects.animate.slide-up.delay-large
         each project in subpages
             - const bg_url = project.icon
-            div(class="project")
+            .project.animate.fade.delay-large
                 .project-background
                     +img_absolute(images + project.token + "/icon.png", project.token)
                 

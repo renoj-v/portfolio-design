@@ -3,34 +3,37 @@ extends ../layout
 block content
     +nav(nav, topDir)
     .project-container.content-container
-        h1.project-title Sanskriti Logo Design
-        h6 introduction
-        h2 Sanskriti brings traditional Indian culture to UConn through dance, music, and cultural celebrations. I was hired as a freelance graphic deisgner to help the club with its logo.
-        .goals.grid-3.flex.mt-xxl
+        h1.project-title.animate.fade.slide-down Sanskriti Logo Design
+        h6.animate.fade.delay-small.slide-down introduction
+        h2.animate.fade.delay-small.slide-down Sanskriti brings traditional Indian culture to UConn through dance, music, and cultural celebrations. I was hired as a freelance graphic deisgner to help the club with its logo.
+        .goals.grid-3.flex.mt-xxl.animate.fade.delay-med.slide-down
             .grid-2-item.left
               p.bold Goal 1
               p.project-p Represent the traditional Indian culture Sanskriti brings to UConn.
             .grid-2-item.right
               p.bold Goal 2
               p.project-p Reflect the perfomance and dance nature of the organization. 
-        h3 Overview
-        p.mb-l
+        h3.animate.fade.delay-large.slide-down Overview
+        p.mb-l.animate.fade.delay-large.slide-down
             strong Role: 
             | Graphic Designer
-        p.mb-l 
+        p.mb-l.animate.fade.delay-large.slide-down
             strong Team: 
             | Solo
-        p
+        p.animate.fade.delay-large.slide-down
             strong Duration: 
             | 4 Weeks
     .tint-box.project-extra-padding
         .project-container.content-container
             .grid-2.flex
-                .grid-2-item
+                .grid-2-item.pr-xl
                     h6 solution
                     h3 Final Logo
                     p.project-p.
-                .grid-2-item
+                        Incorporated passion for traditional Indian culture through maroon and gold colors. 
+                        The lotus symbol and henna patterns further highlight the artisitc elements of Indian culture.
+                        The dance and performance elements are reflected in the Kuchipudi and Bharatnatyam poses as well as the musician. 
+                .grid-2-item.pl-xl
                     +img("sol-1.png")
     .project-extra-padding
         .project-container.content-container

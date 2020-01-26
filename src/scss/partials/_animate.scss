@@ -1,0 +1,34 @@
+.animate {
+    transition: .3s opacity, .3s transform;
+    &.fade {
+        opacity:0;
+        &.in {
+            opacity: 1;
+        }
+    }
+    &.slide-up {
+        transform: translateY(20px);
+        &.in {
+            transform: translateY(0px);
+        }
+    }
+    &.slide-down {
+        transform: translateY(-20px);
+        &.in {
+            transform: translateY(0px);
+        }
+    }
+}
+
+.delay-small {
+
+    transition-delay: .15s;
+}
+.delay-med {
+
+    transition-delay: .25s;
+}
+.delay-large {
+
+    transition-delay: .3s;
+}

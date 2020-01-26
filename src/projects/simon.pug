@@ -4,16 +4,16 @@ block content
     +nav(nav, topDir)
     .project
       .intro.content-container.project-container
-        h1.project-title Simon Says the Weather
-        h6 introduction
+        h1.project-title.animate.fade.slide-down Simon Says the Weather
+        h6.animate.fade.delay-small.slide-down introduction
         //- h2 Problem
         //h3 How might we inform busy adults about the weather so they can plan their day?
         //h2 The weather affects everyone, from what we wear to our daily schedule. How might we inform busy adults, those who may forget to check the forecast, be prepared for the weather?
         // h2 The weather forecast determines how we plan our day. The goal of this project is to reimagine how we receive the forecast.
                                                                                                       To do what? how we can be better prepared for the weather
-        h2 Even simple problems can have creative solutions. Simon Says the Weather aims to take a new perspective on mobile weather apps.
-        .goals.grid-2.flex.mt-xxl
-          .grid-2-item.left
+        h2.animate.fade.delay-small.slide-down Even simple problems can have creative solutions. Simon Says the Weather aims to take a new perspective on mobile weather apps.
+        .goals.grid-2.flex.mt-xxl.animate.fade.delay-med.slide-down
+          .grid-2-item.left.delay-med.slide-down
               p.bold Goal 1
               p.project-p Explore how we can make the weather both fun and informative.
           .grid-2-item.right
@@ -22,14 +22,14 @@ block content
           
         //p.project-p.
           The weather can be quite unpredictable, especially where I live in the Northeast. If we're not prepared, then our whole day can be thrown off. The goal of this app to make sure busy adults, those who may not always be thinking about the weather, are informed and ready to act.
-        h3 Overview
-        p.mb-l
+        h3.animate.fade.delay-large.slide-down Overview
+        p.mb-l.animate.fade.delay-large.slide-down
             strong Role: 
             | Product Designer, UX Researcher
-        p.mb-l 
+        p.mb-l.animate.fade.delay-large.slide-down 
             strong Team: 
             | Solo, with help from mentors and professors
-        p
+        p.animate.fade.delay-large.slide-down
             strong Duration: 
             | 6 Weeks
       .tint-box.project-container
@@ -68,7 +68,7 @@ block content
           h3.mt-separate Competitive Analysis
           p.project-p.
             Some of the users I interviewed already used a weather app. I investigated their applications and those similar to understand their experiences.
-          +img("competitive-analysis.png")
+          +lazy_img("competitive-analysis.png")
       .tint-box
         .insights-opportunities.content-container.project-container
           h3.i-o-header Key Insights and Opportunities
@@ -85,40 +85,40 @@ block content
           h3 Personas
           p.project-p.
             Personas summarized my research efforts and helped me take a user-centered design approach. When considering ideas and concepts, I considered what Jennifer and David would need in a weather app.
-          +img("personas.png")
+          +lazy_img("personas.png")
           h6.mt-separate design
           h3 Wireframe Prototypes
           p.project-p.
             After research, I went directly to wireframes and prototyping ideas to test with my users. The goal was to get out different concepts and gauge user reactions and feedback. One set of user tests was conducted in an interiew format, where participants were able to engage with all three concepts.
           .grid-3.flex.mt-xxl
             .grid-3-item.pr-xl
-              +img("wire-1.png")
+              +lazy_img("wire-1.png")
             .grid-3-2-item.pl-xl
               h5 Concept 1: Traditional weather app
               p.caption Based on the apps analyzed in the competitive analysis. Users can see the weather for the week and get an hour-by-hour forecast by tapping on a day.
-              h5 Rationale
+              p.bold Rationale
               p.caption As a control, this version of the weather app helped participants compare their experience with a traditional weather app with the more experimental concepts.
-              h5 Feedback
+              p.bold Feedback
               p.caption Users understood how to navigate the app, but there wasn't anything unique compared to other weather apps.
           .grid-3.flex.mt-separate
             .grid-3-item.pr-xl
-              +img("wire-2.png")
+              +lazy_img("wire-2.png")
             .grid-3-2-item.pl-xl
               h5 Concept 2: Widget Plugins
               p.caption Control panel that lets users control Widgets, weather plugins that can connect to other apps.
-              h5 Rationale
+              p.bold Rationale
               p.caption User Interviews inspired me to think about how the forecast could appear in apps people already use. Users could set up their Widgets once and then never have to worry about opening up a weather app again.
-              h5 Feedback
+              p.bold Feedback
               p.caption Participants were able to understand what Widgets were and how they might affect other apps. The concept added value, but users would still want a dedicated place to check the weather on their phone.
           .grid-3.flex.mt-separate
             .grid-3-item.pr-xl
-              +img("wire-3.png")
+              +lazy_img("wire-3.png")
             .grid-3-2-item.pl-xl
               h5 Concept 3: AI Assistant
               p.caption An assistant that could message users and send notifications directly to their phone. Users could also ask for suggestions about how to prepare for the day.
-              h5 Rationale
+              p.bold Rationale
               p.caption Inspired by voice assistants in the competitive analysis, I wanted to provide a more personalized way to interact with the forecast. A personal weatherman has a sense of trustiworthiness and expertise that people can rely on. 
-              h5 Feedback
+              p.bold Feedback
               p.caption Participants liked the idea of having a personal weatherman, but were unlikely to interact within a chat.
 
       //-     .grid.grid-3.flex.mb-xxl
@@ -156,7 +156,7 @@ block content
           h3 Wireflow to Integrate Widgets Concept
           p.project-p.
             Widgets were a strong concept that participants enjoyed. To tie them into a traditional mobile weather app, I created different user flows to see how they might fit in. Here’s the final user flow I landed on
-          +img("user-flow.png") 
+          +lazy_img("user-flow.png") 
       .content-container.project-container
           h3 Giving Character to an AI Assistant
           p.project-p
@@ -168,7 +168,7 @@ block content
             | and 
             strong playfulness.
           //Although I only started with one character, a future feature would be to allow users to choose one of many weather reporters, each reflecting different races, genders, and body types.
-          +img("character-design.png")
+          +lazy_img("character-design.png")
       //.content-container.project-container
           h3 Character and Visual Design
           p.project-p.
@@ -180,9 +180,9 @@ block content
             The weatherman concept came around when considering visual design. Creating the character of Simon helped define the colors and fonts that would support a friendly and playful style.
           .grid-2.flex
             .grid-2-item.pr-xl
-              +img("styleguide.png")
+              +lazy_img("styleguide.png")
               .mt-xl
-                +img("styleguide-2.png")
+                +lazy_img("styleguide-2.png")
             .grid-2-item.pl-xl
               h5 Rationale
               p.caption.
@@ -223,7 +223,7 @@ block content
           h5 Inclusive Design
           p.mb-xxxl If I had more time on this project, I would want to design more weather reporters who would represent different races, gender expressions, and body types. The goal would be for users to be able to select the weatherman that reflects them best.
           h3.mb-xxl.mt-separate Final Screens
-          +img("results.png")
+          +lazy_img("results.png")
             
       +project-end-cta()
 

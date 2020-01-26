@@ -5,6 +5,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const sitemap = require("./sitemap.js");
 const pages = sitemap.pages;
+const others = sitemap.others;
 const nav = sitemap.nav;
 const footer = sitemap.footer;
 
@@ -18,6 +19,16 @@ const plugins = pages.map(function(page, i) {
     });
     return plug;
 });
+others.forEach(function(page) {
+    const plug = new HtmlWebpackPlugin({
+        ...page,
+        pages: pages,
+        nav: nav,
+        footer: footer,
+        inject: false
+    });
+    plugins.push(plug)
+})
 const pug = {
     test: /\.pug$/,
     use: {

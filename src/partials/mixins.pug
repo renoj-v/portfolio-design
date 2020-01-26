@@ -1,18 +1,26 @@
 mixin img(source, alt_text, exclude_container)
     - if (exclude_container)
-        img(src=images+source, alt=alt_text)
+        img(src=images+source, alt=alt_text ? alt_text : source)
 
     - else
         .img-container
-            img(src=images+source, alt=alt_text)
+            img(src=images+source, alt=alt_text ? alt_text : source)
+            block
+mixin lazy_img(source, alt_text, exclude_container)
+    - if (exclude_container)
+        img(src=images+source, alt=alt_text ? alt_text : source class="lozad")
+
+    - else
+        .img-container
+            img(src=images+source, alt=alt_text ? alt_text : source  class="lozad")
             block
 mixin img_absolute(source, alt_text, exclude_container)
     - if (exclude_container)
-        img(src=source, alt=alt_text)
+        img(src=source, alt=alt_text ? alt_text : source)
 
     - else
         .img-container
-            img(src=source, alt=alt_text)
+            img(src=source, alt=alt_text ? alt_text : source)
             block
 mixin youtube(source) 
     .youtube-container
@@ -20,7 +28,7 @@ mixin youtube(source)
 
 mixin invision(source) 
     .invision-container
-        iframe(width="442", height="935", src=source frameborder="0" allowfullscreen)
+        iframe(width="442" height="935" data-src=source frameborder="0" allowfullscreen class="lozad")
 mixin video(source,token)
     .video-container
         .video-inner-container

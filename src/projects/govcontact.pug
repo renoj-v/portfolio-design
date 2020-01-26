@@ -4,11 +4,13 @@ block content
     +nav(nav, topDir)
     .project-container.content-container.project-extra-padding
         
-        h1.project-title GovContact
-        h6 introduction
-        h2.mb-xxl Contacting your legislator is one of the simplest and most effective ways to use your political voice. GovContact puts that power at a citizen's fingertips. 
+        h1.project-title.animate.fade.slide-down GovContact
+        h6.animate.fade.slide-down.delay-small introduction
+        h2.mb-xxl.animate.fade.slide-down.delay-small Some of the challenges of contacting a legislator are (1) learning about representatives, (2) staying up to date with representatives' actions, and (3) sending frequent messages. GovContact is a mobile app that makes contacting a representative a simpler experience. 
+        //The Battle for Net Neutrality Movement helped send 22,000,000 messages to Congress. It was successful telling citizens how and why to contact their represenatives. GovContact was inspired by that sentiment
+        //Contacting your legislator is one of the simplest and most effective ways to use your political voice. GovContact puts that power at a citizen's fingertips. 
         //UX design has a role in political activism by designing how we can communicate with government officials.
-        .goals.grid-3.flex.mt-xxl
+        .goals.grid-3.flex.mt-xxl.animate.fade.slide-down.delay-med
             .grid-3-item.left
                 p.bold Goal 1
                 p.project-p Inform citizens about representatives' contact info and political stance.
@@ -18,14 +20,14 @@ block content
             .grid-3-item.right
                 p.bold Goal 3
                 p.project-p Encourage citizens to send frequent, clear, and concise messages.
-        h3 Overview
-        p.mb-l
+        h3.animate.fade.slide-down.delay-large Overview
+        p.mb-l.animate.fade.slide-down.delay-large
             strong Role: 
             | Product Designer, UX Researcher
-        p.mb-l 
+        p.mb-l.animate.fade.delay-large
             strong Team: 
             | Solo, with help from mentors and professors
-        p
+        p.animate.fade.delay-large
             strong Duration: 
             | 10 Weeks
     .solution-block.project-med-padding.ptb-0-mt
@@ -151,7 +153,7 @@ block content
                     h4.mb-s Focus Group
                     p.caption.mb-m.
                         Hitting the ground running, I arranged a focus group with citizens to receive a large amount of qualitative insights in a short amount of time. Disucssion focused on how citizens would contact reps.
-                    ul.mb-xl
+                    ul.mb-xxxl
                         li.quote-box
                             // h5.quote-question
                                 | What do you wish could be improved in the process of finding your representatives' contact information?
@@ -181,12 +183,13 @@ block content
                     h4.mb-s Interviews with Rep Offices
                     p.caption.mb-m.
                         To tackle the problem from another angle, I contacted my own reps' offices and conducted surveys on how a citizen could best get their voice heard.
-                    ul
+                    ul.mb-xxxl
                         li.caption-small Representative employees answer citizen reports rather than representatives themselves. Employees forward important messages and create summary reports.
                     h4.mt-xxxl.mb-s Competitive Analysis
                     p.caption.mb-m.
                         Analysis into civic apps provided inspiration into what works and what could be improved. 
                     +img("competitive-analysis.png")
+                    
                     //h4.mb-xxl.mt-xl Takeaways
                     //ul
                         li.mb-xl
@@ -249,72 +252,85 @@ block content
                 Mentors provided more formal critique.
             .grid-3.flex
                 .grid-3-item
-                    +img("wireframes.png")
+                    +lazy_img("wireframes.png")
                 .grid-3-2-item.right.pl-xxxl
                     h5 Representative Cards
                     p.caption.
                         Cycle through individual cards to meet reps and learn how to contact them.
-                    p.bold.mb-s Rationale
-                    ul
+                    p.bold Rationale
+                    //ul
                         li.mb-s Based on the focus group, the main problem to solve was consoldiating representatives’ info in one place. 
                         //li.mb-m Citizens could learn about reps through social media links
+                    p.caption Based on the focus group, the main problem to solve was consoldiating representatives’ info in one place. 
                     p.bold Feedback 
-                    ul
+                    //ul
                         li.mb-s If only contact info is present, it’s nicer to have them laid out one screen rather than cycling through one by one. 
                         li.mb-s 0% of participants thought they would need more contact information (office address, rss feed)
+                    p.caption If only contact info is present, it’s nicer to have them laid out one screen rather than cycling through one by one. 
+                    p.caption 0% of participants thought they would need more contact information (office address, rss feed)
+            
             .grid-3.flex.mt-separate
                 .grid-3-item
-                    +img("single-page-layout.png")
+                    +lazy_img("single-page-layout.png")
                 .grid-3-2-item.right.pl-xxxl
                     h5 Single Page Layout
-                    p.caption See representative information on a single screen. Easy to scroll through and meet all representatives. Also explored visual design
-                    p.bold.mb-s Rationale
-                    //p.caption Feedback from previous user test showed that citizens wanted to be able to meet their representatives faster. Explored visual design based on a “patriotic” theme.
-                    ul
-                        //li.mb-m Feedback from previous user test showed that citizens wanted to be able to meet their representatives faster. 
-                        li.mb-s Based on the Focus Group, the main problem to solve was consoldiating representatives’ info in one place.
+                    p.caption See representative information on a single screen. Easy to scroll through and meet all representatives.
+                    p.bold Rationale
+                    p.caption Feedback from previous user test showed that citizens wanted to be able to meet their representatives faster. 
+                    p.caption Focus Group and Online Research demonstrated how citizens should know where reprensentatives stand on the issues. Used party affiliation.
+                    //ul
+                        li.mb-m Feedback from previous user test showed that citizens wanted to be able to meet their representatives faster. 
+                        //li.mb-s Based on the Focus Group, the main problem to solve was consoldiating representatives’ info in one place.
                         li.mb-s Focus Group and Online Research showed that citizens needed to know where reps stand on the issues. Political party icons could show how a rep might vote.
-                    p.bold.mb-s Feedback
-                    //p.caption Citizens needed more information on representatives’ political stance. Party affiliation is not enough and may send a divisive message.
-                    ul
+                    p.bold Feedback
+                    p.caption Citizens needed more information on representatives’ political stance. Party affiliation is not enough and may send a divisive message.
+                    //ul
                         li.mb-m Knowing party affiliation is not enough to know a rep's political stance and may send a divisive message.
-            .grid-3.flex.mt-separate
+            .grid-3.flex.mt-separate.mb-xxxl
                 .grid-3-item
-                    +img("rep-profile.png")
+                    +lazy_img("rep-profiles-2.png")
                 .grid-3-2-item.right.pl-xxxl
                     h5 Representative Profiles
                     p.caption Profiles contain both contact info and individualized information about political stance.
-                    p.bold.mb-s Rationale
+                    p.bold Rationale
                     //p.caption Profiles allow citizens to understand how a representative might vote. Pulled away from a single page layout to chunk more appropriate information. Began to use purple as a primary color to symbolize unity (mix of red and blue)
-                    ul
+                    //ul
                         li.mb-s Previous user test showed citizens needed to know more about a political stance than political party. Rep Profiles ignore political party and look at how each rep has supported the issues. 
                         li.mb-s Pulled away from a single page layout to chunk more appropriate information.
-                    p.bold.mb-s Feedback
+                    p.caption Previous user test showed citizens needed to know more about a political stance than political party. Rep Profiles ignore political party and look at how each rep has supported the issues. 
+                    p.caption Pulled away from a single page layout to chunk more appropriate information.
+                    
+                    p.bold Feedback
                     //p.caption Citizens would want to stay updated with what representatives are up to on a daily basis. Based on the online research and competitive analysis, it would be informative to know what legislation representatives are voting on. Another factor to consider was being able to message representatives through GovContact
-                    ul
+                    //ul
                         li.mb-s Citizens would want to a way to message representatives inside GovContact
+                    p.caption Citizens would want to stay updated with what representatives are up to on a daily basis as well as message reps inside GovContact.
             .grid-3.flex.mt-separate
                 .grid-3-item
-                    +img("current-design.png")
+                    +lazy_img("current-design-2.png")
                 .grid-3-2-item.right.pl-xxxl
                     h5 Adding Political Feed and Messaging
                     //p.caption Citizens can stay updated with representatives through a political feed, that finds representatives’ social media, petitions, and recent legislation. To avoid bias, information does not come from a formal news outlet. GovContact also has a messaging feature, which citizens can send text, voice, and video messages to representatives. 
                     p.caption Political Feed scrapes social media, petitions, and legislation to inform and prompt citizens to act. Citizens can use in-app messaging to send text, voice, and video correspondence.
-                    p.bold.mb-s Rationale
+                    p.bold Rationale
                     //p.caption Incorporate a more informative role for GovContact. The goal was to help citizens know what they’re representatives are up to as well encourage them to engage with petitions and bills. The messaging system can be acceessed from representative profiles, the political feed, and the main navigation to encourage citizens to contact their representatives through GovConctact
                     //p.caption.
                         Expanded features from Competitive Analysis to see rep's legislation.  
                         Online Research and Focus Group showed that citizens need to trust information source. Political Feed relies on primary sources rather than news outlets. 
                         Previous user test showed that citizens would also want to message reps within the app.
-                    ul
+                    //ul
                         li.mb-s Expanded features from Competitive Analysis to see rep's legislation.  
                         li.mb-s Online Research and Focus Group showed that citizens need to trust information source. Political Feed relies on primary sources rather than news outlets. 
                         li.mb-s Previous user test showed that citizens would also want to message reps within the app.
-                    p.bold.mb-s Feedback
+                    p.caption Expanded feature from Competitive Analysis to see representatives' bills to include all of their activities.
+                    p.caption Online Research and Focus Group showed that citizens need to trust information source. Political Feed relies on primary sources rather than news outlets. 
+                    p.caption Previous user test showed that citizens would also want to message reps within the app.
+                    p.bold Feedback
                     //p.caption Engagements from social media, petitions, and bills could be sent to representatives as a summary report to be used to understand citizens’ opinions. 
                     //p.caption Engagements from social media, petitions, and bills could be sent to reps as a summary report to be used to understand citizens’ opinions. 
-                    ul
+                    //ul
                         li.mb-m Engagements from social media, petitions, and bills could be sent to reps as a summary report to be used to understand citizens’ opinions. 
+                    p.caption Engagements from social media, petitions, and bills could be sent to reps as a summary report to be used to understand citizens’ opinions. 
             //.grid-3.flex
                 .grid-3-item.left
                     +img("wireframe.png")
@@ -381,7 +397,7 @@ block content
     .content-container.project-container
         h3 Closer Look at Final Solution
         p.project-p After the full design evolution, here is what I landed on. Each feature aims to tackle on the goals established at the research stage.
-        .goals.grid-3.flex.mt-xxl
+        .goals.grid-3.flex.mt-xxl.mb-xl
             .grid-3-item.left
                 p.bold Goal 1
                 p.project-p Inform citizens about representatives' contact info and political stance.
@@ -391,7 +407,7 @@ block content
             .grid-3-item.right
                 p.bold Goal 3
                 p.project-p Encourage citizens to send frequent, clear, and concise messages.
-        +img("deep-dive-rep.png")
+        +lazy_img("deep-dive-rep.png")
         .mt-separate
             //.goals.grid-3.flex.mt-xxl
                 .grid-3-item.left
@@ -403,9 +419,9 @@ block content
                 .grid-3-item.right
                     p.bold Goal 3
                     p.project-p Encourage citizens to send frequent, clear, and concise messages.
-            +img("deep-dive-feed.png")
+            +lazy_img("deep-dive-feed.png")
         .mt-separate
-            +img("deep-dive-message.png")
+            +lazy_img("deep-dive-message.png")
     //.content-container.project-container
         h3 Current Solution
         p.project-p.
@@ -447,7 +463,7 @@ block content
         
     .content-container.project-container
         h3 Final Visual Design Language
-        +img("visual-design.png")
+        +lazy_img("visual-design.png")
     
     .content-container.project-container
             h6 conclusion
@@ -501,7 +517,7 @@ block content
             p.project-p Goal 3: Encourage citizens to send frequent, clear, and concise messages
     .content-container.project-container.mt-separate
             h3 Final Screens
-            +img("results.png")
+            +lazy_img("results.png")
     +project-end-cta()
 
     
@@ -522,4 +538,10 @@ block css
         }
         .tint-box {
             background: #F0E2CC;
+        }
+        .fade{ 
+            opacity:0;
+        }
+        .slide-down {
+            transform: translateY(-20px);
         }

@@ -1,15 +1,18 @@
 
 
 mixin nav(nav,topDir)
-    nav.nav.content-med-container
-        ul.nav-item-list
-            li.nav-item.small-caps.logo
-                a(href=topDir) renoj
-            li.nav-item
-                ul.nav-item-list
-                    li.nav-item.small-caps.mr-xl
-                        a(href=topDir) work
-                    li.nav-item.small-caps.right
-                        a(href=topDir + "static/docs/resume_renoj_varghese.pdf", target="_blank") resume
+    nav.nav
+        .content-med-container.animate.fade.slide-down
+            ul.nav-item-list
+                li.nav-item.small-caps.logo
+                    a(href=topDir) renoj
+                li.nav-item
+                    ul.nav-item-list
+                        li.nav-item.small-caps.mr-xl
+                            a(href=topDir) work
+                        li.nav-item.small-caps.mr-xl
+                            a(href=topDir + "about") about
+                        li.nav-item.small-caps.right
+                            a(href=topDir + "static/docs/resume_renoj_varghese.pdf", target="_blank") resume
 
             

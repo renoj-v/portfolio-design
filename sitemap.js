@@ -10,6 +10,14 @@ const home = {
 const current_projects = require("./current_projects.json");
 
 const others = [
+    {
+        filename: "about/index.html",
+        template: "src/about.pug",
+        inNav: true,
+        title: "About",
+        topDir: "../",
+        imgDir: "static/img/"
+    }
 ];
 
 const socials = [
@@ -30,7 +38,8 @@ const socials = [
 const contact = [];
 module.exports = {
     projectTemplate: "src/projects/project.pug",
-    pages: [home, ...current_projects, ...others],
+    pages: [home, ...current_projects],
+    others: others,
     nav: {
         home: home,
         others: others,
