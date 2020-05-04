@@ -40,7 +40,7 @@ block content
         p.animate.fade.delay-large.slide-down
             strong Duration: 
             | 10 Weeks
-    .solution-block.project-container
+    //-.solution-block.project-container
         .content-container
             .solution
                 .plr-xxxl
@@ -67,34 +67,89 @@ block content
             h6 research
             h3 Research on UserTesting.com
             p.project-p.
-                The first step in the process was conducting user tests with real people. My main tool was UserTesting.com that provided video and audio recording of people using our site
+                The first step in the process was conducting user tests with real people. My main tool was UserTesting.com that provided video and audio recordings of people exploring the Subconscious website.
         .insights-opportunities.content-container
           h3.i-o-header Key Insights and Opportunities
           .i-o
             h4.insight Finding a story is challenging without navigation or search tools
-            p.opportunity Maybe we could make mental health stories easier to find
+            p.opportunity Let's make mental health stories easier to find
           .i-o
             h4.insight People want to learn more about the Subconscious organization
-            p.opportunity Maybe we could build trust by sharing more information about Subconscious
+            p.opportunity There's an opportunity to build trust by sharing more information about Subconscious
           .i-o.mb-0
             h4.insight Readers are hesistant to donate because they are unsure where Donations go
-            p.opportunity Maybe we could redesign how donations are presented to be more transparent
+            p.opportunity One opportunity is to redesign how donations are presented
         .content-container.project-container
             h3 Personas and Journey Maps
             p.project-p.
-                Personas and Journey Maps helped summarize my research results to the Subconscious organization and guide my design work later. With these I was able to have a conversation with organization leaders on how we could better introduce Subconscious to new readers
+                Personas and Journey Maps helped summarize my research results to the Subconscious organization. With these, I was able to have a conversation with organization leaders on how we could better introduce Subconscious to new readers.
+                The documents guided my designs as I thought about how I could improve Jamie's and Tara's experiences on the Subconscious website.
             +img("personas-maps.png")
         .content-container.project-container
             h3 Frequent Stakeholder Checkins
             p.project.-p.
-                A key element in the design and research process was frequently meeting with members of the operations, design, and content. Their feedback helped me understand the aspirations for Subconscious and incorporate the team's ideas in the final redesign
+                A key element in the design and research process was frequently meeting with members of the operations, design, and content teams. Their feedback helped me understand the aspirations for Subconscious and incorporate the team's ideas in the final redesign.
         .content-container.project-container
             h6 design
             h3 Sketches and Concepts
             p.project-p.
-                The next step was to hit the ground running and think of solutions. The best tool for this was paper and pen
+                The next step was to hit the ground running and think of solutions. The best tool for this was paper and pen to explore many ideas in a short amount of time.
             +img("sketches.png")
-        .content-container.project-container   
+        .content-container.project-container
+            h3 High Fidelity Prototype
+            p.mb-l.
+                Since there was an already established design system, I could easily convert my sketches into a high fidelity prototype. With 2-3 design iterations and frequent checkins with stakeholders, I developed the following solutions.
+            h3.mt-xxxl.mb-m Designing the Homepage to Make Stories Easier to Find
+            .grid-2.flex.mb-xl
+                .grid-2-item.left
+                    p
+                        strong Problem: 
+                        | When asked to find a specific story participants took 2-4 minutes to find. 2/7 participants were unable to find the story at all.
+                .grid-2-item.right
+                    p 
+                        strong Solution: 
+                        | Adding a search and filter tool on the homepage could help readers find stories.
+            
+            +img("home-search.png")
+            .caption.mt-m.align-center
+                | Search and Filter goes a step further than a simple search bar to show what readers can find
+            
+            h3.mt-separate.mb-m Telling Subconscious's Story To Increase Clarity
+            .grid-2.flex.mb-xl
+                .grid-2-item.left
+                    p
+                        strong Problem: 
+                        | 6/7 participants had questions about how Subconscious started, who the team was, and why the organization was created.
+                .grid-2-item.right
+                    p 
+                        strong Solution: 
+                        | Include more information on Subconscious's history. Use headers to help readers scan the information they are looking for.
+            
+            +img("our-story-copy-2.png")
+            .caption.mt-m.mb-xxxl.align-center
+                | Present Subconscious's history in both a readable and visual format
+            +img("our-story-copy.png")
+            .caption.mt-m.align-center
+                | Learn about the organization founders and their mental health stories
+
+
+            h3.mt-separate.mb-m Presenting Donations with Detail and Transparency
+            .grid-2.flex.mb-xl
+                .grid-2-item.left
+                    p
+                        strong Problem: 
+                        | 4/7 participants who reported that they would be unlikely to donate were also unsure about how their donation would be used.
+                .grid-2-item.right
+                    p 
+                        strong Solution: 
+                        | Update the Donations page with clear categories that help showcase transparency and clarity about donation funds.
+            
+            +img("donate-grid.png")
+            .caption.mt-m.mb-l.align-center
+                | Redesign openly breaks down expenses from previous fiscal year
+           
+        
+        //- .content-container.project-container   
             h3 High Fidelity Prototype
             p.project-p.
                 Since there was an already established design system, I could skip the wireframes and move onto creating a high fidelity prototype. With 2-3 iterations and checking with stakeholders, I was ready to test our new experience.
@@ -150,7 +205,7 @@ block content
         .content-container.project-container
             h3 A/B Testing
             p.project-p.
-                With the redesign ready, it was time to test. Using UserTesting.com again, I conducted two sets of user test focusing on how we could present the Donations page. One prototype contained a Donations page with explicit percentages and another with imagery.
+                With the redesign ready, it was time to test. Using UserTesting.com again, I conducted two sets of user tests focusing on how we could present the Donations page. One prototype contained a Donations page with explicit percentages and another with imagery.
             //+img("ab-test.png")
             .grid-2.flex
                 .grid-2-item.pr-xl
@@ -168,7 +223,7 @@ block content
           h3.i-o-header Testing Results
           .i-o
             h4.insight Readers were as likely to donate with version A as with version B
-            p.opportunity There were no significant differences between how readers responded to both versions of the donation page
+            p.opportunity There were no significant differences between how readers responded to either versions of the donation page
           .i-o
             h4.insight Participants reported they were 40% more likely to donate compared to the original site
             p.opportunity For both the original site and the redesign participants were asked to rate how likely they would be to donate to Subconscious. The average ratings for the redesign was 40% higher than for the original site.
@@ -181,13 +236,13 @@ block content
         ul 
             li.mb-m Told the story of Subconscious, a mission driven non-profit dedicated to people's mental health stories.
             li.mb-m Solved navigation issues to find mental health stories through search tools
-            li.mb-m Updated Get Help page to help readers find trusted, reliable mental health information from experts
+            //li.mb-m Updated Get Help page to help readers find trusted, reliable mental health information from experts
             li.mb-m Developed the About Us page to show readers how the organization started
             li Increased clarity and transparency about donations and Subconscious.
         h3.mt-separate Challenges and Lessons
         h5 CopyWriting
         p.project-p When redesigning the site, I focused more on layout and hierarchy, using dummy text for copy. 
-            | But to test with users, I needed more realistic copy for readers to get an understanding of who Subconscious is
+            | But to test with users, I needed more realistic copy for readers to get an understanding of who Subconscious is.
             | The Operations and Content teams volunteered to do copywriting, while I could focus on the design.
         h3.mt-separate Next Steps
         h5 Getting the Site Live

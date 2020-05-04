@@ -1,0 +1,71 @@
+extends ./layout
+
+block content
+    .content-container.project-container
+        h1 Spine App
+        h6 introduction
+        h2
+            | The Spine App helps people with chronic back pain.
+            | It is part of a University of Connecticut research study.
+            | We were tasked to redesign the app to improve the user experience of managing chronic pain
+
+        .goals.grid-3.flex.mt-xxl
+            .grid-3-item.left
+                p.bold Goal 1
+                p.project-p Improve the usability of the Spine App
+            .grid-3-item.middle
+                p.bold Goal 2
+                p.project-p Give the Spine App a new visual design language
+            .grid-3-item.right
+                p.bold Goal 3
+                p.project-p Create Learning Module Videos to inform users about chronic low back pain
+        h3.animate.fade.delay-large Overview
+        p.mb-l.animate.fade.delay-large
+            strong Process:
+            | Initial User Flow, Information Architecture, Visual Design
+
+
+
+    //.tint-box
+        .content-container.project-extra-padding.animate.slide-up.delay-large
+            h3 Mission Statement
+        
+    .content-container.project-extra-padding
+        h3 Usability Tests
+        p.project-p.
+            Researchers had already conducted user tests by asking participants to walk through case scenarios. They recored and audio and video to analyze results.
+        // - TO DO: Main Takeaways 
+        h3 Key Insights and Opportunties
+        .i-o
+            h4.insight Users had trouble navigating the important tasks of understanding learning modules, logging physical activity,and tracking goals.
+            p.opportunity An opportunity is to improve the usability of the app to make it easier for users to fully engage in managing chronic back pain.
+        .i-o
+            h4.insight Not much time was dedicated to the visual design and feeling of the app. 
+            p.opportunity An opportunity is to put in the time to develop a visual design language. 
+        .i-o
+            h4.insight Video modules are not engaging to users to follow and complete activities.
+            p.opportunity An opportunity is to provide visualizations to help users learn about back pain.
+        h3.mt-separate User Flow
+        +img("user-flow.png")
+        h3.mt-separate Information Architecuture
+        +img("information architecture_v1.png")
+        h3.mt-separate Visual Design
+
+        +img("visual-exploration.png")
+        .mt-separate
+            +img("color palette.png")
+        
+        .grid-2.flex.mt-separate
+            .grid-2-item.left
+                +img("green.png")
+            .grid-2-item.right 
+                +img("orange.png")
+        h3 Redeisgning Video Learning Modules
+        p.project-p.
+            TBD
+        h3 Next Steps
+        h4 Interface Design
+        h4 Redesigning Information Architecture
+        h4 Redesign User Flow
+        h4 Competitive Analysis
+        

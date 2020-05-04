@@ -22,6 +22,14 @@ mixin img_absolute(source, alt_text, exclude_container)
         .img-container
             img(src=source, alt=alt_text ? alt_text : source)
             block
+mixin lazy_img_absolute(source, alt_text, exclude_container)
+    - if (exclude_container)
+        img(data-src=source, alt=alt_text ? alt_text : source  class="lozad")
+
+    - else
+        .img-container
+            img(data-src=source, alt=alt_text ? alt_text : source  class="lozad")
+            block
 mixin youtube(source) 
     .youtube-container
         iframe( width="420" height="315" src=source frameborder="0" allowfullscreen)

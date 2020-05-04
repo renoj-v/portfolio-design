@@ -13,11 +13,15 @@ block content
                     a(href="mailto:renoj@uconn.edu")
                         | renoj@uconn.edu
     .projects.animate.slide-up.delay-large
-        each project in subpages
+        each project,i in subpages
             - const bg_url = project.icon
             .project.animate.fade.delay-large
-                .project-background
-                    +img_absolute(images + project.token + "/icon.png", project.token)
+                - if (i < 2)
+                    .project-background
+                        +img_absolute(images + project.token + "/icon.png", project.token)
+                - else
+                    .project-background
+                        +lazy_img_absolute(images + project.token + "/icon.png", project.token)
                 
                 div(class="project-text-block project-text " + project.token)
                     h3.mb-s=project.title
