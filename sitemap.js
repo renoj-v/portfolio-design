@@ -17,6 +17,14 @@ const others = [
         title: "About",
         topDir: "../",
         imgDir: "static/img/"
+    },
+    {
+        filename: "spineapp/index.html",
+        template: "src/spineapp.pug",
+        inNav: true,
+        title: "SpineApp",
+        topDir: "../",
+        imgDir: "static/img/husky/"
     }
 ];
 
