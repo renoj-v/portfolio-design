@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "renoj's portfolio site",
     "scripts": {
-        "start": "npm run generate && webpack-dev-server --config './webpack.config.js' --mode development",
+        "start": "npm run generate && node --max-old-space-size=8192 './node_modules/webpack-dev-server/bin/webpack-dev-server.js' --mode development",
         "watch": "npm run generate && webpack --watch --mode development",
         "build": "npm run generate && webpack --mode production",
         "deploy": "deploy-to-git",
