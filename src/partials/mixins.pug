@@ -6,6 +6,12 @@ mixin img(source, alt_text, exclude_container)
         .img-container
             img(src=images+source, alt=alt_text ? alt_text : source)
             block
+
+            
+mixin img_full(source, alt_text, exclude_container)
+    img(src=images+source, alt=alt_text ? alt_text : source, style="width:100%")
+
+
 mixin lazy_img(source, alt_text, exclude_container)
     - if (exclude_container)
         img(src=images+source, alt=alt_text ? alt_text : source class="lozad")
@@ -45,6 +51,12 @@ mixin video(source,token)
                 | Your browser does not support the video tag.
         .controls
             h6(id=`${token}_ctrl` class="video-ctrl" target=token) Play
+mixin video_plain(source)
+    .video-container-plain
+        .video-inner-container
+            video(width="100%" autoplay loop controls)
+                source(src=images + source)
+                | Your browser does not support the video tag.
 
 mixin project-end-cta()
     .content-container.project-container.project-extra-padding

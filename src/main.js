@@ -15,7 +15,7 @@ window.onload = function() {
     const observer = lozad();
     observer.observe();
 
-    document.querySelectorAll("img.lozad").forEach( (lz,i) => {
+    document.querySelectorAll(".lozad").forEach( (lz,i) => {
         observer.triggerLoad(lz);
     })
 

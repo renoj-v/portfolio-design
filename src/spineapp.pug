@@ -2,8 +2,20 @@ extends ./layout
 
 block content
     .content-container.project-container
+        nav.nav
+            ul.nav-item-list
+                li.nav-item.small-caps.no-left
+                    a(href="#introduction") Spine App
+                li.nav-item.small-caps
+                    a(href="#research") Research
+                li.nav-item.small-caps
+                    a(href="#ui-design") UI Design
+                li.nav-item.small-caps
+                    a(href="#motion-design") Motion Design
+                li.nav0item.small-caps
+                    a(href="#about-us") About Us
+        h6(id="introduction")            
         h1 Spine App
-        h6 introduction
         h2
             | The Spine App helps people with chronic back pain.
             | It is part of a University of Connecticut research study.
@@ -19,23 +31,24 @@ block content
             .grid-3-item.right
                 p.bold Goal 3
                 p.project-p Create Learning Module Videos to inform users about chronic low back pain
-        h3.animate.fade.delay-large Overview
-        p.mb-l.animate.fade.delay-large
-            strong Process:
-            | Initial User Flow, Information Architecture, Visual Design
+        //- h3.animate.fade.delay-large Overview
+        //- p.mb-l.animate.fade.delay-large
+        //-     strong Process:
+        //-     | Initial User Flow, Information Architecture, Visual Design
 
 
-
-    //.tint-box
-        .content-container.project-extra-padding.animate.slide-up.delay-large
-            h3 Mission Statement
         
     .content-container.project-extra-padding
+        h6(id="research") 
         h3 Usability Tests
         p.project-p.
-            Researchers had already conducted user tests by asking participants to walk through case scenarios. They recored and audio and video to analyze results.
-        // - TO DO: Main Takeaways 
-        h3 Key Insights and Opportunties
+            Researchers had already conducted user tests by asking participants to walk through case scenarios. They recorded and audio and video to analyze results.
+        h3 Analysis of Current App
+        p.project-p.
+            The design team reviewed the current app alongside stakeholders to gain an understanding of the requirements. Some limitations of the current app were
+            that users lacked the ability to manage their goals, users were frustrated when going through video modules, the modules lacked appeal, and researchers were not able to track user activities.     
+        +img("original-ui.png")
+        h3.mt-separate Key Insights and Opportunties
         .i-o
             h4.insight Users had trouble navigating the important tasks of understanding learning modules, logging physical activity,and tracking goals.
             p.opportunity An opportunity is to improve the usability of the app to make it easier for users to fully engage in managing chronic back pain.
@@ -45,27 +58,131 @@ block content
         .i-o
             h4.insight Video modules are not engaging to users to follow and complete activities.
             p.opportunity An opportunity is to provide visualizations to help users learn about back pain.
-        h3.mt-separate User Flow
-        +img("user-flow.png")
-        h3.mt-separate Information Architecuture
-        +img("information architecture_v1.png")
-        h3.mt-separate Visual Design
-
-        +img("visual-exploration.png")
-        .mt-separate
-            +img("color palette.png")
-        
-        .grid-2.flex.mt-separate
-            .grid-2-item.left
-                +img("green.png")
-            .grid-2-item.right 
-                +img("orange.png")
-        h3 Redeisgning Video Learning Modules
+        h6(id="ui-design")
+        h3.mt-separate Information Architecture
         p.project-p.
-            TBD
-        h3 Next Steps
-        h4 Interface Design
-        h4 Redesigning Information Architecture
-        h4 Redesign User Flow
-        h4 Competitive Analysis
-        
+            Usability research showed that users had trouble navigating the app to find learning modules, set goals, and track activities. One of the first steps in the redesign process was to simplify the information architecture to tackle these usability concerns.
+        +img("information_architecture.png")
+        h3.mt-separate Visual Design Components
+        p.project-p.
+            One of the main endeavors was to give the SpineApp visual depth. The following design system represents the organic and calm mood established in the app. 
+        +img("design.png")
+            
+
+        h3.mt-separate Updated User Flows
+        p.project-p.
+            For each feature of the app, the team restructured the flow to better solve user problems. Video modules were simplified and incorporated more engaging content. Goals and activities were connected to help users understand the progress in managing chronic low back pain. And finally the process of teleconferencing with nurses included ways to schedule Zoom meetings. 
+        +img("complete-module-study.jpg")
+        .mt-separate
+            +img("user-flow–goal-activity.png")
+        .mt-separate
+            +img("user-flow–goal-checkin.png")
+        .mt-separate
+            +img("contact-nurses.jpg")
+
+        h6(id="motion-design")
+        h3.mt-separate Redesigning Video Learning Modules
+        p.project-p.
+            Part of the project was to redesign the videos that were apart of the learning modules. The team incorporated more animation and visualizations to add appeal and clarity to the learning content. 
+        .grid-2.flex
+            .grid-2-item.left
+                +video_plain("video/face_exercise.mp4")
+            .grid-2-item.right
+                +video_plain("video/scale_weigh.mp4")
+            //.grid-2-item.left
+                +video_plain("video/arch_back.mov")
+            //.grid-2-item.right
+                +video_plain("video/bicep_flex.mov")
+            .grid-2-item.left
+                +video_plain("video/breathing.mp4")
+            //.grid-2-item.right
+                +video_plain("video/fear_movement.avi")
+
+        h6(id="about-us") 
+        h3.mt-separate Meet the team
+        .about-us
+            .grid-3.flex.mt-xxxl
+                .grid-3-item.left
+                    +img("profile/yh.jpg")
+                .grid-3-2-item.right.pl-xl
+                    h4 Yucheng Hang
+                    p.project-p.
+                        Yucheng Hang is a first year graduate student in the Digital Media and Design program at the University of Connecticut. She is from China and currently lives in Willimantic, Connecticut. Yucheng focuses on conducting user research and designing user experiences and interfaces. She worked on the team to redesign the Spine App to help people manage their chronic low back pain. In quarantine, Yucheng spends her time trying to cook new recipes and draw little illustrations. 
+            .grid-3.flex.mt-xxxl
+                .grid-3-item.left
+                    +img_full("profile/rv.jpg")
+                .grid-3-2-item.right.pl-xl
+                    h4 Renoj Varghese
+                    p.project-p.
+                        Renoj Varghese is a first year graduate student in the Digital Media and Design program at the University of Connecticut. He is originally from Orange, Connecticut. Renoj focuses on designing user experiences and interfaces. He worked on the team to redesign the Spine App to help people manage their chronic low back pain. In quarantine, Renoj spends his time cooking up recipes from leftover ingredients in his kitchen. 
+            .grid-3.flex.mt-xxxl
+                .grid-3-item.left
+                    +img("profile/ne.jpg")
+                .grid-3-2-item.right.pl-xl
+                    h4 Nicole Ellis
+                    p.project-p.
+                        Nicole Ellis is a Junior Digital Media & Design Major, with a concentration in 2D Animation. She is from Charlotte, North Carolina, but currently lives in Vernon, Connecticut. Nicole worked on creating the “Le Paysage De Baucis” AR painting, the smog for multiple SparkAR projects, and the “PMR” animated portion of the Spine project.
+            .grid-3.flex.mt-xxxl
+                .grid-3-item.left
+                    +img("profile/ejm.jpg")
+                .grid-3-2-item.right.pl-xl
+                    h4 EJ McCabe
+                    p.project-p.
+                        EJ McCabe is a sophomore Digital Media & Design major concentrating in motion design. He is from Bridgewater, Massachusetts, and has loved animation for as long as he can remember. He created the Architecture Au Clair De Lune AR filter for the Adobe Aero Project, the pollution face filter for the Spark AR project, and worked on character animation for the Body Mechanics section for the Spine app project. He spends most of his time in quarantine either drawing, playing video games, or hanging out with his two cats.        
+            .grid-3.flex.mt-xxxl
+                .grid-3-item.left
+                    +img("profile/jb.jpg")
+                .grid-3-2-item.right.pl-xl
+                    h4 John Ballou
+                    p.project-p.
+                        John Ballou is a Junior Digital Media & Design Major, with a concentration in Motion Design. He is from Salem, Massachussettes. John worked on creating the False Mirror AR Painting in Adobe Aero, the “breathing” animation portion of the Spine project, and the documentation of all projects. His favorite quarantine activity is facetiming all of his friends from UConn to make things feel a little more normal.
+            .grid-3.flex.mt-xxxl
+                .grid-3-item.left
+                    +img("profile/sb.png")
+                .grid-3-2-item.right.pl-xl
+                    h4 Sean Bollman
+                    p.project-p.
+                        Sean Bollman is a senior Digital Media & Design major concentrating in motion design. Born in Baltimore, Maryland, Sean has been working with digital media for over half of his life. In addition to working on the Adobe Aero project and some of the Nursing School Spine video content, Sean led the Spark AR face filter project this semester. His current favorite quarantine pastime is playing video games late at night with friends.
+            .grid-3.flex.mt-xxxl
+                .grid-3-item.left
+                    +img("profile/sm.png")
+                .grid-3-2-item.right.pl-xl
+                    h4 Sofia Messerrly
+                    p.project-p.
+                        Sofia Messerrly is a Sophomore Digital Media & Design major, concentrating in Motion Design & Animation. She is from Port Chester, New York and currently lives in Greenwich, Connecticut. Sofia created the The Victory AR painting for the Adobe Aero project and collaborated in creating the Air Pollution filter for the Spark AR project. Sofia also created the Guided Imagery module for the Spine project. Sofia has been spending her quarantine watching reality shows with her family and creating a new piece of art everyday.
+block css
+    style.
+        h3 {
+            font-size: 2.25rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        h6, .nav-item-list li {
+            color: #292929;
+            font-size: 1.25rem;
+            padding:0px 40px;
+        }
+        h6 {
+            margin-bottom:100px;
+        }
+        .nav-item-list li:before {
+            display:none;
+        }
+        .nav-item-list li {
+            line-height:1.25;
+        }
+        li.nav-item.no-left {
+            padding-left: 0px; 
+        }
+        .nav {
+            position:fixed;
+            top:0;
+            background:white;
+            width:55rem;
+            padding-top:15px;
+        }
